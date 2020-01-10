@@ -1,0 +1,108 @@
+
+.haut1
+{
+margin-top: -20px;
+height: 180px;
+background-color: #273c75;
+width: 100%;
+
+}
+.profil1 {
+width: 300px;
+height: 190%;
+
+
+margin-top: 20px;
+border: 3px solid #273c75;
+
+
+
+
+}
+.nom1 {
+
+font-size: 25px;
+
+
+}
+.type1 {
+font-size: 20px;
+
+background-color: #2f3640;
+
+
+}
+#stars1{
+	
+}
+
+#stars1 >span{
+	display: inline-block;
+	font-size: 30px;
+	color: #ffcf48 ;
+}
+#stars1:hover>span:before{
+	content: '\2605';
+	position: absolute;
+
+}
+#stars1>span:hover~span:before{
+	content:'' ;
+}
+
+
+.contenu
+{
+	background-color: #ecf0f1;
+
+	width: 85%;
+	margin-left: 7%;
+	margin-top: 170px;
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-bottom: 3%;
+	padding-top: 2%;
+	border-radius: 20px;
+
+
+}
+.inp1{
+font-weight : bold;	
+
+
+
+
+}
+
+.inp1[type='file']
+{
+	font-size: 70%;
+
+
+	height: 100%;
+	width: 70%;
+
+	border-radius: 40px;
+}
+.lab
+{
+text-align: center;
+font-weight : bold;
+
+
+}
+
+.but1
+{
+	width: 70%;
+	font-size: 100%;
+	font-weight : bold;
+	border-radius: 20px;
+
+}
+.change
+{
+	background-color: white;
+	padding : 2%;
+	border-radius: 20px;
+}

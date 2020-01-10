@@ -1,0 +1,1931 @@
+
+<!DOCTYPE html>
+<html lang="fr" class="no-js">
+	<head>
+					
+<script>
+window.gdprAppliesGlobally=true;
+(function(){function n(){if(!window.frames.__cmpLocator){if(document.body&&document.body.firstChild){var e=document.body;var t=document.createElement("iframe");t.style.display="none";t.name="__cmpLocator";t.title="cmpLocator";e.insertBefore(t,e.firstChild)}else{setTimeout(n,5)}}}function e(e,t,n){if(typeof n!=="function"){return}
+if(!window.__cmpBuffer){window.__cmpBuffer=[]}if(e==="ping"){n({gdprAppliesGlobally:window.gdprAppliesGlobally,cmpLoaded:false},true)}else{window.__cmpBuffer.push({command:e,parameter:t,callback:n})}}e.stub=true;function t(r){if(!window.__cmp||window.__cmp.stub!==true){return}if(!r.data){return}var a=typeof r.data==="string";var e;try{e=a?JSON.parse(r.data):r.data}catch(t){return}if(e.__cmpCall){var o=e.__cmpCall;window.__cmp(o.command,o.parameter,function(e,t){var n={__cmpReturn:{returnValue:e,success:t,callId:o.callId}};r.source.postMessage(a?JSON.stringify(n):n,"*")})}}if(typeof window.__cmp!=="function"){window.__cmp=e;if(window.addEventListener){window.addEventListener("message",t,false)}else{window.attachEvent("onmessage",t)}}n()})();(function(e){var t=document.createElement("script");t.id="spcloader";t.type="text/javascript";t.async=true;t.src="https://sdk.privacy-center.org/"+e+"/loader.js?target="+document.location.hostname;t.charset="utf-8";var n=document.getElementsByTagName("script")[0];
+n.parentNode.insertBefore(t,n)})("8b462e24-511c-4ea5-b420-54ac628aaabe");
+
+window.didomiConfig = {
+  notice: {
+    position: 'banner'
+  },
+  experiment: {
+    id: 'test-popup-for-mobile',
+    size: 0.5,
+    startDate: '2019-08-30T00:00:00Z',
+    config: {
+      notice: {
+        position: ((window.matchMedia('(max-device-width: 960px)').matches) ? "popup" : "banner")
+      }
+    }
+  },
+};
+window.didomiOnReady = window.didomiOnReady || [];
+window.didomiOnReady.push(function cmpDidomiPushOnReady(Didomi) {
+  if(Didomi.notice.isVisible()) {
+    const maxScrollDepth = ((Didomi.getConfig()||{}).custom||{}).scrollDepth;
+    if(!maxScrollDepth)
+      return;
+    const startPositionScroll = window.scrollY;
+    var ticking = false;
+    window.addEventListener('scroll', function cmpDidomiScrollListener(e) {
+      if (!ticking) {
+        window.requestAnimationFrame(function cmpDidomiCheckScrollDepth() {
+          if(!Didomi.notice.isVisible()){
+            window.removeEventListener('scroll', cmpDidomiScrollListener);
+            return;
+          }
+          var lastPositionScroll = window.scrollY;
+          if (Math.abs(startPositionScroll - lastPositionScroll) >= maxScrollDepth) {
+              Didomi.setUserAgreeToAll();
+              window.removeEventListener('scroll', cmpDidomiScrollListener);
+          }
+          ticking = false;
+        });
+        ticking = true;
+      }
+    });
+  }
+});
+var showCmpPreferencesPopup = function(){ Didomi.preferences.show() };
+</script>
+
+
+
+
+
+
+
+			    
+	   
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="HandheldFriendly" content="true">
+		<meta name="format-detection" content="telephone=no">
+		<title>Cette mystérieuse maladie paralyse les enfants </title>
+<meta property="og&#x3A;type" content="article" />
+<meta property="og&#x3A;title" content="Cette&#x20;myst&#xE9;rieuse&#x20;maladie&#x20;paralyse&#x20;les&#x20;enfants" />
+<meta property="og&#x3A;description" content="Ils&#x20;sont&#x20;90&#x20;enfants&#x20;&#xE0;&#x20;avoir&#x20;&#xE9;t&#xE9;&#x20;diagnostiqu&#xE9;s&#x20;de&#x20;cette&#x20;maladie&#x20;inconnue&#x20;appel&#xE9;e&#x20;la&#x20;&quot;my&#xE9;lite&#x20;flasque&#x20;aigu&#xEB;&quot;&#x20;cette&#x20;ann&#xE9;e.&#x20;Cette&#x20;derni&#xE8;re..." />
+<meta property="og&#x3A;image" content="https&#x3A;&#x2F;&#x2F;assets.afcdn.com&#x2F;story&#x2F;acc9_2949718&#x2F;accFacebook0x0a337835.jpg" />
+<meta property="og&#x3A;url" content="https&#x3A;&#x2F;&#x2F;www.aufeminin.com&#x2F;news-societe&#x2F;cette-mysterieuse-maladie-paralyse-plusieurs-enfants-americains-s2949718.html" />
+<meta property="og&#x3A;site_name" content="aufeminin" />
+<meta property="fb&#x3A;app_id" content="145880842166163" />
+<meta property="twitter&#x3A;card" content="summary_large_image" />
+<meta property="twitter&#x3A;title" content="Cette&#x20;myst&#xE9;rieuse&#x20;maladie&#x20;paralyse&#x20;les&#x20;enfants" />
+<meta property="twitter&#x3A;description" content="Ils&#x20;sont&#x20;90&#x20;enfants&#x20;&#xE0;&#x20;avoir&#x20;&#xE9;t&#xE9;&#x20;diagnostiqu&#xE9;s&#x20;de&#x20;cette&#x20;maladie&#x20;inconnue&#x20;appel&#xE9;e&#x20;la&#x20;&quot;my&#xE9;lite&#x20;flasque&#x20;aigu&#xEB;&quot;&#x20;cette&#x20;ann&#xE9;e.&#x20;Cette&#x20;derni&#xE8;re..." />
+<meta property="twitter&#x3A;image&#x3A;src" content="https&#x3A;&#x2F;&#x2F;assets.afcdn.com&#x2F;story&#x2F;acc9_2949718&#x2F;accFacebook0x0a337835.jpg" />
+<meta property="al&#x3A;iphone&#x3A;app_store_id" content="598233773" />
+<meta property="al&#x3A;iphone&#x3A;app_name" content="aufeminin&#x20;NEWS" />
+<meta property="al&#x3A;iphone&#x3A;url" content="aufemininnews&#x3A;&#x2F;&#x2F;story&#x3F;id&#x3D;2949718" />
+<meta property="twitter&#x3A;app&#x3A;id&#x3A;iphone" content="598233773" />
+<meta property="twitter&#x3A;app&#x3A;name&#x3A;iphone" content="aufeminin&#x20;NEWS" />
+<meta property="twitter&#x3A;app&#x3A;url&#x3A;iphone" content="aufemininnews&#x3A;&#x2F;&#x2F;story&#x3F;id&#x3D;2949718" />
+<meta property="al&#x3A;android&#x3A;package" content="com.aufeminin.aufemininnews" />
+<meta property="al&#x3A;android&#x3A;app_name" content="aufeminin&#x20;NEWS" />
+<meta property="al&#x3A;android&#x3A;url" content="aufemininnews&#x3A;&#x2F;&#x2F;story&#x3F;id&#x3D;2949718" />
+<meta property="twitter&#x3A;app&#x3A;country" content="FR" />
+<meta property="twitter&#x3A;app&#x3A;id&#x3A;googleplay" content="com.aufeminin.aufemininnews" />
+<meta property="twitter&#x3A;app&#x3A;name&#x3A;googleplay" content="aufeminin&#x20;NEWS" />
+<meta property="twitter&#x3A;app&#x3A;url&#x3A;googleplay" content="aufemininnews&#x3A;&#x2F;&#x2F;story&#x3F;id&#x3D;2949718" />
+<meta name="news_keywords" content="Maladie&#x20;myst&#xE9;rieuse&#x20;enfants&#x20;Etats-Unis&#x20;paralyse&#x20;&#x20;My&#xE9;lite&#x20;flasque&#x20;aigu&#xEB;&#x20;rhume&#x20;fi&#xE8;vre&#x20;Centres&#x20;am&#xE9;ricains&#x20;pour&#x20;le&#x20;contr&#xF4;le&#x20;et&#x20;la&#x20;pr&#xE9;vention&#x20;des&#x20;maladies&#x20;&#x28;CDC&#x29;" />
+<meta name="description" content="Ils&#x20;sont&#x20;90&#x20;enfants&#x20;&#xE0;&#x20;avoir&#x20;&#xE9;t&#xE9;&#x20;diagnostiqu&#xE9;s&#x20;de&#x20;cette&#x20;maladie&#x20;inconnue&#x20;appel&#xE9;e&#x20;la&#x20;&quot;my&#xE9;lite&#x20;flasque&#x20;aigu&#xEB;&quot;&#x20;cette&#x20;ann&#xE9;e.&#x20;Cette&#x20;derni&#xE8;re..." />
+<meta name="article&#x3A;author" content="Leslie&#x20;Muya" />
+<meta name="article&#x3A;published_time" content="2018-11-16T15&#x3A;00&#x3A;00&#x2B;01&#x3A;00" />
+<script type="text/javascript" crossorigin="anonymous" src="https://static.afcdn.com/relfr/concat.js?PCM-lVTBbtswDP2aHi3ENha0hx3SAdtlhwAtcg1oi3aUSqJgyhuyrx-twonduZ17McjHxyeSpnRAr6m7K76HvuK-EiNXW7W5Ahkb31qM5NWZvx5GdkW_GW-GcmYeh76Rb2upAnusyTnyx0hhgQPNT2pbkVgKPSGzoUVpWEzYQ4tPAVF_ILrTlaX6ZRYLZC-NsVbM2gKzNRxnhBN4bbGCjmfOwPlGLpBHH4dIdPZxUN9pfuPO5GQkXFOHE_PIsUNwjJ5xnOdU-pfRSHsLlzT32EH9gqmaUeAwEJ4HXH7Z6myH2oDD2Jl_BU4xBr4rd0IbZtRRo5AjRCVHCnBO-X32ReWrj_ux-0SZIRk84tl5PsQRnJjZVuVlWt-EvEcPtm-NvyZKnnGQdr9Q-Q1VgmZ90BBRr5eqycs0qwzSCgzD2S5HP24e9P7avtQxO_-12lIVD0VqVvxyfYGNbPhJ_EIVt1GN-Of7PNnXPktVLkdXL4fc0LQdt8v7ftrEy_po_nfKxHtL5Mc-yvvGh2LmLL9V8OdiCYZtUMUmf8g3-X2eb7Z_AQ"></script>
+<script type="text/javascript">
+ jsdchtml3 = function(string, id) {
+ if (!jsdchtml3.p) {
+ String.prototype.afca = String.prototype["ch"+"ar"+"At"];
+ jsdchtml3.k = "243524534235";
+ jsdchtml3.ra = Array("º<", "¹>", "¦/");
+ jsdchtml3.u = function(s) {
+ if (!jsdchtml3.u.r) {
+ jsdchtml3.u.r = Array();
+ for (var i=0,a; i < jsdchtml3.ra.length; i++) {
+ a = jsdchtml3.ra[i].split('');
+ jsdchtml3.u.r[i] = Array(new RegExp(a[0], 'gi'), a[1]);
+ }
+ }
+ for (var i=0; i<jsdchtml3.u.r.length; i++) {
+ s = s.replace(jsdchtml3.u.r[i][0], jsdchtml3.u.r[i][1]);
+ }
+ return s;
+ };
+ jsdchtml3.r = function(a,b,c) {
+ for (var j=c-1,o="";j>=0;j--) {
+ o+=a.afca(b+j);
+ }
+ return o;
+ };
+ jsdchtml3.p = function(f,a) {
+ var t = jsdchtml3.u(f), i = 0, p = 0, n, o = "";
+ while (p < t.length) {
+ n = parseInt(a.afca(i++ % a.length));
+ o += jsdchtml3.r(t,p,n);
+ p += n;
+ }
+ return o;
+ };
+ };
+ 
+ var script = document.getElementById(id);
+ //script.insertAdjacentHTML("afterend", jsdchtml3.p(string, jsdchtml3.k));
+ document.write(jsdchtml3.p(string, jsdchtml3.k)); // quickfix
+ }
+ </script>
+<script type="application&#x2F;ld&#x2B;json">
+    
+    {"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://www.aufeminin.com","name":"Accueil"}},{"@type":"ListItem","position":2,"item":{"@id":"/societe-sc26.html","name":"Soci\u00e9t\u00e9"}},{"@type":"ListItem","position":3,"item":{"@id":"/societe/news-societe-ssc156.html","name":"News soci\u00e9t\u00e9"}}]}
+    
+</script>
+<script type="text/javascript">var _eStat_Whap_loaded = 0;</script>
+<script type="text/javascript">
+ var af_diapo_list = [];
+ var af_diapo_common = {};
+ var af_diapo_instances = {};
+</script>
+<script type="text/javascript">af_diapo_list.push({"defaultTitle":"","current":0,"diapoSize":51,"forwardCallbackURL":"","id":"af-diapo-desktop-0","isStory":1,"isOPS":0,"isRecipeDiapo":0,"nextPhotosCallbackURL":"\/reloaded\/api\/album-photo?albumid=1129595&lastModificationDate=20190613153200","photos":[[24284362,"https:\/\/assets.afcdn.com\/album\/D20150116\/image-acc-ok-1129595_H172136_L_w670.jpg",670,446,"Yes, 50 pr\u00e9noms de b\u00e9b\u00e9 Made in USA !","https:\/\/assets.afcdn.com\/album\/D20150116\/image-acc-ok-1129595_H172136_L_s96.jpg","\u00a9 \u00a9 iStock",1,"<p>Courts, longs, rares, tendance, anciens : pas toujours facile de choisir le pr&#233;nom de son enfant... Car un pr&#233;nom c&#8217;est pour la vie, et chaque futur parent sait qu&#8217;il existe LE pr&#233;nom id&#233;al pour le b&#233;b&#233;&#160;qui va na&#238;tre. Sonorit&#233;, originalit&#233;, &#233;tymologie&#8230; les facteurs qui influencent les choix des parents sont multiples, et heureusement on a neuf mois pour plonger dans l&#8217;analyse des pr&#233;noms de toute sorte et origine !<br\/><br\/>Vous avez fait le tour des pr&#233;noms &#171; nationaux &#187; sans trouver votre bonheur ? Appeler votre enfant Emma, L&#233;o, Jules, Chlo&#233; vous para&#238;t trop banal ? Envolez-vous vers les l&#8217;Am&#233;rique : original et tendance, un <b><a href=\"https:\/\/www.aufeminin.com\/tools\/name\/prenoms-americains-l234.html\" target=\"_blank\" rel=\"follow\">pr&#233;nom am&#233;ricain<\/a><\/b> peut &#234;tre une alternative int&#233;ressante aux pr&#233;noms made in France.<br\/><br\/>S&#233;ries tv, films, stars&#8230; les pr&#233;noms am&#233;ricains on les connait bien ! Il faudra bien entendu les associer au nom de famille du futur b&#233;b&#233;, pour voir comment ils sonnent. Sans oublier leur orthographe et la prononciation, pas toujours &#233;videntes. M&#234;me si, en cette &#233;poque de mondialisation, cela ne semble plus &#234;tre un frein. <br\/><br\/>Et puis, rassurez-vous : un <b>pr&#233;nom am&#233;ricain<\/b> a des fortes chances d&#8217;avoir des origines europ&#233;ennes qui le rend finalement tr&#232;s proche. <br\/>D&#233;couvrez donc sans plus attendre notre s&#233;lection de pr&#233;noms les plus port&#233;s par les b&#233;b&#233;s Am&#233;ricains : et si aux USA on les adore, pourquoi ne pas tenter l&#8217;exp&#233;rience chez nous ? <br\/><br\/>&#169; iStock<\/p>"],[24284346,"https:\/\/assets.afcdn.com\/album\/D20150108\/6e-prenom-arabe-nora-1127360_H174204_L_w670.jpg",413,620,"Abigail","https:\/\/assets.afcdn.com\/album\/D20150108\/6e-prenom-arabe-nora-1127360_H174204_L_s96.jpg","\u00a9 \u00a9 iStock",2,"Tr\u00e8s \u00e0 la mode aux \u00c9tats Unis, le pr\u00e9nom Abigail \u00e9tait celui de la tr\u00e8s belle et intelligente troisi\u00e8me femme du Roi David. En h\u00e9breu Abigail signifie : <br>\u00ab source de joie \u00bb.<br><br>Tout savoir sur le pr\u00e9nom <a href=\"http:\/\/www.aufeminin.com\/w\/prenom\/p242\/abigail.html\" rel=\"follow\"><u>Abigail<\/u><\/a>.<br><br>\u00a9 iStock"],[24284347,"https:\/\/assets.afcdn.com\/album\/D20150108\/27e-prenom-arabe-adam-1127360_H174217_L_w670.jpg",399,620,"Landon","https:\/\/assets.afcdn.com\/album\/D20150108\/27e-prenom-arabe-adam-1127360_H174217_L_s96.jpg","\u00a9 \u00a9 iStock",3,"Pr\u00e9nom \u00e0 la mode aux USA, Landon \u00e9tait \u00e0 l\u2019origine un nom d\u2019endroit et il signifie en effet \u00ab longue colline \u00bb. Au fil des ann\u00e9es Landon semble avoir remplac\u00e9 le plus classique \u00ab Brandon \u00bb.<br><br>Trouvez l\u2019inspiration avec notre outil <a href=\" http:\/\/www.aufeminin.com\/idees-prenom.html\" rel=\"noopener noreferrer nofollow\" target=\"_blank\"><u>pr\u00e9noms<\/u><\/a>.<br><br>\u00a9 iStock"],[24284358,"https:\/\/assets.afcdn.com\/album\/D20150108\/36e-prenom-arabe-ibrahim-1127360_H174225_L_w670.jpg",404,620,"Gavin","https:\/\/assets.afcdn.com\/album\/D20150108\/36e-prenom-arabe-ibrahim-1127360_H174225_L_s96.jpg","\u00a9 \u00a9 iStock",4,"Gavin est un d\u00e9riv\u00e9 du pr\u00e9nom Gauvain, neveu du l\u00e9gendaire roi Arthur. Ce pr\u00e9nom, qui vient du gallois et signifie \u00ab faucon de la plaine \u00bb, est redevenu \u00e0 la mode aux USA \u00e0 partir des ann\u00e9es 2000. <br><br>Tout savoir sur le pr\u00e9nom <a href=\" http:\/\/www.aufeminin.com\/w\/prenom\/p6772\/gavin.html\" rel=\"noopener noreferrer nofollow\" target=\"_blank\"><u>Gavin<\/u><\/a>.<br><br>\u00a9 iStock"],[24284371,"https:\/\/assets.afcdn.com\/album\/D20150115\/bebe-americain-7-thinkstock-1129595_H170115_L_w670.jpg",413,620,"Mia","https:\/\/assets.afcdn.com\/album\/D20150115\/bebe-americain-7-thinkstock-1129595_H170115_L_s96.jpg","\u00a9 \u00a9 Thinkstock",5,"D\u00e9riv\u00e9 de Maria, Mia est un pr\u00e9nom moderne qui a connu un succ\u00e8s fulgurant ces derni\u00e8res ann\u00e9es, et il figure d\u00e9sormais dans la top 10 des pr\u00e9noms les plus donn\u00e9s aux USA.<br><br>Tout savoir sur le pr\u00e9nom <a href=\" http:\/\/www.aufeminin.com\/w\/prenom\/p13573\/mia.html\" rel=\"noopener noreferrer nofollow\" target=\"_blank\"><u>Mia<\/u><\/a>.<br><br>\u00a9 Thinkstock"],[24284363,"https:\/\/assets.afcdn.com\/album\/D20150115\/istock-bebe-drapeau-1-1129595_H170110_L_w670.jpg",413,620,"Harper","https:\/\/assets.afcdn.com\/album\/D20150115\/istock-bebe-drapeau-1-1129595_H170110_L_s96.jpg","\u00a9 \u00a9 iStock",6,"Harper \u00e9tait \u00e0 l\u2019origine un nom de famille. D\u00e9sormais utilis\u00e9 comme pr\u00e9nom f\u00e9minin, Harper signifie : \u00ab celle qui joue de la harpe \u00bb. Parmi les c\u00e9l\u00e9brit\u00e9s qui portent ce pr\u00e9nom il y a la romanci\u00e8re Harper Lee, qui gagna le prix Pulitzer en 1961 pour son roman : <i> To Kill a Mockingbird <\/i> (Ne tirez pas sur l\u2019oiseau moqueur).<br><br>Trouvez l\u2019inspiration avec notre outil <a href=\" http:\/\/www.aufeminin.com\/idees-prenom.html\" rel=\"noopener noreferrer nofollow\" target=\"_blank\"><u>pr\u00e9noms<\/u><\/a>.<br><br>\u00a9 iStock"],[24284359,"https:\/\/assets.afcdn.com\/album\/D20150108\/24e-prenom-arabe-ilyes-1127360_H174215_L_w670.jpg",402,620,"Aaron","https:\/\/assets.afcdn.com\/album\/D20150108\/24e-prenom-arabe-ilyes-1127360_H174215_L_s96.jpg","\u00a9 \u00a9 iStock",7,"Pr\u00e9nom d\u2019origine h\u00e9bra\u00efque, Aaron signifie : <br>\u00ab esprit \u00bb.<br>Tr\u00e8s \u00e0 la mode aux USA \u00e0 partir des ann\u00e9es 1970, son succ\u00e8s est un peu en d\u00e9clin, mais il ne faut pas se tromper : Aaron est toujours tr\u00e8s appr\u00e9ci\u00e9s par les parents et Aaron n\u2019est pas pr\u00eat de quitter le Top 100 am\u00e9ricain.<br><br>Tout savoir sur le pr\u00e9nom <a href=\" http:\/\/www.aufeminin.com\/w\/prenom\/p6\/aaron.html\" rel=\"noopener noreferrer nofollow\" target=\"_blank\"><u>Aaron<\/u><\/a>.<br><br>\u00a9 iStock"],[24284357,"https:\/\/assets.afcdn.com\/album\/D20150108\/15e-prenom-arabe-selma-1127360_H174209_L_w670.jpg",417,620,"Kinsley","https:\/\/assets.afcdn.com\/album\/D20150108\/15e-prenom-arabe-selma-1127360_H174209_L_s96.jpg","\u00a9 \u00a9 iStock",8,"Kinsley signifie \u00ab propri\u00e9t\u00e9 du roi \u00bb. Ce pr\u00e9nom, cr\u00e9ation 100% am\u00e9ricaine du d\u00e9but des ann\u00e9es 2000, a connu une ascension fulgurante qui ne semble pas pr\u00eate de s\u2019arr\u00eater ! <br><br>Tout savoir sur le pr\u00e9nom <a href=\" http:\/\/www.aufeminin.com\/w\/prenom\/p22358\/kinsley.html\" rel=\"noopener noreferrer nofollow\" target=\"_blank\"><u>Kinsley<\/u><\/a>.<br><br>\u00a9 iStock"],[24284349,"https:\/\/assets.afcdn.com\/album\/D20150108\/26e-prenom-arabe-ayoub-1127360_H174216_L_w670.jpg",413,620,"Michael","https:\/\/assets.afcdn.com\/album\/D20150108\/26e-prenom-arabe-ayoub-1127360_H174216_L_s96.jpg","\u00a9 \u00a9 iStock",9,"Michael est l\u2019\u00e9quivalent am\u00e9ricain de Michel. <br>C\u2019est un pr\u00e9nom tr\u00e8s populaire aux USA depuis les ann\u00e9es 1940 et, m\u00eame si sa popularit\u00e9 est un d\u00e9clin, il fait encore partie des pr\u00e9noms les plus attribu\u00e9s.<br><br>Tout savoir sur le pr\u00e9nom <a href=\" http:\/\/www.aufeminin.com\/w\/prenom\/p13582\/michael.html\" rel=\"noopener noreferrer nofollow\" target=\"_blank\"><u>Michael<\/u><\/a>.<br><br>\u00a9 iStock"],[24284352,"https:\/\/assets.afcdn.com\/album\/D20150108\/11e-prenom-arabe-kenza-1127360_H174208_L_w670.jpg",460,620,"Scarlett","https:\/\/assets.afcdn.com\/album\/D20150108\/11e-prenom-arabe-kenza-1127360_H174208_L_s96.jpg","\u00a9 \u00a9 iStock",10,"Scarlett signifie \u00ab rouge brillant \u00bb. Ce pr\u00e9nom est devenu tr\u00e8s populaire aux USA ces derni\u00e8res ann\u00e9es. Va savoir si Scarlett Johansson y est pour quelque chose\u2026<br><br>Tout savoir sur le pr\u00e9nom <a href=\" http:\/\/www.aufeminin.com\/w\/prenom\/p17373\/scarlett.html\" rel=\"noopener noreferrer nofollow\" target=\"_blank\"><u>Scarlett<\/u><\/a>.<br><br>\u00a9 iStock"]],"sButtons":"<div id=\"af-socials-btn-diapo-desktop-0\" class=\"af-social-share-v2 diapoDesktop open\"><\/div>","sButtonsId":"af-socials-btn-diapo-desktop-0","seeAlsoTitle":"you might also like","useModalForAlert":null})</script>
+<script type="text/javascript">
+ var aufAdtechParams = {};
+
+ var sas_formatIds = '';
+ var sas_pageId = 31855;
+ var sas_dfpPageId = 'section_society';
+ var sas_target = '';
+ </script>
+<script type="text/javascript">
+ window.afSession = window.afSession || new AufSession();
+ </script>
+<script type="text/javascript">
+ window.afLogger = window.afLogger || new Aflog.Logger();
+ window.afLogger.initQueue();
+ af_addEvent(window, 'beforeunload', function() { afLogger.realtimeBulkPost(); }, false);
+ </script>
+<script type="application&#x2F;ld&#x2B;json">
+    
+    {"@context":"http://schema.org","@type":"NewsArticle","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.aufeminin.com/news-societe/cette-mysterieuse-maladie-paralyse-plusieurs-enfants-americains-s2949718.html"},"headline":"Cette myst\u00e9rieuse maladie paralyse les enfants ","image":["https://assets.afcdn.com/story/20181116/1313842_w767h767c1cx518cy247.jpg","https://assets.afcdn.com/story/20181116/1313842_w767h767c1cx518cy247.jpg","https://assets.afcdn.com/story/20181116/1313842_w767h575c1cx518cy247.jpg"],"datePublished":"2018-11-16T15:00:00+01:00","dateModified":"2018-11-16T15:47:00+01:00","author":{"@type":"Person","name":"Leslie Muya"},"publisher":{"@type":"Organization","name":"aufeminin","logo":{"@type":"ImageObject","url":"https://static.afcdn.com/relfr/Front/Component/header/assets/logo.png","width":240,"height":60}},"description":"Ils sont 90 enfants \u00e0 avoir \u00e9t\u00e9 diagnostiqu\u00e9s de cette maladie inconnue appel\u00e9e la \"my\u00e9lite flasque aigu\u00eb\" cette ann\u00e9e. Cette derni\u00e8re..."}
+    
+</script>
+<script type="text/javascript">af_translations = {};
+af_translations.sButtonsShareText = "Partager sur #socialNetworkName#";
+</script>
+<script type="text/javascript">
+ // add global random value from 1 to 100
+ var afGlobalRandomValue = Math.floor(Math.random() * 100) + 1;
+ // push see also event
+ var afSeeAlsoEnabled = afGlobalRandomValue % (100/10) == 0;
+ // To make other subdomains able to contact this page
+ if (document.domain && typeof(sas_ddotpos) == 'undefined') {
+ sas_ddotpos = document.domain.indexOf('.');
+ if (sas_ddotpos > 0) document.domain = document.domain.substr(sas_ddotpos + 1);
+ }
+
+</script>
+<script type="text/javascript">
+ PubSub.subscribe('cmp.display.banner',function(){
+ af_ua_trackEvent('AF_CMP', 'showBanner', '', 0, true); 
+ });</script>
+<script type="text/javascript">
+ var af_isConnected = af_getCookie('cu') != '' ? 1 : 0;
+ var af_userInfo = {
+ 'hashedUserId': (af_isConnected && localStorage && localStorage.getItem('hashedUserId')) ? localStorage.getItem('hashedUserId') : '',
+ 'hashedUserEmail': (af_isConnected && localStorage && localStorage.getItem('hashedUserEmail')) ? localStorage.getItem('hashedUserEmail') : ''
+ }
+ </script>
+<script type="text/javascript">
+ if (location.hash && location.hash.toLowerCase().substr(0, 5) == '#via=') {
+ var via = location.hash.substr(5).split('::');
+ if (via.length == 3) document.location.hash = 'utm_campaign='+via[0]+'&utm_medium='+via[1]+'&utm_source='+via[2];
+ };
+ </script>
+<script type="text/javascript">
+ var af_winSize = af_windowSize();
+ </script>
+<script type="text/javascript">
+ var af_consentInternetTargeting = true;
+ var af_consentAdsTargeting = true;
+ 
+ if (typeof(window.__cmp) !== 'undefined' && typeof(window.__cmp.getCustomConsentBeforeLoad) !== 'undefined') {
+ var customCookieData = JSON.parse(window.__cmp.getCustomConsentBeforeLoad());
+
+ if (customCookieData !== null) {
+ if (typeof(customCookieData.internet_targeting) !== 'undefined') {
+ af_consentInternetTargeting = customCookieData.internet_targeting;
+ }
+
+ if (typeof(customCookieData.ads_targeting) !== 'undefined') {
+ af_consentAdsTargeting = customCookieData.ads_targeting;
+ }
+ }
+
+ }
+ </script>
+<script type="text/javascript">af_dataLayer = [{
+ 'vuid': af_guid(),
+ 'siteInfo': {
+ 'sid': 1,
+ 'platform': 'aufeminin',
+ 'uaid': 'UA-1901803-1',
+ 'optimizeId': 'GTM-5ZQ8BS2',
+ 'lang': 'fr',
+ 'isMobile': 0,
+ 'gemkey': 'pyabkHsYiGHgoaLAznK6pKQsTDku5B.sBU1AZySiVcj.c7',
+ 'applicationType': 'default'
+ },
+ 'pageInfo': {
+ 'trackPageview': 1,
+ 'rid': 26,
+ 'srid': 156,
+ 'sec': 'Société / News société',
+ 'version' : 'new',
+ 'contentType': 'Stories',
+ 'ops': 'none',
+ 'ops_uaid': 'none',
+ 'section': 'societe',
+ 'subsection': 'news-societe',
+ 'thematic': '',
+ 'tag': 'actu,etats-unis,maladie-infantile',
+ 'tags': ',SEO:actu,SEO:etats-unis,SEO:maladie-infantile,',
+ 'category': ''
+ 
+ },
+ 'userInfo': {
+ 'du': '/dz',
+ 'logged': af_isConnected,
+ 'device': 'desktop',
+ 'hashedUserId': af_userInfo.hashedUserId,
+ 'hashedUserEmail': af_userInfo.hashedUserEmail,
+ 'referer': document.referrer,
+ 'userAgent': navigator.userAgent,
+ 'adblocker': 'N/A',
+ 'segment': afSession.getSegment(),
+ 'screenResolution': af_winSize.w + 'x' + af_winSize.h,
+ 'consentInternetTargeting': (af_consentInternetTargeting ? 1 : 0),
+ 'consentAdsTargeting': (af_consentAdsTargeting ? 1 : 0)
+ },
+ 'campaignInfo': {
+ 'utmSource': afSession.getUtmSource(),
+ 'utmMedium': afSession.getUtmMedium(),
+ 'utmCampaign': afSession.getUtmCampaign(),
+ 'paid' : afSession.isPaid() ? 1 : 0
+ }}];
+ </script>
+<script type="text/javascript">
+ PubSub.subscribeOnce('ad.block.detect', function(msg, data) {
+ af_dataLayer[0].userInfo.adblocker = data.status ? 1 : 0;
+ PubSub.publish('datalayer.ready', { datalayer: af_dataLayer[0] });
+ });
+ </script>
+<script type="text/javascript">
+ afLogger.setDataLayer(af_dataLayer[0]);
+ </script>
+<script type="text/javascript">
+ sas_target = (window.sas_target ? sas_target : '') + ';r=26r;section=26r;sr=156s;subsection=156s;seo_tag=122560t;tag=122560t;seo_tag=18932t;tag=18932t;seo_tag=22188t;tag=22188t;story=2949718s;contenttype=stories;site=1s;usercountry=dz;version=desktop;platform=desktop;';
+ </script>
+<script type="text/javascript">aufAdtechParams = {"exclusivesAdsFormats":null,"formatIds":"300_atf,300_mtf,native_seealso_left,native_seealso_right,banner_atf,banner_btf,dhtml","pageId":"section_society","placeholders":{"300_atf":{"hasRefresh":true,"refreshParams":{"capping":15,"refreshAdsInterval":15000}}}}; </script>
+<script type="text/javascript">
+ if (Math.random() < 0.1) {
+ (function() {
+ function hsLogError(message, category, sampling) {
+ var d = message.split('').reverse().join('');
+ new Image().src = 'https://www.aufeminin.com/reloaded/errpix.php?'
+ + 'd=' + encodeURIComponent(d)
+ + (sampling ? '&s=' + sampling : '')
+ + (category ? '&c=' + encodeURIComponent(category) : '');
+ if (window.console && console.error) console.error('JS Catchall: ' + message);
+ }
+
+ var af_JsElementBlocked = false;
+ var af_nbErrorsToReport = 10;
+ window.onerror = function(message, url, line, column, error) {
+ if (af_nbErrorsToReport-- < 0) return;
+
+ var category = 'JS - window.onerror';
+
+ if (typeof message === 'string') {
+ if (message.indexOf('Script error') !== -1) {
+ category += ' - external';
+ }
+
+ if (url && url.indexOf(document.domain) === -1) {
+ message += ' @ ' + url;
+ if (typeof line !== undefined) {
+ message += ':' + line;
+ }
+ if (typeof column !== undefined) {
+ message += ':' + column;
+ }
+ }
+ } else if (typeof message == 'object' && message.srcElement && message.target) {
+ if (message.srcElement == '[object HTMLScriptElement]' && message.target == '[object HTMLScriptElement]') {
+ message = 'Error loading script';
+ } else {
+ message = 'Event Error - target:' + message.target + ' srcElement:' + message.srcElement;
+ af_JsElementBlocked = true;
+ }
+ } else if (typeof message == 'object') {
+ message = 'MESSAGE_OBJECT: ' + message.constructor.name;
+ } else {
+ message = 'MESSAGE_NOSTRING: ' + typeof message;
+ }
+
+ hsLogError(message, category);
+
+ return true;
+ };
+
+ var af_taggingToReport = true;
+ function checkTagging() {
+ if (!af_taggingToReport) return;
+ af_taggingToReport = false;
+ if (window.top != window.self) return; // Iframe
+ if (af_JsElementBlocked) return; // Errors when loading page
+
+ if (!window.af_dataLayer) {
+ hsLogError('GTM data layer missing', 'GTM', 1);
+ }
+ if (!window.af_ua_trackEvent) {
+ hsLogError('UA track event function missing', 'GTM', 1);
+ }
+ }
+
+ if (window.addEventListener) {
+ window.addEventListener('load', checkTagging, false);
+ } else if (window.attachEvent) {
+ window.attachEvent('onload', checkTagging);
+ }
+ })();
+ }</script>
+
+<link href="https&#x3A;&#x2F;&#x2F;tlx.3lift.com" rel="preconnect">
+<link href="https&#x3A;&#x2F;&#x2F;tlx.3lift.com" rel="dns-prefetch">
+<link href="https&#x3A;&#x2F;&#x2F;a.teads.tv" rel="preconnect">
+<link href="https&#x3A;&#x2F;&#x2F;a.teads.tv" rel="dns-prefetch">
+<link href="https&#x3A;&#x2F;&#x2F;ap.lijit.com" rel="preconnect">
+<link href="https&#x3A;&#x2F;&#x2F;ap.lijit.com" rel="dns-prefetch">
+<link href="https&#x3A;&#x2F;&#x2F;fastlane.rubiconproject.com" rel="preconnect">
+<link href="https&#x3A;&#x2F;&#x2F;fastlane.rubiconproject.com" rel="dns-prefetch">
+<link href="https&#x3A;&#x2F;&#x2F;aufeminin-g-d.openx.net" rel="preconnect">
+<link href="https&#x3A;&#x2F;&#x2F;aufeminin-g-d.openx.net" rel="dns-prefetch">
+<link href="https&#x3A;&#x2F;&#x2F;ib.adnxs.com" rel="preconnect">
+<link href="https&#x3A;&#x2F;&#x2F;ib.adnxs.com" rel="dns-prefetch">
+<link href="https&#x3A;&#x2F;&#x2F;c.amazon-adsystem.com" rel="preconnect">
+<link href="https&#x3A;&#x2F;&#x2F;c.amazon-adsystem.com" rel="dns-prefetch">
+<link href="https&#x3A;&#x2F;&#x2F;hb-api.omnitagjs.com" rel="preconnect">
+<link href="https&#x3A;&#x2F;&#x2F;hb-api.omnitagjs.com" rel="dns-prefetch">
+<link href="https&#x3A;&#x2F;&#x2F;cdn.jsdelivr.net" rel="preconnect">
+<link href="https&#x3A;&#x2F;&#x2F;cdn.jsdelivr.net" rel="dns-prefetch">
+<link href="https&#x3A;&#x2F;&#x2F;adservice.google.com" rel="preconnect">
+<link href="https&#x3A;&#x2F;&#x2F;adservice.google.com" rel="dns-prefetch">
+<link href="https&#x3A;&#x2F;&#x2F;adservice.google.fr" rel="preconnect">
+<link href="https&#x3A;&#x2F;&#x2F;adservice.google.fr" rel="dns-prefetch">
+<link href="https&#x3A;&#x2F;&#x2F;securepubads.g.doubleclick.net" rel="preconnect">
+<link href="https&#x3A;&#x2F;&#x2F;securepubads.g.doubleclick.net" rel="dns-prefetch">
+<link href="https&#x3A;&#x2F;&#x2F;pubads.g.doubleclick.net" rel="preconnect">
+<link href="https&#x3A;&#x2F;&#x2F;pubads.g.doubleclick.net" rel="dns-prefetch">
+<link href="https&#x3A;&#x2F;&#x2F;www.googletagservices.com" rel="preconnect">
+<link href="https&#x3A;&#x2F;&#x2F;www.googletagservices.com" rel="dns-prefetch">
+<link href="https&#x3A;&#x2F;&#x2F;blog.aufeminin.com" rel="preconnect">
+<link href="https&#x3A;&#x2F;&#x2F;blog.aufeminin.com" rel="dns-prefetch">
+<link href="https&#x3A;&#x2F;&#x2F;album.aufeminin.com" rel="preconnect">
+<link href="https&#x3A;&#x2F;&#x2F;album.aufeminin.com" rel="dns-prefetch">
+<link href="https&#x3A;&#x2F;&#x2F;forum.aufeminin.com" rel="preconnect">
+<link href="https&#x3A;&#x2F;&#x2F;forum.aufeminin.com" rel="dns-prefetch">
+<link href="https&#x3A;&#x2F;&#x2F;www.aufeminin.com" rel="preconnect">
+<link href="https&#x3A;&#x2F;&#x2F;www.aufeminin.com" rel="dns-prefetch">
+<link href="https&#x3A;&#x2F;&#x2F;static.afcdn.com" rel="preconnect">
+<link href="https&#x3A;&#x2F;&#x2F;static.afcdn.com" rel="dns-prefetch">
+<link href="https&#x3A;&#x2F;&#x2F;assets.afcdn.com" rel="preconnect">
+<link href="https&#x3A;&#x2F;&#x2F;assets.afcdn.com" rel="dns-prefetch">
+<script type="text/javascript" crossorigin="anonymous" src="https://static.afcdn.com/relfr/concat.js?PCM-lVLBTsMwDP0ajkRJJ01w4IAm7QJIE0O7VknjhqxpXMUJY39PRmGoUju6i_Viv_fiON6B1xhuinWXFCWVgWBLxs-JW7LeOIjo2Z4edr9shQeCP8BaO6zLVOdoHCrpygrbFn0ZsRvhyPoZjckWY6UtEFkcs5aaTj0GUFb3yc03njYbCnpQsMWC8SvsV-hra64QvEgvLzbkkrGe-uxbkFWT572xn-BoUpMjhA8IJ1zmwuPPeZZA192__EFT-ckRfHyC4wGDpvF_irZqjit0F6rzbltjlWge9RXqAPQ-j7xt7PQa9TM8rw4ruLgXXNwJwZdf"></script>
+<script type="text/javascript">
+ window.afSession = window.afSession || new AufSession();
+ </script>
+<script type="text/javascript">
+ window.afLogger = window.afLogger || new Aflog.Logger();
+ window.afLogger.initQueue();
+ af_addEvent(window, 'beforeunload', function() { afLogger.realtimeBulkPost(); }, false);
+ </script>
+<script type="text/javascript">
+ window.aufAdtechParams = window.aufAdtechParams || {};
+ aufAdtechParams.domUser = 'dz';
+ aufAdtechParams.isMobile = false;
+ aufAdtechParams.target = window.sas_target || '';
+ 
+ if (!aufAdtechParams.formatIds) {
+ aufAdtechParams.formatIds = window.sas_formatIds || '';
+ } else if (!window.sas_formatIds) {
+ sas_formatIds = aufAdtechParams.formatIds;
+ }
+ </script>
+<script type="text/javascript">
+ aufAdtechParams.adUnitPath = '229683329/aufeminin/organic';
+ aufAdtechParams.adUnitPathHbForced = '229683329/aufeminin/content_marketing';
+ aufAdtechParams.formatMapping = {"banner_atf":{"id":"banner_atf","hasLabel":false,"isAsync":false,"isCentered":true,"sizes":["1x1","728x90","800x250","970x250","980x250","1000x90","1000x250","1020x250","1800x1000"]},"banner_atf_small":{"id":"banner_atf_small","hasLabel":false,"isAsync":false,"isCentered":true,"sizes":["fluid","1x1","728x90","1000x90"]},"banner_mtf":{"id":"banner_mtf","hasLabel":false,"isAsync":false,"isCentered":true,"sizes":["1x1","728x90","800x250","970x250","990x90","1000x90","1000x250","1020x250"]},"banner_mtf_small":{"id":"banner_mtf_small","hasLabel":false,"isAsync":false,"isCentered":true,"sizes":["728x90"]},"banner_btf":{"id":"banner_btf","hasLabel":false,"isAsync":false,"isCentered":true,"sizes":["1x1","728x90","950x90","970x90","990x90","1000x90"]},"300_atf":{"id":"300_atf","hasLabel":false,"isAsync":false,"isCentered":true,"sizes":["120x600","160x600","300x250","300x600"]},"300_mtf":{"id":"300_mtf","hasLabel":false,"isAsync":false,"isCentered":true,"sizes":["fluid","1x1","300x250"]},"300_mtf_2":{"id":"300_mtf_2","hasLabel":false,"isAsync":false,"isCentered":true,"sizes":["300x250"]},"300_mtf_3":{"id":"300_mtf_3","hasLabel":false,"isAsync":false,"isCentered":true,"sizes":["300x250"]},"300_btf":{"id":"300_btf","hasLabel":false,"isAsync":false,"isCentered":true,"sizes":["300x250"]},"300_diapodynamic":{"id":"300_diapodynamic","hasLabel":false,"isAsync":true,"isCentered":true,"sizes":["120x600","160x600","300x250","300x600"]},"sitebar_left":{"id":"sitebar_left","hasLabel":false,"isAsync":false,"isCentered":true,"sizes":["120x600","160x600"]},"sitebar_right":{"id":"sitebar_right","hasLabel":false,"isAsync":false,"isCentered":false,"sizes":["120x600","160x600"]},"native_home_dynamic":{"id":"native_home_dynamic","hasLabel":false,"isAsync":false,"isCentered":false,"sizes":["fluid","1x1"]},"native_seealso_right":{"id":"native_seealso_right","hasLabel":false,"isAsync":false,"isCentered":false,"sizes":["fluid","1x1"]},"native_seealso_left":{"id":"native_seealso_left","hasLabel":true,"isAsync":false,"isCentered":false,"sizes":["fluid","1x1"]},"inread":{"id":"inread","hasLabel":false,"isAsync":false,"isCentered":true,"sizes":["1x1"]},"dhtml":{"id":"dhtml","hasLabel":false,"isAsync":false,"isCentered":false,"sizes":["1x1","320x480"]},"native_seealso":{"id":"native_seealso","hasLabel":false,"isAsync":false,"isCentered":true,"sizes":["fluid","1x1"]},"native_recipe_center":{"id":"native_recipe_center","hasLabel":false,"isAsync":false,"isCentered":true,"sizes":["fluid","1x1"]},"native_shopping":{"id":"native_shopping","hasLabel":false,"isAsync":false,"isCentered":true,"sizes":["fluid","1x1","229x240"]},"native_block_left":{"id":"native_block_left","hasLabel":false,"isAsync":false,"isCentered":true,"sizes":["fluid","1x1"]},"native_block_right":{"id":"native_block_right","hasLabel":false,"isAsync":false,"isCentered":true,"sizes":["fluid","1x1"]},"300_newsletter":{"id":"300_newsletter","hasLabel":false,"isAsync":false,"isCentered":true,"sizes":["300x250"]},"native_article_center":{"id":"native_article_center","hasLabel":false,"isAsync":false,"isCentered":true,"sizes":["fluid","1x1"]}};
+ </script>
+<script type="text/javascript">
+ window.afAd = new AufAds.DFPAdserver(aufAdtechParams);
+ afAd.initQueue();
+ </script>
+<script type="text/javascript">
+ (function() {
+ var s = document.createElement('script');
+ s.type = 'text/javascript';
+ s.async = true;
+ s.src = 'https://boot.pubstack.io/v1/tag/fc39af63-d31a-4ac4-84b6-86c1c0b87cfd';
+ document.getElementsByTagName('head')[0].appendChild(s);
+ })();
+ </script>
+<script type="text/javascript">
+ if (!window.aufHBDisabled) {
+ if (window.aufbidjs) {
+ afLogger.logError('HB already initialized', 'HB');
+ } else if (!window.AufPrebid) {
+ afLogger.logError('AufPrebid library not defined', 'HB');
+ } else {
+ window.aufbidjsParams = {
+ data: {"formats":{"300_atf":{"asyncOnly":false,"position":"ATF"},"300_diapodynamic":{"asyncOnly":true,"position":"ATF"},"300_mtf":{"asyncOnly":true,"position":"MTF"},"300_btf":{"asyncOnly":false,"position":"BTF"},"banner_atf":{"asyncOnly":false,"position":"ATF"},"banner_atf_small":{"asyncOnly":false,"position":"ATF"},"banner_btf":{"asyncOnly":false,"position":"BTF"},"sitebar_left":{"asyncOnly":false,"position":"ATF"},"300_mtf_2":{"asyncOnly":false,"position":"MTF"},"300_mtf_3":{"asyncOnly":false,"position":"MTF"},"banner_mtf":{"asyncOnly":false,"position":"MTF"},"sitebar_right":{"asyncOnly":false,"position":"ATF"}},"accounts":[{"name":"AUF - AdYouLike","aliasBidder":"","bidder":"adyoulike","accountId":"","siteId":null,"currency":"USD","deal_commission":10,"open_commission":10,"adjustment":60,"grossRevenue":1,"placements":{"300_atf":[{"tag":"2991f51c3385e331bcd0f6fef4d5e811","size":"300x600"},{"tag":"811a8c7eb61b857e41a4e0e8a9f40654","size":"300x250"}],"300_diapodynamic":[{"tag":"5ba98d2cb312591b4adad49a457b8152","size":"300x600"},{"tag":"ad45e570e8c1eb5e43968736104f8c8c","size":"300x250"}],"300_mtf":[{"tag":"224a63d6310cbde948c139ae7c0ce562","size":"300x250"}]}},{"name":"AUF - Amazon","aliasBidder":"","bidder":"amazon","accountId":"3357","siteId":null,"currency":"USD","deal_commission":0,"open_commission":0,"adjustment":60,"grossRevenue":0,"placements":{"300_atf":[{"tag":"1","size":"300x250"},{"tag":"1","size":"300x600,160x600"}],"300_btf":[{"tag":"1","size":"300x250"}],"300_diapodynamic":[{"tag":"1","size":"300x250,300x600,160x600"}],"banner_atf":[{"tag":"1","size":"728x90,970x250"}],"banner_atf_small":[{"tag":"1","size":"728x90"}],"banner_btf":[{"tag":"1","size":"728x90"}],"sitebar_left":[{"tag":"1","size":"160x600"}]}},{"name":"AUF - AppNexus","aliasBidder":"","bidder":"appnexus","accountId":"7695","siteId":null,"currency":"USD","deal_commission":0,"open_commission":0,"adjustment":4,"grossRevenue":0,"placements":{"300_atf":[{"tag":"11106146","size":"300x250,300x600,120x600,160x600"}],"300_btf":[{"tag":"11106148","size":"300x250"}],"300_diapodynamic":[{"tag":"12222257","size":"300x250"}],"banner_atf":[{"tag":"11106145","size":"970x250,728x90,1000x90,1800x1000"}],"banner_btf":[{"tag":"11106149","size":"728x90, 1000x90"}]}},{"name":"AUF - Criteo","aliasBidder":"","bidder":"criteo","accountId":"6710","siteId":null,"currency":"EUR","deal_commission":0,"open_commission":0,"adjustment":0,"grossRevenue":0,"placements":{"300_atf":[{"tag":"846825","size":"300x600"}],"300_btf":[{"tag":"846824","size":"300x250"}],"300_diapodynamic":[{"tag":"1176177","size":"300x600"}],"banner_atf":[{"tag":"846828","size":"970x250"}],"banner_btf":[{"tag":"855201","size":"728x90"}]}},{"name":"AUF - IAS","aliasBidder":"","bidder":"ias","accountId":"929475","siteId":null,"currency":"USD","deal_commission":0,"open_commission":0,"adjustment":0,"grossRevenue":0,"placements":{"300_atf":[{"tag":"300_atf","size":"300x250"}],"300_btf":[{"tag":"300_btf","size":"300x250"}],"300_diapodynamic":[{"tag":"300_diapodynamic_desktop","size":"300x250"}],"300_mtf":[{"tag":"300_mtf","size":"300x250"}],"300_mtf_2":[{"tag":"300_mtf_2","size":"300x250"}],"300_mtf_3":[{"tag":"300_mtf_3","size":"300x250"}],"banner_atf":[{"tag":"banner_atf","size":"1x1"}],"banner_btf":[{"tag":"banner_btf_desktop","size":"728x90"}],"banner_mtf":[{"tag":"banner_mtf","size":"1x1"}],"sitebar_right":[{"tag":"sitebar_right","size":"120x600"}]}},{"name":"AUF - IndexExchange","aliasBidder":"","bidder":"ix","accountId":"184403","siteId":"185606","currency":"EUR","deal_commission":0,"open_commission":0,"adjustment":2,"grossRevenue":0,"placements":{"300_btf":[{"tag":"187988","size":"300x250"}],"300_diapodynamic":[{"tag":"223319","size":"300x250"},{"tag":"223319","size":"300x600,120x600,160x600"}],"banner_atf":[{"tag":"185606","size":"728x90,970x250,1000x90"}],"banner_btf":[{"tag":"187990","size":"728x90,1000x90"}]}},{"name":"AUF - InSkin","aliasBidder":"","bidder":"inskin","accountId":"9874","siteId":null,"currency":"USD","deal_commission":0,"open_commission":0,"adjustment":0,"grossRevenue":0,"placements":{"banner_atf":[{"tag":"1069486","size":"1800x1000"}]}},{"name":"AUF - InVibes","aliasBidder":"","bidder":"invibes","accountId":"","siteId":null,"currency":"EUR","deal_commission":0,"open_commission":0,"adjustment":0,"grossRevenue":0,"placements":{"300_mtf":[{"tag":"invibes_aufeminin","size":"300x250"}]}},{"name":"AUF - JustPremium","aliasBidder":"","bidder":"justpremium","accountId":"","siteId":null,"currency":"USD","deal_commission":0,"open_commission":0,"adjustment":0,"grossRevenue":0,"placements":{"banner_atf":[{"tag":"47104","size":"1800x1000"}]}},{"name":"AUF - Oath","aliasBidder":"","bidder":"aol","accountId":"4887.1","siteId":null,"currency":"USD","deal_commission":0,"open_commission":0,"adjustment":1,"grossRevenue":0,"placements":{"300_atf":[{"tag":"6516988","size":"160x600"},{"tag":"6516991","size":"300x600"},{"tag":"6516994","size":"120x600"},{"tag":"6516999","size":"300x250"}],"300_btf":[{"tag":"6540117","size":"300x250"}],"300_diapodynamic":[{"tag":"6540113","size":"120x600"},{"tag":"6540114","size":"160x600"},{"tag":"6540115","size":"300x600"},{"tag":"6540118","size":"300x250"}],"banner_atf":[{"tag":"6516986","size":"728x90"},{"tag":"6516989","size":"970x250"},{"tag":"6516995","size":"1000x90"}],"banner_btf":[{"tag":"6516992","size":"728x90"},{"tag":"6516996","size":"1000x90"}]}},{"name":"AUF - OpenX","aliasBidder":"","bidder":"openx","accountId":"","siteId":"aufeminin-e","currency":"EUR","deal_commission":0,"open_commission":0,"adjustment":0,"grossRevenue":0,"placements":{"300_atf":[{"tag":"538804709","size":"300x600,300x250,120x600,160x600"}],"300_btf":[{"tag":"538775772","size":"300x250"}],"300_diapodynamic":[{"tag":"539422546","size":"300x250"},{"tag":"539422546","size":"300x600,120x600,160x600"}],"banner_atf":[{"tag":"538804708","size":"970x250,728x90,1000x90"}],"banner_btf":[{"tag":"538775771","size":"728x90,1000x90"}]}},{"name":"AUF - Pubmatic","aliasBidder":"","bidder":"pubmatic","accountId":"157997","siteId":null,"currency":"USD","deal_commission":0,"open_commission":0,"adjustment":2,"grossRevenue":0,"placements":{"300_atf":[{"tag":"1958753","size":"300x600"},{"tag":"1958754","size":"160x600"},{"tag":"1958755","size":"300x250"},{"tag":"1958756","size":"120x600"}],"300_btf":[{"tag":"1958761","size":"300x250"}],"300_diapodynamic":[{"tag":"1958769","size":"300x600"},{"tag":"1958770","size":"160x600"},{"tag":"1958771","size":"300x250"},{"tag":"1958772","size":"120x600"}],"banner_atf":[{"tag":"1958763","size":"1000x90"},{"tag":"1958764","size":"970x250"},{"tag":"1963569","size":"728x90"}],"banner_btf":[{"tag":"1958767","size":"1000x90"},{"tag":"1958768","size":"728x90"}]}},{"name":"AUF - Rubicon","aliasBidder":"","bidder":"rubicon","accountId":"12982","siteId":"52246","currency":"USD","deal_commission":0,"open_commission":0,"adjustment":1,"grossRevenue":0,"placements":{"300_atf":[{"tag":"237884-10","size":"300x600"},{"tag":"237884-15","size":"300x250"},{"tag":"237884-8","size":"120x600"},{"tag":"237884-9","size":"160x600"}],"300_btf":[{"tag":"238784-15","size":"300x250"}],"300_diapodynamic":[{"tag":"738400-10","size":"300x600"},{"tag":"738400-15","size":"300x250"},{"tag":"738400-8","size":"120x600"},{"tag":"738400-9","size":"160x600"}],"banner_atf":[{"tag":"237884-57","size":"970x250"},{"tag":"237884-68","size":"1800x1000"},{"tag":"412946-2","size":"728x90"},{"tag":"237884-58","size":"1000x90"}],"banner_btf":[{"tag":"238784-2","size":"728x90"}]}},{"name":"AUF - Smart RTB+","aliasBidder":"","bidder":"smartadserver","accountId":"","siteId":"1","currency":"EUR","deal_commission":9.5,"open_commission":9.5,"adjustment":1,"grossRevenue":1,"placements":{"300_atf":[{"tag":"12","size":"300x250,300x600,160x600,120x600"}],"300_btf":[{"tag":"9888","size":"300x250"}],"300_diapodynamic":[{"tag":"16863","size":"300x250"},{"tag":"16863","size":"300x600,160x600,120x600"}],"banner_atf":[{"tag":"117","size":"728x90,1000x90,970x250"}],"banner_btf":[{"tag":"3243","size":"728x90,1000x90"}]}},{"name":"AUF - SovRn","aliasBidder":"","bidder":"sovrn","accountId":"13390877","siteId":"aufeminin","currency":"USD","deal_commission":0,"open_commission":0,"adjustment":3,"grossRevenue":0,"placements":{"300_atf":[{"tag":"400415","size":"300x250"},{"tag":"400421","size":"300x600"}],"300_btf":[{"tag":"400439","size":"300x250"}],"300_diapodynamic":[{"tag":"552745","size":"300x250"},{"tag":"552746","size":"300x600"}],"banner_atf":[{"tag":"400427","size":"728x90"},{"tag":"400433","size":"970x250"}],"banner_atf_small":[{"tag":"400427","size":"728x90"}],"banner_btf":[{"tag":"552854","size":"728x90"}]}},{"name":"AUF - SublimeSkinz","aliasBidder":"","bidder":"sublime","accountId":"23331","siteId":null,"currency":"EUR","deal_commission":0,"open_commission":0,"adjustment":-30,"grossRevenue":0,"placements":{"banner_atf":[{"tag":"23331","size":"1800x1000"}]}},{"name":"AUF - Teads - Teads","aliasBidder":"","bidder":"teads","accountId":"","siteId":"87286","currency":"EUR","deal_commission":0,"open_commission":0,"adjustment":2,"grossRevenue":0,"placements":{"300_mtf":[{"tag":"109327","size":"300x250"}]}},{"name":"AUF - TripleLift","aliasBidder":"","bidder":"triplelift","accountId":"3610","siteId":null,"currency":"USD","deal_commission":0,"open_commission":0,"adjustment":0,"grossRevenue":0,"placements":{"300_atf":[{"tag":"Aufeminin_300_ATF_Desktop_300x250","size":"300x250"},{"tag":"Aufeminin_300_ATF_Desktop_300x600","size":"300x600"}],"300_diapodynamic":[{"tag":"Aufeminin_300_Diapo_Desktop_300x250","size":"300x250"},{"tag":"Aufeminin_300_Diapo_Desktop_300x600","size":"300x600"}],"300_mtf":[{"tag":"AuFeminin_Desktop_300_MTF","size":"300x250"}]}},{"name":"AUF - Proxistore","aliasBidder":"","bidder":"proxistore","accountId":"","siteId":null,"currency":"EUR","deal_commission":0,"open_commission":0,"adjustment":6,"grossRevenue":0,"placements":{"300_atf":[{"tag":"68163685","size":"300x600"},{"tag":"72644881","size":"300x250"}],"banner_atf":[{"tag":"36143814","size":"970x250"}]}}]},
+ isMobile: false,
+ currenciesRates: {"ARS":0.0155028,"CAD":0.684693,"GBP":1.15763,"MXN":0.0470335,"USD":0.904154},
+ floorPrices: [],
+ geoLoc: '/dz'
+ };
+ window.aufbidjs = AufPrebid.Manager;
+ window.aufbidjs.init(aufbidjsParams);
+ }
+ }
+ 
+ if (!window.AufTrackingPixels) {
+ afLogger.logError('AufTrackingPixels library not defined', 'ads');
+ } else {
+ AufTrackingPixels.init({
+ isMobile: false,
+ });
+ }
+ </script>
+<script type="text/javascript">
+ if (Math.random() < 0.1) {
+ (function() {
+ function hsLogError(message, category, sampling) {
+ var d = message.split('').reverse().join('');
+ new Image().src = 'https://www.aufeminin.com/reloaded/errpix.php?'
+ + 'd=' + encodeURIComponent(d)
+ + (sampling ? '&s=' + sampling : '')
+ + (category ? '&c=' + encodeURIComponent(category) : '');
+ if (window.console && console.error) console.error('JS Catchall: ' + message);
+ }
+
+ var af_JsElementBlocked = false;
+ var af_nbErrorsToReport = 10;
+ window.onerror = function(message, url, line, column, error) {
+ if (af_nbErrorsToReport-- < 0) return;
+
+ var category = 'JS - window.onerror';
+
+ if (typeof message === 'string') {
+ if (message.indexOf('Script error') !== -1) {
+ category += ' - external';
+ }
+
+ if (url && url.indexOf(document.domain) === -1) {
+ message += ' @ ' + url;
+ if (typeof line !== undefined) {
+ message += ':' + line;
+ }
+ if (typeof column !== undefined) {
+ message += ':' + column;
+ }
+ }
+ } else if (typeof message == 'object' && message.srcElement && message.target) {
+ if (message.srcElement == '[object HTMLScriptElement]' && message.target == '[object HTMLScriptElement]') {
+ message = 'Error loading script';
+ } else {
+ message = 'Event Error - target:' + message.target + ' srcElement:' + message.srcElement;
+ af_JsElementBlocked = true;
+ }
+ } else if (typeof message == 'object') {
+ message = 'MESSAGE_OBJECT: ' + message.constructor.name;
+ } else {
+ message = 'MESSAGE_NOSTRING: ' + typeof message;
+ }
+
+ hsLogError(message, category);
+
+ return true;
+ };
+
+ var af_taggingToReport = true;
+ function checkTagging() {
+ if (!af_taggingToReport) return;
+ af_taggingToReport = false;
+ if (window.top != window.self) return; // Iframe
+ if (af_JsElementBlocked) return; // Errors when loading page
+
+ if (!window.af_dataLayer) {
+ hsLogError('GTM data layer missing', 'GTM', 1);
+ }
+ if (!window.af_ua_trackEvent) {
+ hsLogError('UA track event function missing', 'GTM', 1);
+ }
+ }
+
+ if (window.addEventListener) {
+ window.addEventListener('load', checkTagging, false);
+ } else if (window.attachEvent) {
+ window.attachEvent('onload', checkTagging);
+ }
+ })();
+ }</script>
+
+<link href="https&#x3A;&#x2F;&#x2F;ad.doubleclick.net" rel="preconnect" />
+<link href="https&#x3A;&#x2F;&#x2F;ad.doubleclick.net" rel="dns-prefetch" />
+<link href="https&#x3A;&#x2F;&#x2F;www.gstatic.com" rel="preconnect" />
+<link href="https&#x3A;&#x2F;&#x2F;www.gstatic.com" rel="dns-prefetch" />
+<link href="https&#x3A;&#x2F;&#x2F;googleads.g.doubleclick.net" rel="preconnect" />
+<link href="https&#x3A;&#x2F;&#x2F;googleads.g.doubleclick.net" rel="dns-prefetch" />
+<link href="https&#x3A;&#x2F;&#x2F;pagead2.googlesyndication.com" rel="preconnect" />
+<link href="https&#x3A;&#x2F;&#x2F;pagead2.googlesyndication.com" rel="dns-prefetch" />
+<link href="https&#x3A;&#x2F;&#x2F;www.aufeminin.com&#x2F;news-societe&#x2F;cette-mysterieuse-maladie-paralyse-plusieurs-enfants-americains-s2949718.html" rel="canonical" />
+<link href="https&#x3A;&#x2F;&#x2F;prof.estat.com" rel="preconnect" />
+<link href="https&#x3A;&#x2F;&#x2F;prof.estat.com" rel="dns-prefetch" />
+<link href="https&#x3A;&#x2F;&#x2F;imasdk.googleapis.com" rel="preconnect" />
+<link href="https&#x3A;&#x2F;&#x2F;imasdk.googleapis.com" rel="dns-prefetch" />
+<link href="https&#x3A;&#x2F;&#x2F;pubads.g.doubleclick.net" rel="preconnect" />
+<link href="https&#x3A;&#x2F;&#x2F;pubads.g.doubleclick.net" rel="dns-prefetch" />
+<link href="android-app&#x3A;&#x2F;&#x2F;com.aufeminin.aufemininnews&#x2F;aufemininnews&#x2F;story&#x3F;id&#x3D;2949718" rel="alternate" />
+<link href="https&#x3A;&#x2F;&#x2F;static.afcdn.com&#x2F;world&#x2F;icon&#x2F;appli-144.png" rel="apple-touch-icon-precomposed" sizes="144x144" />
+<link href="https&#x3A;&#x2F;&#x2F;static.afcdn.com&#x2F;world&#x2F;icon&#x2F;appli-114.png" rel="apple-touch-icon-precomposed" sizes="114x114" />
+<link href="https&#x3A;&#x2F;&#x2F;static.afcdn.com&#x2F;world&#x2F;icon&#x2F;appli-72.png" rel="apple-touch-icon-precomposed" sizes="72x72" />
+<link href="https&#x3A;&#x2F;&#x2F;static.afcdn.com&#x2F;world&#x2F;icon&#x2F;appli-57.png" rel="apple-touch-icon-precomposed" />
+<link href="https&#x3A;&#x2F;&#x2F;static.afcdn.com&#x2F;world&#x2F;icon&#x2F;apple_webclip.png" rel="apple-touch-icon" />
+<link href="https&#x3A;&#x2F;&#x2F;w.estat.com" rel="preconnect" />
+<link href="https&#x3A;&#x2F;&#x2F;w.estat.com" rel="dns-prefetch" />
+<link href="https&#x3A;&#x2F;&#x2F;blog.aufeminin.com" rel="preconnect" />
+<link href="https&#x3A;&#x2F;&#x2F;blog.aufeminin.com" rel="dns-prefetch" />
+<link href="https&#x3A;&#x2F;&#x2F;album.aufeminin.com" rel="preconnect" />
+<link href="https&#x3A;&#x2F;&#x2F;album.aufeminin.com" rel="dns-prefetch" />
+<link href="https&#x3A;&#x2F;&#x2F;forum.aufeminin.com" rel="preconnect" />
+<link href="https&#x3A;&#x2F;&#x2F;forum.aufeminin.com" rel="dns-prefetch" />
+<link href="https&#x3A;&#x2F;&#x2F;www.aufeminin.com" rel="preconnect" />
+<link href="https&#x3A;&#x2F;&#x2F;www.aufeminin.com" rel="dns-prefetch" />
+<link href="https&#x3A;&#x2F;&#x2F;static.afcdn.com" rel="preconnect" />
+<link href="https&#x3A;&#x2F;&#x2F;static.afcdn.com" rel="dns-prefetch" />
+<link href="https&#x3A;&#x2F;&#x2F;assets.afcdn.com" rel="preconnect" />
+<link href="https&#x3A;&#x2F;&#x2F;assets.afcdn.com" rel="dns-prefetch" />
+<link href="https://static.afcdn.com/relfr/concat.css?PCM-pVLBbsMgDP2iQOi0ajvs0HaXSd1UqVLvDiEdLcERmEr5-5G1TRqSw6Rd8HvPzwYDW2gxEK-CMQ0cVQ-Yl96_HZQt0XEtsUa03FNrFOsSG6wbtMoS_6barA3Ks3-A1-rB5JVaGY-HxYBSS188oP9YVoFw5-KxZ6S0iOC41b6Po9EhVByqPWl5bjdoJoMRuqhbSklqLDU0-K78mbAZkUnHdSBC67u76mFqOoW6QHJo71unQlqgSk34YSscUGqpEEm5W0iThVNQShd3eYCTy4-J2OEa5pP7UHzBZUTmjZ-g7eC8sem3Aie_1-AGlFq0bcJtHb_rBQhcZhR1Q49Y2uKiS4U7A200PuBRu189O3nemHDU1l-Fk89kfA-niwxKz5-ZYMu5DPtLJ10DF2zBxF1hUZmtvINsycQTy3vemdkiF68iFy9C5Msf" media="all" rel="stylesheet" type="text/css">
+<link href="&#x2F;reloaded&#x2F;static&#x2F;Front&#x2F;Component&#x2F;subscribePopup&#x2F;subscribePopup.scss&#x3F;1571603645" media="all" rel="stylesheet" type="text&#x2F;css" />
+
+	</head>
+	<body class=" body-domuser-dz">
+		<script> afAdblock.init(); </script>		
+		<!--[if lt IE 9]>
+<link rel="stylesheet" type="text/css" href="https://static.afcdn.com/relfr/Front/Component/header/header-ie.css?v=201910181106" />
+<link rel="stylesheet" type="text/css" href="https://static.afcdn.com/relfr/Front/Vendor/icomoon/ie7/ie7.css?v=201910181106" />
+<script src="https://static.afcdn.com/relfr/Front/Vendor/icomoon/ie7/ie7.js?v=201910181106"></script>
+<script src="https://static.afcdn.com/relfr/Front/vendor/auf/ie-shim.js?v=201910181106"></script>
+<![endif]-->
+<!--[if IE 9]>
+<script src="https://static.afcdn.com/relfr/Front/vendor/auf/ie-shim.js?v=201910181106"></script>
+<![endif]-->
+<div id="header">
+<header class="header-sticky" >
+		<div id="header-content">
+			<div id="hamburger" class="out">
+				<a href="#" id="hamburger-menu" class="af-btn-v2 mini"><i class="icon icon-burger-menu"></i></a>
+			</div>
+			<div id="home-btn">
+				<a id="hamburger-desktop" href="#" class="af-btn-v2 mini">
+					<i class="icon icon-burger-menu"></i>
+				</a><!--
+				White space hack !!
+			--><a href="https://forum.aufeminin.com/forum/" class="af-btn-v2 mini">
+					<i class="icon icon-start-thread"></i><br>
+					<span class="btn-label">Forums</span>
+				</a><!--
+				White space hack !!
+			--><a href="/album/" class="af-btn-v2 mini">
+					<i class="icon icon-news-round last"></i><br>
+					<span class="btn-label">Albums</span>
+				</a>			</div>
+			<p id="logo" class="text-center">
+									<a href="https://www.aufeminin.com" class="image"><img id="auf-logo" src="https://static.afcdn.com/relfr/Front/Component/header/assets/logo_dz.png" alt="aufeminin">
+					</a>
+							</p>
+			
+						<div id="top-right">
+				<div id="header-search">
+					<a href="#" id="search-open-buton" class="open-buton af-btn-v2 mini">
+						<i class="icon icon-search"></i><br>
+						<span class="btn-label">Rechercher</span>
+					</a>
+				</div><!--
+				White space hack !!
+			--><div id="user-zone">
+				<script id="af_jsencrypt_2" type="text/javascript">jsdchtml3('aºerh "=fsptth¦:www¦efua.nimc.nimoer¦edaol¦dresul¦s"nigo						 				lc =ssaa"b-f2v-ntl  tsanipnim k"i									  	"=diis-ngº¹"ni isalc"=s nocicia-noratavsu-¹"re¦ºº¹isº¹rbaplc nssantb"=l-lebanoC¹"xenºnois¦nap¹a¦º¹', 'af_jsencrypt_2')</script>				</div>
+			</div>
+					</div>
+	</header>
+	<div class="spacer"></div>
+		<div id="main-nav-container">
+		<nav id="main-nav">
+			<script id="af_jsencrypt_1" type="text/javascript">jsdchtml3('fº mroalca"=ss-fraesab-hc "rdi ""=aesf-hcrroan-m""vitca nos¦"=hcraeuq¦"yrem hteG"=doTEº	¹"vidsalc =srof"noc-mort	¹"lº	pniyt tuepet"="txeman "= "wkeulav""=alp ecloh"=redeRrehcehcrap( a uetuit ,rertoc ,tnune... ,")º¹¦ pniyt tuepih"="neddan "=em"tav "=eul82¹¦ "ubº¹nottsº napssalci"= nocci-nocraes"hs¦º¹napub¦º¹tt	¹novid¦º¦º¹mrof¹', 'af_jsencrypt_1')</script>			<ul class="main-menu-items">
+			<li class="item"><a class="item-link" href="https://www.aufeminin.com/">Accueil</a></li><li class="item"><a class="item-link" href="https://www.aufeminin.com/societe/news-societe-ssc156.html">News</a></li><li id="navSection14" class="item"><a data-sid="14" class="item-link" href="https://www.aufeminin.com/mode-sc14.html">Mode</a><script id="af_jsencrypt_1" type="text/javascript">jsdchtml3('dºc visalus"=s-bunemº		¹"vidalc sss"=em-buuntit-"eledoM¹¦º¹vidluº		lc =ssas"-bu-unemti"smelº¹alc issus"=eti-bn mus-o"baº¹salc =sbus"ti-il-meknrh "h"=feptt¦¦:swwa.wimefuinoc.nm¦mt¦edonecnadss-se.1clmth¹"psºeT¹nadnecnam s¦ºedopsº¹na¦º¹a¦¹il ilºlcssabus"=i- met-on¹"busaºalc s"=ss-bumetil-knierh "=ftth":spwww¦¦a.mefu.ninimocdom¦¦edomsaf-eihs-no4cslmth.¹"apsºerD¹niss¦ºgnps¹naº¹a¦ºl¦lº¹ic i=ssals"i-bun mets-o¹"buaºlc "=ssausti-b-me"knilh =ferptth"¦:swww¦a.efuninimc.m¦moedoerts¦teyts-om-el-ed1css86th.º¹"lmpsS¹naertts telys¦ºeº¹nap¹a¦il¦ºº¹ ilssalc"=-buseti-on musº¹"balc a=ssbus"i-metknil- "ferhh"=¦:pttw¦a.wwimefuninmoc.m¦edoedom¦f-emmete--iom-ssh.5c¹"lmtpsºR¹nalekoo¦ºgnipsº¹na¹a¦¹il¦ºlºlc i"=ssabuseti- m-on¹"busaºalc =ss-bus"til-me "knierhh"=ftt:spwww¦¦a.mefuinimoc.nm¦¦edoskoolts--srass.6c"lmthº¹napsoL¹ed ko sratsps¦ºs¹na¹a¦º¦º¹ilc ilºal"=ssbusmeti-n us-oaº¹"blc =ssas"-bu-metiil "knerhth"=fpt¦¦:sa.wwwefuinim.nmocedom¦a¦secciosm-serdoss-eth.3c"lmpsº¹nacA¹ossecri¦ºseapsa¦º¹nº¹¹il¦c ilºsals"=sbuti-on mes-¹"bu aºssalc"=-bus-metinilh "ker"=fsptth¦:www¦ua.nimefnimoc.edom¦ed¦elifd-m-es-edocsth.7"lmapsº¹¹niféD¦ºsélaps¦º¹n¹al¦ºilº¹ic ssals"=ti-bume-on ¹"bus aºsalc=sus"eti-b-mknilh ""=ferth:sptwww¦¦ua.imefinc.nom¦moednoc¦iesed-slm--edo61cssh.9"lmtº¹apsnoC¹nes slidomps¦ºenaa¦º¹il¦º¹lº¹lc isa"=si-buseton mus-aº¹"bc ssalbus"=ti-l-meni "k=ferhh"sptt¦¦:a.wwwfunimeoc.nim¦m¦edoivoededom-s-11csh.8¹"lmtsº¹napoédiV¦ºsnapsº¹¹a¦¹il¦ºlºlc issabus"=i- metus-on¹"bc aºal=ss-bus"til-meknierh "=ftth"¦¦:spdomua.eefnimoc.ni¦murofa¦mº¹"llpsF¹nasmuros¦º¹nap¦ºº¹aº¹il¦ilalc =ss-bus"tin mebus-oº¹"lc asa"=si-busetil-m"knferh "=ptthw¦¦:s.wwefuaimnin¦moc.etnadnsecubla¦smohp-m-sotedo3pt-53.99"lmthº¹napslA¹ºsmubs¦¹napº¹a¦ºil¦ilº¹c salus"=s-bmetion "bus-º¹lc a"=ssabuseti--mnilrh "kfeth"=sptww¦¦:.wefuaninimoc.om¦meden¦ts-swlyss-e51cmth.9"lpsº¹eN¹naºswaps¦¹na¦ºil¦º¹º¹c ilsalus"=s-bmetis-on "bu aº¹lcssabus"=i--metnilrh "kfeth"=¦:sptww¦ua.wefnimoc.ni¦mbulcen¦telswet?¦sr&34=nmtuuos_crb=enerravaedomtu&dem_muilp=mofetaemrmtu&c_pma=ngiaerturc"lnapsº¹¹nm eLellie ru sedutsotaps¦º¹n¹a¦ºl¦ºilº¹ic ssalbus"=ti-n me-obus aº¹"lc=ssaus"eti-b-mknilerh ""=fptth¦:ww¦fua.wmeninioc.dom¦m¦epohs-gnipcss.312th"lmapsº¹¹npohSnipps¦ºgnaa¦º¹il¦º¹lº¹lc isa"=si-busetº¹"mc a=ssals"i-bul-metknirh "fe¦"=dlrowe¦otidni¦l¦xed__d-41th.1-"lmpsº¹naoT¹el su sitraelcps¦ºsnaa¦º¹il¦º¹¦º¹º¹lululc "=ssausti-bsme"cca- ¹¹ilº								 aº	lcssacca"=or"ehcrh h"=fett¦:sp.www¦fuanimenioc.wen¦m-slytse¦el-matvihs-e02-wo-91d-nufeelicalp--esuosel-ngis--el-edvid-asre-eti4s400h.919mto "llcn"=kcifa_au_kcartevE\'(tneM\'uncA\' ,rcehcoilC ,\'kcun ,llº¹")0gmicrs "=tth¦¦:sptscitafa.c.ndcmorow¦hs¦dl.mi"figd atagiro-nith"=sptsa¦¦:esa.st.ndcfmocots¦yrca¦04_9c40¦919cca1361119_786h081w081xc1c0ttyc4bxc049byc4923gpj.6 "=tlasº¹""napalc ssp"=hecallo"red		¹							sº		c napsalt"=sti"elmatE¹L  eviohS102 w,9 nu lifédp éécals suos el gid enl evid areétisaps¦º	¹n									aps¦º¹n							a¦º			¹				¦º			¹ililº 	¹								aºalc =ssrcca"co "eh=ferhth":spt¦¦wwwefua.im.ninmocedom¦a¦mubl89801¦85dnetna-ecsuahcus-servih02-re91202-h.0-0lmtno "lckci_fa"=auart_Ekc(tnevM\'\'unecA\' ,orcCehcil\'kclun ,,l")0 iº¹rs gm=ctth"¦¦:spats.citfandc¦moc.ow¦dlrihsfig.m "atadgiro-=nitth"sp¦¦:tessa.sdcfac.nmi¦mois¦1et11cca01_5898¦8ccax7521218a752781w_4308081hpj.1c "g=tla""sº¹c napal"=ssalploheced	¹"r								sº		apc n=ssalt"eltiL¹"hc seuarusset seadn ecned\'l motuaenvih- re-910202¦º02¹naps									¦º	¹naps										¹a¦º						il¦º	¦º¹º¹lud¦¹vi', 'af_jsencrypt_1')</script></li><li id="navSection8" class="item"><a data-sid="8" class="item-link" href="https://www.aufeminin.com/beaute-sc8.html">Beauté</a><script id="af_jsencrypt_1" type="text/javascript">jsdchtml3('dºc visalus"=s-bunemº		¹"vidalc sss"=em-buuntit-"eluaeB¹étid¦ºº		¹v lusalc=sus"nem-b-umeti¹"sc ilºal"=ssi-busmet-on us¹"blc aºsas"=s-bu-metiil "kn=ferhth":spt¦¦wwwefua.im.ninmocuaeb¦etqam¦alliu-eg1css.5mthsº¹"lapaM¹niuqegall¦ºnaps¹a¦º¹l¦ºlº¹i ialcs"=ssbueti-n mbus-o¹"c aº=ssalus"ti-bmeil-h "knerh"=fpttw¦¦:swwfua.inimec.nb¦moaeetunios¦-sasiv-eg41css.1lmthpsº¹"¹nanioS ssiv¦ºegapsº¹na¹a¦¹il¦ºlºlc i"=ssabuseti- m-on¹"busaºalc =ss-bus"til-me "knierhh"=ftt:spwww¦¦a.mefuinimoc.nb¦tuaeios¦e-snproc-scssh.241mtº¹"lapsioS¹nsnroc s¦ºspnapa¦º¹º¹il¦ ilº¹lc=ssaus"eti-b ms-onº¹"buc assal"=busmeti-l-"knirh h"=fett¦:sp.www¦fuanimenioc.aeb¦mtuos¦eials-sercs.541"lmthsº¹¹napoSial¦ºserpsº¹na¹a¦¹il¦ºlºlc i"=ssabuseti- m-on¹"busaºalc =ss-bus"til-me "knierhh"=ftt:spwww¦¦a.mefuinimoc.nb¦tuaeehc¦euevss-x1ch.8¹"lmtsº¹napehCºxuevs¦¹napº¹a¦ºil¦ilº¹c salus"=s-bmetion "bus-º¹lc a"=ssabuseti--mnilrh "kfeth"=sptww¦¦:.wefuaninimoc.eb¦mua¦etufrapsmcss-.71"lmthº¹napsfraP¹smups¦ºna¦º¹l¦º¹a¹i ilºalcs"=ssbueti--on mbusaº¹"c salus"=s-bmetiil-h "knerh"=f:spttw¦¦a.wwfuimec.ninmoaeb¦etu-oib¦ss251clmth.º¹"napsB¹ºoinaps¦º¹º¹a¦il¦ ilº¹lc=ssa-bus"etion ms-"buc aº¹al"=ssbusmeti-l-"kniferh h"=sptt¦:ww¦fua.wmeninioc.aeb¦mtueb¦e-etua-edrats-scssth.91lmsº¹"napuaeB¹ét ed sratss¦º¹nap¦ºº¹aº¹il¦ilalc =ss-bus"tin mebus-oº¹"lc asa"=si-busetil-m"knferh "=ptthw¦¦:s.wwefuaimnin¦moc.ebetuahc¦grurieicss-h.351lmtsº¹"apC¹nrurihigs¦ºenap¹a¦º¹¦ºº¹illc ilssaus"=-beti-on musº¹"bc a=ssals"i-bul-metknirh "feh"=:sptt¦¦.wwwfuainime.n¦mociuqamalla¦egblsmutohp-sotat-auot-seg7p6976lmth.¹" apsº¹ntaTegauoºsaps¦º¹n¦º¹a¦ililº¹salc "=s-busti meus-on"b aº¹alcs"=ssbueti-nil-m "kferh"=tth¦¦:spupsdab.g.lbuodcekcil¦ten.mag¦daplci?k684=d103929i&022¦=u692338fua¦9ime¦ninlcccinammo"dpsº¹¹nasnioSC evehs¦ºxunapa¦º¹º¹il¦ ilº¹lc=ssaus"eti-b ms-onº¹"buc assal"=busmeti-l-"knirh h"=fett¦:sp.www¦fuanimenioc.aeb¦mtuiv¦eoeduqam-liegaluaeb--et1css91th.º¹"lmpsV¹naédis¦ºsoap¦º¹nl¦º¹aº¹ic ilal=ss-bus"tin mes-oº¹"bu asalcus"=si-b-metil"knferh "=ptth¦:s.www¦uaimefc.nin¦mouqamligalaeb¦etulufiob--al-xobeb-x-etuafuanimeni1s-56856.6lmthtu#uos_mcreW=eetisbtu&em_mid=mubsuosraedervantuaeb&e_mtuapmacngiaeb=tuufixob-l¹"apsºB¹nituaeufoB lps¦ºx¹na¹a¦º¦º¹ilc ilºal"=ssbusmeti-n us-oaº¹"blc =ssas"-bu-metiil "knerhth"=fpt¦¦:sa.wwwefuinim.nmocvehc¦uela¦xmubohp-soteb-s-etua3pt0063h.lmtpsº¹"nablA¹smuaps¦º¹n¹a¦º¹il¦ºilºalc sss"=ti-bume-on bus aº¹"lc=ssa-bus"etiil-mknh ""=ferth:sptb¦¦etuaea.mefu.ninimocrof¦mula¦sº¹"lapoF¹nmurps¦ºsnaa¦º¹il¦º¹lº¹lc isa"=si-buseton mus-aº¹"bc ssalbus"=ti-l-meni "k=ferhh"sptt¦¦:a.wwwfunimeoc.nil¦mlc-ebued-pxe-sre¦setmohmth.e"lpsº¹eT¹naetss¦ºzapº¹n¦º¹a¦ililº¹lc "=ssausti-bon meus-º¹"b aalcs"=ssbueti-l-m "knirh"=fe:ptthw¦¦a.wwfuimec.ninmoaeb¦etupohs¦ips-gn412csth.¹"lmsºnappohS¹ip¦ºgnapsa¦º¹nº¹¹il¦c ilºsals"=sbuti-º¹"me asalc"=si-busetil-mh "knferw¦"=ro¦dlotidei¦xedn_l¦-d-8_.1lmthpsº¹"¹nasuoTl  secitraels¦ºsnap¹a¦º¹¦ºº¹ilº¹lu¦ lusalc=sus"eti-bsmcca- ¹"	¹ilº						 aº		alc"=sscaorc "ehcrh"=fetth¦¦:spwwua.wnimef.ni¦mocossniproc-¦settatniu-d-eenlam--eidatuceenae-ellnerp--dr-asave-ehcnusal-r-eiv--neevedan-tnennamuqs-ni004.3284th "lmilcno=kc_fa"aurt_vEkcaneM\'(tuneA\' ,\'cchcorcilCe,\'klun ,l)0 miº¹" g=crsth"¦:spts¦itatcfa.c.nd¦mocowdlrmihs¦g. "fitadiro-aigh"=n:sptta¦¦tess.scfaoc.nd¦mrotsa¦y4_9cc0032844cca¦8435302_381w081h01c0txctyc4bxc0745bycpj.27 "g=tla""sº¹c napal"=ssalploheced	¹"r								sº		apc n=ssalt"eltiA¹"niettetu\'d am endald ei eaepec ,uttam eenn niuqrp dneer asnav ehcusl reiv a¦ºnaps		¹							s¦º		¹nap							º	¹a¦							l¦º	 ¹i	¹ilº						 aº		alc"=sscaorc "ehcrh"=fetth¦¦:spwwua.wnimef.ni¦mocossniasiv-egorp¦iuded-stb-tuaepus-emrehcra-e52s89141h."lmtno kcilc"=u_faart_aEkctnev\'(neM\' ,\'ucAcorcCeh\'kcil ,llun")0 ,iº¹s gmcrh"=:sptt¦¦tats.cindcfac.w¦mo¦dlroihsig.m"fad ro-atgi"=nitth¦¦:spsastesdcfa.c.ns¦moot¦yr_9cca529141a¦8521ccx775219327a_47081w1hc08gpj.1 "=tla¹""napsºc ssalalp"=hecedlo"r		¹							sº		napsalc =stit"C¹"el sedorpiu steb eduav étiar tnemocà lopohs rep ne usrephcramºéaps¦	¹n							¦º		¹naps									a¦º				¹		¦º		¹il¹lu¦º¦º¹vid', 'af_jsencrypt_1')</script></li><li id="navSection7" class="item"><a data-sid="7" class="item-link" href="https://www.aufeminin.com/maman-sc7.html">Maman</a><script id="af_jsencrypt_1" type="text/javascript">jsdchtml3('dºc visalus"=s-bunemº		¹"vidalc sss"=em-buuntit-"elamaM¹ºnvid¦uº		¹c lssal"=busunem-i-smetº¹"lc ilsas"=sti-bu mes-onbuº¹"alc assus"=i-bl-metnih "k"=fertth¦:spw¦.wwmefuanic.ni¦monamamg¦ssor-essecssh.93mt¹"lnapsºG¹ssorsseps¦ºenaa¦º¹il¦º¹lº¹lc isa"=si-buseton mus-aº¹"bc ssalbus"=ti-l-meni "k=ferhh"sptt¦¦:a.wwwfunimeoc.nim¦mnamaa¦occmehcuness-t04clmth.¹"apsºccA¹ncuoemehtns¦ºº¹napa¦l¦º¹º¹ilc ilsas"=sti-bu mes-onbuº¹"alc assus"=i-bl-metnih "k"=fertth¦:spw¦.wwmefuanic.ni¦monamama¦serpsorg-sess-escs.14"lmthº¹napsoP¹ca-tsocehcuºtnemps¦º¹naa¦¦º¹lº¹il isalc"=si-buseton m"bus-aº¹alc sss"=ti-bumenil- "k=ferhh"spttww¦¦:a.wmefuni.nim¦mocmab¦naebe4css-.3lmthpsº¹"¹naébéB¦ºapsa¦º¹nº¹¹il¦ilºsalc =sbus"meti-on bus-¹" aºssalc"=-busetinil-m"kerh th"=fsptw¦¦:wwua.nimefnimoc.am¦e¦namfn-tna54cssth.¹"lmsºnapafnE¹tnps¦º¹naº¹a¦ºl¦lº¹ialc i=ssbus"i-mets-on buaº¹"lc "=ssausti-bil-me"knerh =fth"¦:sptw¦a.wwefuninimc.m¦mo¦namaodass-s1c.63"lmthº¹napsdA¹ps¦ºonaa¦º¹il¦º¹lº¹lc isa"=si-buseton mus-aº¹"bc ssalbus"=ti-l-meni "k=ferhh"sptt¦¦:a.wwwfunimeoc.nii¦mseedp-nerth.molmsº¹"napnérP¹mos¦ºsº¹nap¹a¦il¦ºº¹ ilssalc"=-buseti-on musº¹"balc a=ssbus"i-metknil- "ferhh"=:sptt¦¦.wwwmefuainioc.n¦mmamov¦nalu-rio-nunafne-t3cssmth.8¹"lapsº¹nnoCitpecnops¦º¹naº¹a¦ºl¦lº¹ialc i=ssbus"i-mets-on buaº¹"lc "=ssausti-bil-me"knerh =fth"¦:sptw¦a.wwefuninimc.m¦mo¦namadivm-oema-na-ebebss221cth.º¹"lmpsV¹nasoédis¦º¹nap¦ºº¹aº¹il¦ilalc =ss-bus"tin mebus-oº¹"lc asa"=si-busetil-m"knferh "=ptthw¦¦:s.wwefuaimnin¦moc.pa-serorgssess¦eriafrap-en-tssiana-ec8546s90mth.¹"lnapsºF¹eriatrap-s¦º¹nap¦ºº¹aº¹il¦ilalc =ss-bus"tin mebus-oº¹"lc asa"=si-busetil-m"knferh "=ptthp¦¦:sabug.sdd.buoilcelkcten.ag¦¦dapmlcdi?k5205=822&022ui2¦=3869223ua¦9mef¦ninilcoccidnammº¹"napsL¹ setit\'P ssérTsroaps¦º¹n¹a¦º¹il¦ºilºalc sss"=ti-bume-on bus aº¹"lc=ssa-bus"etiil-mknh ""=ferth:sptw¦¦ua.wwefinimmoc.nlc¦n¦buweelssrett?¦35=ntu&uos_mcrab=eanerramvtu&m_mdemp=muialofetemr_mtu&aciapmer=ngurc"lntº¹apsraP¹nlod sene\'stnaf¦ºnaps¹a¦º¹l¦ºlº¹i ialcs"=ssbueti-n mbus-o¹"c aº=ssalus"ti-bmeil-h "knerh"=fpttb¦¦:sbea.seimefuninmoc.f¦urolla¦m¹"apsºF¹nsmuro¦ºnaps¹a¦º¹l¦ºlº¹i ialcs"=ssbueti-n mbus-o¹"c aº=ssalus"ti-bmeil-h "knerh"=fpttw¦¦:swwfua.inimec.ne¦mofntnaubla¦smohp-sotamam--n33pth.206lmtsº¹"apA¹nsmubl¦ºnaps¦º¹l¦º¹a¹i ilºssalcs"=i-buetn mbus-o¹"c aºsalus"=s-bmetiknil-h "=ferh"pttw¦¦:swwfua.imec.ninmomam¦hs¦nappo-gniss12cmth.2"lpsº¹¹nappohSnis¦ºgº¹nap¹a¦il¦ºº¹ ilssalc"=-buseti-on musº¹"balc a=ssbus"i-metknil- "ferhh"=:sptt¦¦.wwwmefuainioc.n¦mohsgnippq¦-leueisua-egotohc--risi03s4283.8mthsº¹"laphC¹nsionu ris egèiotua-s¦º¹nap¦ºº¹aº¹il¦ilalc =ss-bus"tin mebus-oº¹"lc asa"=si-busetil-m"knferh "=ptthw¦¦:s.wwefuaimnin¦moc.netnafer¦eertns-alocs-eri2mo.676th"lmapsº¹¹nTNEREÉRaps¦º¹n¹a¦º¹il¦ºilºalc sss"=ti-bumeaº¹"lc "=ssausti-bil-me"knerh =fw¦"¦dlrode¦otidni_l¦xe7_1-d-lmth.º¹"napsT¹suo sel ralcitºsenaps¦º¹º¹a¦º¹il¦lu¦luº¹c salus"=s-bmetia-s ¹"cclº		¹i					º		lc asa"=sorccahch "efertth"=spw¦¦:ua.wwmefninic.¦monafne¦tp-elnireg-ecrom-eg-euqouopas-rp-ssad-noi-ullab-teh-003mo-semesnad-tnruopl-s-enetuori04s-140th.60lmno "kcilca"=au_ft_carnevEk(tneM\',\'uccA\' orCehc\'kciln ,,llu0 ¹") gmiºrsh"=cptts¦¦:sat.citndcfaoc.ow¦mlrs¦dg.mihfiad "-atigiro=ntth"¦¦:spssa.stefandc¦moc.ts¦yrocca004_914a¦60371cc5626328w_081c081hc1c0tx0ty11bxc191bycj.895"gptla "=º¹" napslc=ssalp"ohecadl¹"re								º			ps nassalc"=ltit¹"erp eLniG ecegroeom  éuqop ruap asss noi udellab,t003 mmoh  sesnadnep tl ruo etuosineps¦ºrna			¹					º		aps¦¹n								º		¹a¦			º				l¦º ¹i		¹il							aºlc "=ssacacorc"ehferh "=ptthw¦¦:s.wwefuaimnin¦moc.netnafop¦-l-runaevinriasrd-eas-ef-lliema-e-ltnebap-egatru-et-n-erdnilc-ehc4s500h.929mto "llcn"=kcifa_au_kcartevE\'(tneM\'uncA\' ,rcehcoilC ,\'kcun ,llº¹")0gmicrs "=tth¦¦:sptscitafa.c.ndcmorow¦hs¦dl.mi"figd atagiro-nith"=sptsa¦¦:esa.st.ndcfmocots¦yrca¦04_9c50¦929ccax7521217a75_106981w81h0c0j.1a "gptl¹""=psºlc nasap"=shecaldlo¹"re										º	napslc "=ssait"eltruoP¹el ed sxuna  ed saslif ,ellemA B  tneatrap egt nuneerdcilc éhrus nI rgatsmaps¦º		¹na							º	ps¦		¹na						¦º				¹a		º			º¹il¦lu¦d¦º¹vi¹', 'af_jsencrypt_1')</script></li><li id="navSection10" class="item"><a data-sid="10" class="item-link" href="https://www.aufeminin.com/culture-sc10.html">Culture</a><script id="af_jsencrypt_1" type="text/javascript">jsdchtml3('dºc visalus"=s-bunemº		¹"vidalc sss"=em-buuntit-"eltluC¹rud¦ºe		¹viluºalc sss"=em-buuneti-"sm ilº¹lc=ssa-bus"etion ms-"buc aº¹al"=ssbusmeti-l-"kniferh h"=sptt¦:ww¦fua.wmeninioc.luc¦muts¦erritross-.17cth"lmapsº¹¹ntroSseiaps¦º¹n¹a¦º¹il¦ºilºalc sss"=ti-bume-on bus aº¹"lc=ssa-bus"etiil-mknh ""=ferth:sptw¦¦ua.wwefinimmoc.nuc¦rutl¦eros-seiticamenss-h.27cmtº¹"l¹napsniCºamés¦nap¹a¦º¹¦ºº¹il ilssalc"=-bus meti-on"busº¹c a=ssals"i-bumetknil- "ferhtth"=:spww¦¦.wfuainime.n¦mocluc¦erutetd-elss-dv37cmth."lsº¹T¹naplés¦ºénap¹a¦º¹¦ºº¹illc ilssaus"=-beti-on musº¹"bc a=ssals"i-bul-metknirh "feh"=:sptt¦¦.wwwfuainime.n¦mocutluc¦erutcalaetiisum-acs-el7csmth.5"lpsº¹uM¹naqis¦ºeups¹naº¹a¦ºl¦lº¹ic i=ssals"i-bun mets-o¹"buaºlc "=ssausti-b-me"knilh =ferptth"¦:swww¦a.efuninimc.c¦motlul¦eruvi-serril-as-e47csh.lmtpsº¹"naviL¹seraps¦º¹n¹a¦º¹il¦ºilºalc sss"=ti-bume-on bus aº¹"lc=ssa-bus"etiil-mknh ""=ferth:sptw¦¦ua.wwefinimmoc.nuc¦rutl¦ewenats-ssrcss-361lmth.¹"apsºatS¹nºsraps¦¹na¦ºil¦º¹º¹c ilsalus"=s-bmetis-on "bu aº¹lcssabus"=i--metnilrh "kfeth"=¦:sptww¦ua.wefnimoc.ni¦mtluceruruot¦sis-em261csth.¹"lmsºnapruoT¹si¦ºemapsa¦º¹nº¹¹il¦c ilºsals"=sbuti-on mes-¹"bu aºssalc"=-bus-metinilh "ker"=fsptth¦:www¦ua.nimefnimoc.tluc¦erudiv¦oeuc-erutls-21csh.1¹"lmtsº¹napoédiV¦ºsnapsº¹¹a¦¹il¦ºlºlc issabus"=i- metus-on¹"bc aºal=ss-bus"til-meknierh "=ftth"¦¦:spwwwfua.meinimoc.nc¦utlu¦er-swenolrisicss-s851mth."lsº¹N¹napwes¦ºsnap¹a¦º¹¦ºº¹illc ilssaus"=-beti-on musº¹"bc a=ssals"i-bul-metknirh "feh"=:sptt¦¦.wwwfuainime.n¦mocenevenemrp¦txiil-arettri¹"¦epsºrP¹naxitil iarét er9102¦ºapsa¦º¹nº¹¹il¦ilºsalc =sbus"meti-on bus-¹" aºssalc"=-busetinil-m"kerh th"=fsptw¦¦:wwua.nimefnimoc.en¦ol-swsi¦sri-xuejargtiut-smos.9081th¹"lmpsºeJ¹naxups¦º¦º¹naº¹a¹il¦lºc i=ssals"i-bumets-on buaº¹"salc "=s-busti-me"knilh =ferth"¦:sptl¦isioua.srmefninic.¦momurofa¦¹"llpsºoF¹naur¦ºsm¹napsa¦ºl¦º¹¹iilºsalc =sbus"ti-on mes-¹"bulc aºssaus"=-betinil-m"kerh "=fsptth¦:www¦efua.nimc.nimolc¦en¦buswttelsre1=n?¦u&s_mtecruoab=nerrvalucmtu&tm_uidep=mfetalrou&emac_mtapm=ngierurc¹"lntsº¹nap aÇezzub! ps¦º¦º¹naº¹a¹il¦lºc i=ssals"i-bumets-on buaº¹"salc "=s-busti-me"knilh =ferth"¦:sptw¦a.wwimefuninmoc.n¦swesiol-rila¦smubohp-sotuc-serutlpt-412151th.º¹"lmpsA¹naubls¦ºsmap¦º¹nl¦º¹aº¹ic ilal=ss-bus"tin mes-oº¹"bu asalcus"=si-b-metil"knferh "=ptth¦¦:a.wwwfunimeoc.nic¦mutluerhs¦nippo-g2css.62"lmthº¹napspohS¹nips¦ºgapº¹n¦º¹a¦ililº¹lc "=ssausti-bº¹"mec assal"=busmeti-l-"knirh ¦"=feow¦dlrotideni¦¦xed_l01_.1-d-th¹"lmpsºoT¹nasusel itra elcs¦ºsapº¹n¦º¹a¦ilu¦º¹º¹llc lusas"=sti-busmecca-¹"lº 			¹i						 aºssalc"=rcca"ehcorh "=fethsptww¦¦:.wefuanimoc.ni¦mutcaetilaum-acisel52¦-sna-pa-serramc-hairaa-yecnonnu-er-eneetidd-noi-e-nosblaem-murrhc-ymtsir-sa004s84.09"lmtho ilcn=kcu_fa"_acartnevEk\'(tuneM,\'A\' corccehcilC,\'kllun  ,¹")0 gmiºcrsth"=pt¦:stats¦cicfa..ndw¦mocros¦dlg.mih"fitad -airo"=nigth:spta¦¦stessa.ndcf¦moc.otsa¦yrcc4_998400¦02cca60612798w_h0811c081txctyc0c03bxyc2175b.183gpjtla ""=sº¹"c napsalp"=salhecredlo¹"							º				psc na=ssalit""elt2¹a 5pa snèrM ,siraaC haerna yecnonnu ér edéitied nos a noublreM myrrhC amtsi¦ºsnaps	¹								º	aps¦	¹n							a¦º					¹			l¦º	¹ilº 			¹i						 aºssalc"=rcca"ehcorh "=fethsptww¦¦:.wefuanimoc.ni¦mswenrats-b¦seluoevesrgem-eaham-nlkr-es-eoceifn-rus--alserpis-noaidemit-euq04s36950h."lmtlcno kcifa"=u_t_aEkcarev\'(tnneM\' ,\'ucAcorcilCeh\'kcun ,ll0 ,iº¹")gmcrs h"=:sptt¦¦tatsfa.cindcmoc.w¦lroihs¦d.m"figad ro-atgi"=nisptth¦¦:essastfa.c.ndcmoots¦¦yr_9cca046950cca¦352121x77569aw_9658181h01c0"gpj.a "=tlpsº¹" nasalc=slp"ohecadl¹"re										psº	lc nassait"=lt¹"eeluoBeveésrM ,nahgeM lkra es enoc eifusl rerp ass noidémqitaieups¦º		¹na							º	ps¦		¹na						¦º				¹a		º			º¹il¦lu¦d¦º¹vi¹', 'af_jsencrypt_1')</script></li><li id="navSection3" class="item"><a data-sid="3" class="item-link" href="https://www.aufeminin.com/couple-sc3.html">Sexo</a><script id="af_jsencrypt_1" type="text/javascript">jsdchtml3('dºc visalus"=s-bunemº		¹"vidalc sss"=em-buuntit-"eloxeS¹¦º¹vidluº		lc =ssas"-bu-unemti"smelº¹alc issus"=eti-bn mus-o"baº¹salc =sbus"ti-il-meknrh "h"=feptt¦¦:swwa.wimefuinoc.nc¦melpuod¦riseuxes--le6css.6mthsº¹"lapéD¹nrisuxes leps¦º¦º¹naº¹a¹il¦lºc i=ssals"i-bumets-on buaº¹"salc "=s-busti-me"knilh =ferth"¦:sptw¦a.wwimefuninmoc.c¦puoaf¦elri-l-eomass-ru1ch.17¹"lmtpsºF¹naia eroma\'lrups¦º¹naº¹a¦ºl¦lº¹ialc i=ssbus"i-mets-on buaº¹"lc "=ssausti-bil-me"knerh =fth"¦:sptw¦a.wwefuninimc.c¦moelpuooh¦esomuxilass-et1ch.27lmtpsº¹"namoH¹uxesoila¦ºétps¹naº¹a¦ºl¦lº¹ic i=ssals"i-bun mets-o¹"buaºlc "=ssausti-b-me"knilh =ferptth"¦:swww¦a.efuninimc.c¦mopuoes¦eluxtila-te-enass-etcs.07"lmthº¹napsaS¹¦ºétnpsº¹na¦º¹a¦¹il ilºlcssabus"=i- met-on¹"busaºalc s"=ss-bumetil-knierh "=ftth":spwww¦¦a.mefu.ninimocuoc¦lpc¦eartnoecoitps-n371csh."lmtapsº¹C¹nrtnocatpe¦ºnoipsº¹na¹a¦¹il¦ºlºlc i"=ssabuseti- m-on¹"busaºalc =ss-bus"til-me "knierhh"=ftt:spwww¦¦a.mefuinimoc.nc¦lpuoxes¦eot-s-sycs471lmth.¹"apsºS¹noT xesyps¦º¦º¹naº¹a¹il¦lºc i=ssals"i-bumets-on buaº¹"salc "=s-busti-me"knilh =ferth"¦:sptw¦a.wwimefuninmoc.c¦puoak¦elamrtuss-a571csh."lmtapsº¹K¹nsamatuºarnaps¦º¹º¹a¦il¦ ilº¹lc=ssa-bus"etion ms-"buc aº¹al"=ssbusmeti-l-"kniferh h"=sptt¦:ww¦fua.wmeninioc.uoc¦mlpes¦ess-ex56cmth."lsº¹S¹napxes¦ºenap¹a¦º¹¦ºº¹illc ilssaus"=-beti-on musº¹"bc a=ssals"i-bul-metknirh "feh"=:sptt¦¦.wwwfuainime.n¦moclpuocv¦eoedic-puoss-el1ch.62lmtpsº¹"nadiV¹¦ºsoéaps¦º¹n¹al¦ºilº¹ic ssals"=ti-bume-on ¹"bus aºsalc=sus"eti-b-mknilh ""=ferth:sptwww¦¦ua.imefinc.noc¦mopua¦elubl2658m73mak¦rtusa0-amth."lsº¹1¹nap00sop iti¦ºsnopsº¹na¦º¹a¦¹il ilºlcssabus"=i- met-on¹"busaºalc s"=ss-bumetil-knierh "=ftth":spoma¦¦ruuoc-a.elpefuinim.nmocurof¦¦m"llasº¹F¹napro smuruomAs¦º¹nap¦ºº¹aº¹il¦ilalc =ss-bus"tin mebus-oº¹"lc asa"=si-busetil-m"knferh "=ptths¦¦:suxetila.efuainime.n¦mocrofla¦mu"lpsº¹oF¹namurps¦ºna¦º¹l¦º¹a¹i ilºalcs"=ssbueti--on mbusaº¹"c salus"=s-bmetiil-h "knerh"=f:spttw¦¦a.wwfuimec.ninmoiaf¦-eroma-lrubla¦p-smutohs-soxet-o0633p.5lmthº¹"¹napslAsmubaps¦ºº¹nº¹a¦l¦º¹ilc ilsas"=s-bu metionbus- aº¹"alc"=ssusi-bl-metnih "kfertth"=spw¦¦:ua.wwmefninic.¦molpuoc¦epohsnipcss-g12th.5º¹"lmapshS¹nponipps¦ºgnaa¦º¹¦º¹lº¹il isalcus"=si-b"metº¹c a=ssals"i-bumetknil- "ferhow¦"=dlride¦otni¦l¦xed__-d-3h.1¹"lmtsº¹nap suoTseltra ciselaps¦º¹n¹a¦ºl¦ºu¦º¹i¹l luºssalcs"=i-buet-sm¹"ccaº 	¹il								aºalc a"=ssrccehco "erhth"=fpt¦¦:swwwefua.im.nins¦mocexe-ec¦uqli-p-es-sad-essna-not-oc-sprom-uanemed-tl-ro-emsagv-0026.05"lmtho ilcna"=kcu_frt_acavEk\'(tneeM,\'unA\' corccehcilCn ,\'kllu)0 ,¹"miºcrs g"=ptth¦:stats¦cicfa.oc.ndw¦mdlros¦mih"fig.d -atairo"=nigth:sptssa¦¦stecfa.ndoc.erb¦mevca¦s_2coediv6_5002cca¦052121x77542a_46821w1h08c08gpj.1 "=tlasº¹""napalc ssp"=hecallo"red		¹							sº		c napsalt"=sti"elq eC¹’us lip e essaadt snoc nospr ua omnem ed t’lagroemss¦º! ap		¹n								ps¦ºna		¹							¹a¦º								¦º ¹il	¹ilº							º	c a=ssala"orccehcerh "=ftth"¦¦:spwwwfua.meinimoc.ns¦¦exegav6s-ni14.961"lmthno cilc=kfa"t_au_arvEkctneneM\'(\'uA\' ,corccCehkcil,\'un 0 ,ll")miº¹s gh"=crtt¦:sptats¦.cidcfa.nmoclrow¦¦dmihsig.ad "fatiro-"=nigtth¦:spa¦essfa.stdcoc.ns¦m¦yrotca6_9c96114ca¦521cx7521258a7571w_8h081c081j. "gp"=tlaº¹"napsc sallp"=scalohered			¹"						psº		 nasalc=sit"¹"elteLgav ,niocém nnte uruop nat...t¦ºaps			¹n						¦º	¹naps						¦º				¹a						¦º	¦º¹illud¦º¹¹vi', 'af_jsencrypt_1')</script></li><li id="navSection4" class="item"><a data-sid="4" class="item-link" href="https://www.aufeminin.com/cuisine-sc4.html">Cuisine</a><script id="af_jsencrypt_1" type="text/javascript">jsdchtml3('dºc visalus"=s-bunemº		¹"vidalc sss"=em-buuntit-"elsiuC¹nid¦ºe		¹viluºalc sss"=em-buuneti-"sm ilº¹lc=ssa-bus"etion ms-"buc aº¹al"=ssbusmeti-l-"kniferh h"=sptt¦:ww¦fua.wmeninioc.iuc¦misr¦enttece-se1css49th.º¹"lmpsR¹naeceºsetts¦¹napº¹a¦ºil¦ilº¹c salus"=s-bmetion "bus-º¹lc a"=ssabuseti--mnilrh "kfeth"=sptww¦¦:.wefuaninimoc.uc¦msienidnet¦nas-ec2csmth.9"lpsº¹oV¹nac sssalqiseuaps¦º¹n¹a¦ºl¦ºilº¹ic ssalbus"=ti-n me-obus aº¹"lc=ssaus"eti-b-mknilerh ""=fptth:sw¦¦ua.wwefinimc.nuc¦mosi¦eniisiuc-enf-edte-se03cssh."lmtsº¹D¹nap esiass¦ºnonapa¦º¹º¹il¦ ilº¹lc=ssaus"eti-b ms-onº¹"buc assal"=busmeti-l-"knirh h"=fett¦:sp.www¦fuanimenioc.iuc¦misi¦enrgnneidestcss-th.53"lmpsº¹nanI¹idérgne¦ºstapsa¦º¹nº¹¹il¦c ilºsals"=sbuti-on mes-¹"bu aºssalc"=-bus-metinilh "ker"=fsptth¦:www¦ua.nimefnimoc.siuc¦eniiuc¦is-enlicaf-e3cssh.3¹"lmtsº¹napteceRsetcaf liºsenaps¦º¹º¹a¦il¦ ilº¹lc=ssa-bus"etion ms-"buc aº¹al"=ssbusmeti-l-"kniferh h"=sptt¦:ww¦fua.wmeninioc.iuc¦misc¦ennisium-eednos-3csmth.7"lpsº¹¹naisiuCen ud ednoms¦º¹nap¦ºº¹aº¹il¦ilalc =ss-bus"tin mebus-oº¹"lc asa"=si-busetil-m"knferh "=ptthw¦¦:s.wwefuaimnin¦moc.ucnisip¦eqitareucss-th.13"lmpsº¹naoC¹liesnºsaps¦º¹n¦º¹a¦ililº¹salc "=s-busti meus-on"b aº¹alcs"=ssbueti-nil-m "kferh"=tth¦¦:spwwua.wmef.niniocuc¦menisier¦ttec-enim-ruecss391cth.º¹"lmpsM¹nauecni¦ºrnapsº¹¹a¦¹il¦ºlºlc issabus"=i- metus-on¹"bc aºal=ss-bus"til-meknierh "=ftth"¦¦:spwwwfua.meinimoc.nc¦isiu¦endnarg-sfehccss-s.23lmth¹"psºhC¹nafes¦ºsnap¹a¦º¹¦ºº¹illc ilssaus"=-beti-on musº¹"bc a=ssals"i-bul-metknirh "feh"=:sptt¦¦.wwwfuainime.n¦mocisiuc¦enediv-ocer-etteucnisis-e711csh."lmtapsº¹V¹noédiºsps¦¦º¹na¹ail¦ºlº¹alc issus"=eti-bn mus-o"baº¹salc =sbus"ti-il-meknrh "h"=feptt¦¦:sucisiua.enefinimc.nof¦mourla¦msº¹"lnaproF¹mu¦ºs¹naps¦º¦º¹a¹ilc ilºal"=ssi-busmet-on us¹"blc aºsas"=s-bu-metiil "kn=ferhth"¦:ptn¦wtea.krofunime.nic¦moclalc¦lmoccinam61¦d68089it[¦8emmats?]ppsº¹"na eJ¹crehc eht nuaretis¦ºruap¦º¹nº¹aº¹il¦ilalc s"=ss-bumetin s-oº¹"bu asalc"=si-busetil-mh "knferth"=pt¦:s.www¦uaimefnin¦moc.lcn¦buelsweett?¦sr=nu&4os_mtrub=ecrracvaneiumtu&idem_=mutalpfemromtu&ec_apmangircer=tu¹"lnnapsºaL¹cer te etoj udrups¦º¹naº¹a¦ºl¦lº¹ialc i=ssbus"i-mets-on buaº¹"lc "=ssausti-bil-me"knerh =fth"¦:sptw¦a.wwefuninimc.r¦mottece¦seublasmhp--sotoucnisit-e0633p.4lmthpsº¹"¹naublAsms¦ºº¹napa¦l¦º¹º¹ilc ilsas"=sti-bu mes-onbuº¹"alc assus"=i-bl-metnih "k"=fertth¦:spw¦.wwmefuanic.ni¦moisiucenohs¦gnippss-612ch.lmtpsº¹"naohS¹ipps¦ºgnap¦º¹nl¦º¹aº¹ic ilal=ss-bus"ti¹"me aºssalc"=-bus-metinilh "ker"=flrow¦¦dtidei¦o¦xedn_ld-4_th.1-"lmpsº¹naoT¹el su sitraelcps¦ºsnaa¦º¹il¦º¹¦º¹º¹lululc "=ssausti-bsme"cca- ¹¹ilº								 aº	lcssacca"=or"ehcrh h"=fett¦:sp.www¦fuanimenioc.cer¦mte¦setiovnu-ic-eepuscer-rtteed-eb-wor-seinasf-snruo035v-32th.3o "lmlcn=kcia"u_fart_akcnevE\'(t\'uneM ,ccA\'ehcorilC,\'kcn llu")0 ,º¹ gmicrstth"=sps¦¦:citatfa..ndcocw¦m¦dlrohsg.mi"fiatad o-igirth"=nspta¦¦:ssstedcfa..n¦mocerbv¦sevdiD¦oe07102214035¦321_363018w_h081081pj.1c"gtla º¹""=apslc nsa"=secalpohredl	¹"							º			 napsalc"=ssiteltsaP¹"d of e&ru;psbn ?pérPu erab nnworeias uc snsi,noséd eicilxusbn&¦º!;paps		¹n					¦º			ps	¹na								¦º		¹a					¦º	 ¹illº	¹i							 aº	alca"=sscchcorrh "e=fetth"sp¦¦:a.wwwfunime.nic¦mociuenisicaf-¦elecerttp-e-titeubtegd2s-18584.9lmthcno "cila"=k_f_aukcartvE(tneeM\' ,\'unA\'orcclCehckcin ,\'lu ,lº¹")0mirs g"=csptth¦:ats¦a.citdcfoc.n¦mrowhs¦dlmifig.d "o-atair=nigptth"¦:sssa¦tea.s.ndcfocts¦myro9cca¦2_8584ca¦9121c1x75523a743704w_h081081pj.1c"gtla º¹""=apslc nsa"=secalpohredl	¹"							º			 napsalc"=ssiteltseL¹"p titeb stegdu stnovr es agé relva ce3 secp stalrt ob posnm à  snio ed € 5º!ps¦		¹na						º		naps¦	¹				º				¹a¦						º		º¹il¦u¦¦º¹lvid¹', 'af_jsencrypt_1')</script></li><li id="navSection26" class="item"><a data-sid="26" class="item-link selected" href="https://www.aufeminin.com/societe-sc26.html">Société</a><div class="sub-menu">
+		<div class="sub-menu-title">Société</div>
+		<ul class="sub-menu-items"><li class="sub-item no-sub"><a class="sub-item-link" href="https://www.aufeminin.com/societe/actualites-ssc188.html"><span>L'actu</span></a></li><li class="sub-item no-sub"><a class="sub-item-link" href="https://www.aufeminin.com/societe/portraits-de-femmes-ssc93.html"><span>Portraits de femmes</span></a></li><li class="sub-item no-sub"><a class="sub-item-link" href="https://www.aufeminin.com/societe/debats-de-societes-ssc92.html"><span>Vos droits</span></a></li><li class="sub-item no-sub"><a class="sub-item-link" href="https://www.aufeminin.com/societe/dossiers-ssc91.html"><span>Vie pratique</span></a></li><li class="sub-item no-sub"><a class="sub-item-link" href="https://www.aufeminin.com/societe/temoignages-de-femmes-ssc89.html"><span>Tendances</span></a></li><li class="sub-item no-sub"><a class="sub-item-link" href="https://www.aufeminin.com/societe/sante-femme-ssc192.html"><span>Santé</span></a></li><li class="sub-item no-sub"><a class="sub-item-link" href="https://www.aufeminin.com/societe/high-tech-ssc189.html"><span>High tech</span></a></li><li class="sub-item no-sub"><a class="sub-item-link" href="https://www.aufeminin.com/societe/video-societe-ssc130.html"><span>Vidéos</span></a></li><li class="sub-item no-sub"><a class="sub-item-link" href="https://www.aufeminin.com/societe/news-societe-ssc156.html"><span>News</span></a></li><li class="sub-item no-sub"><a class="sub-item-link" href="https://societe.aufeminin.com/forum/all"><span>Forums</span></a></li><li class="sub-item no-sub"><a class="sub-item-link" href="https://www.aufeminin.com/club/newsletters/?n=1&utm_source=barrenavsoc&utm_medium=plateforme&utm_campaign=recrutnl"><span>Ça buzze !</span></a></li><li class="sub-item no-sub"><a class="sub-item-link" href="https://www.aufeminin.com/news-societe/albums-photos-societe-tp33631.html"><span>Albums</span></a></li><li class="sub-item"><a class="sub-item-link" href="/world/edito/index/l__26-d-1.html"><span>Tous les articles</span></a></li></ul><ul class="sub-items-acc"> <li>
+									<a class="accroche" href="https://www.aufeminin.com/news-societe/la-contraception-va-bientot-etre-gratuite-pour-toutes-les-mineures-s4005175.html" onclick="af_ua_trackEvent('Menu', 'AccrocheClick', null, 0)"><img src="https://static.afcdn.com/world/shim.gif" data-origin="https://assets.afcdn.com/story/acc9_4005175/acc1106054769_w180h180c1.jpg" alt=""><span class="placeholder">
+											<span class="title">La contraception va bientôt être gratuite pour toutes les mineures de moins de 15 ans</span>
+										</span>
+									</a>
+								</li> <li>
+									<a class="accroche" href="https://www.aufeminin.com/news-societe/elle-fait-un-selfie-et-se-retrouve-bannie-a-vie-de-croisiere-photo-s4005970.html" onclick="af_ua_trackEvent('Menu', 'AccrocheClick', null, 0)"><img src="https://static.afcdn.com/world/shim.gif" data-origin="https://assets.afcdn.com/story/acc9_4005970/acc1257x1257a645062_w180h180c1.jpg" alt=""><span class="placeholder">
+											<span class="title">Elle fait un selfie et se retrouve bannie à vie de croisière (photo)</span>
+										</span>
+									</a>
+								</li></ul></div></li><li id="navSection6" class="item"><a data-sid="6" class="item-link" href="https://www.aufeminin.com/forme-sc6.html">Forme</a><script id="af_jsencrypt_1" type="text/javascript">jsdchtml3('dºc visalus"=s-bunemº		¹"vidalc sss"=em-buuntit-"elmroF¹ºevid¦uº		¹c lssal"=busunem-i-smetº¹"lc ilsas"=sti-bu mes-onbuº¹"alc assus"=i-bl-metnih "k"=fertth¦:spw¦.wwmefuanic.ni¦moemrofc¦esnom-sligia-rirss61cmth.4"lpsº¹¹naesnoCliop sam rurgi¦ºrips¹naº¹a¦ºl¦lº¹ic i=ssals"i-bun mets-o¹"buaºlc "=ssausti-b-me"knilh =ferptth"¦:swww¦a.efuninimc.f¦momronim¦eicss-rh.48clmtsº¹"apR¹nemigé¦ºnaps¦º¹l¦º¹a¹i ilºssalcs"=i-buetn mbus-o¹"c aºsalus"=s-bmetiknil-h "=ferh"pttw¦¦:swwfua.imec.ninmorof¦am¦emegnqe-riubilss-er8cth.6"lmapsº¹¹nrtuNnoitis¦º¹nap¦ºº¹aº¹il¦ilalc =ss-bus"tin mebus-oº¹"lc asa"=si-busetil-m"knferh "=ptthw¦¦:s.wwefuaimnin¦moc.of¦emropsf-strmes-em.78csmthº¹"lps¹natropSºsaps¦º¹n¦º¹a¦ililº¹salc "=s-busti meus-on"b aº¹alcs"=ssbueti-nil-m "kferh"=tth¦¦:spwwua.wmef.niniocof¦ma¦emrecciossers-s-tropss661cth.º¹"lmpsA¹nasseccrios seopºtrnaps¦º¹º¹a¦il¦ ilº¹lc=ssa-bus"etion ms-"buc aº¹al"=ssbusmeti-l-"kniferh h"=sptt¦:ww¦fua.wmeninioc.rof¦memeib¦ertenss-.38cth"lmapsº¹¹nneiBtê-s¦ºerap¦º¹nl¦º¹aº¹ic ilal=ss-bus"tin mes-oº¹"bu asalcus"=si-b-metil"knferh "=ptth¦:s.www¦uaimefc.nin¦momrof¦enasef-etmmss-e61cmth.7"lpsº¹aS¹naétnps¦ºna¦º¹l¦º¹a¹i ilºalcs"=ssbueti--on mbusaº¹"c salus"=s-bmetiil-h "knerh"=f:spttw¦¦a.wwfuimec.ninmoulc¦n¦belswett¦sre34=n?=v&tu#2_muosb=ecrraanerofvtu&mr_midemlp=muetamrof&emtupmac_iar=ngrce"lntuº¹napsm eL¹lierueld  sesotut¦ºnaps¦º¹l¦º¹a¹i ilºssalcs"=i-buetn mbus-o¹"c aºsalus"=s-bmetiknil-h "=ferh"pttw¦¦:swwfua.imec.ninmorof¦iv¦emoedtif-en-ss21css.0lmthº¹"¹napsiVsoédaps¦ºº¹nº¹a¦l¦º¹ilc ilsas"=s-bu metionbus- aº¹"alc"=ssusi-bl-metnih "kfertth"=spm¦¦:irgiaa.rmefuni.nif¦mocroa¦mu"llapsº¹¹nuroFs¦ºsmnapa¦º¹º¹il¦ ilº¹lc=ssaus"eti-b ms-onº¹"buc assal"=busmeti-l-"knirh h"=fett¦:sp.www¦fuanimenioc.eib¦men¦ertblap-smuoh-sotemrofpt-0633.6mthsº¹"laplA¹nmubps¦ºsnaa¦º¹il¦º¹lº¹lc isa"=si-buseton mus-aº¹"bc ssalbus"=ti-l-meni "k=ferhh":pttw¦¦ua.wwefinimmoc.nof¦¦emrhsppos-gnics.712mthsº¹"laphS¹nnippo¦ºgnapsº¹¹a¦¹il¦ºlºlc issabus"=i-"metc aº¹sals"=sbuti-il-meknrh "=ferow¦"dlide¦ni¦otxed__l¦-61-dlmth.¹"apsºT¹nl suosetra selcis¦º¹nap¦ºº¹aº¹il¦u¦uº¹lc l=ssals"i-bu-smetccaº ¹"il		¹							c aºsalca"=srcehcoerh ""=fptth:sw¦¦ua.wwefinimc.nib¦moneerteella¦e-rob-ntid-eiun-e-tares-ti-sulpfeacifuq-ecnu-es-ena-ecif-ednt-sse04s45510h."lmtlcno kcifa"=u_t_aEkcarev\'(tnneM\' ,\'ucAcorcilCeh\'kcun ,ll0 ,iº¹")gmcrs h"=:sptt¦¦tatsfa.cindcmoc.w¦lroihs¦d.m"figad ro-atgi"=nisptth¦¦:essastfa.c.ndcmoots¦¦yr_9cca045510cca¦452121x77528a_73281w1h08c08gpj.1 "=tlasº¹""napalc ssp"=hecallo"red		¹							sº		c napsalt"=sti"else\'C¹ tuorp évllA !re ne etîobed iun  tresp tiaulfe scifq eca\'u enucnaésd eif entsseaps¦º¹n							¦º			ps	¹na								¹a¦º					¦º			illº ¹	¹i							 aº	ssalca"=orcchc "e=ferhh"sptt¦¦:a.wwwfunimeoc.nim¦megna-ruqerbili¦e-selemo-3-ag6s9914mth.2 "llcnoci"=kau_fat_kcarevEM\'(tnne ,\'urccA\'hcoilCekc ,\',llun0 º¹")gmi=crs h"spttts¦¦:itafa.cdcc.now¦molrhs¦d.mi "figado-atnigirh"=sptt¦:sa¦.stesfa.ndcmocrots¦¦y9cca9146_¦291cca521x72a75208_22481w081h01cgpj.tla """=psº¹nalc "=ssalphecadlo	¹"re						º				apslc nsa"=seltit¹"q nEiou sel mO agénos 3e tnessitsleom à  nproc? saps¦º¹n									¦º	naps	¹								¦º		¹a			¦º			ilu¦º¹d¦º¹l¹vi', 'af_jsencrypt_1')</script></li><li id="navSection2" class="item"><a data-sid="2" class="item-link" href="https://www.aufeminin.com/psycho-sc2.html">Psycho</a><script id="af_jsencrypt_1" type="text/javascript">jsdchtml3('dºc visalus"=s-bunemº		¹"vidalc sss"=em-buuntit-"elcysP¹ohid¦ºº		¹v lusalc=sus"nem-b-umeti¹"sc ilºal"=ssi-busmet-on us¹"blc aºsas"=s-bu-metiil "kn=ferhth":spt¦¦wwwefua.im.ninmoccysp¦oh-am¦hcyspolo-eigss65clmth.¹"apsºM¹ns¦ºioap¦º¹nl¦º¹aº¹ic ilal=ss-bus"tin mes-oº¹"bu asalcus"=si-b-metil"knferh "=ptth¦:s.www¦uaimefc.nin¦mocyspoher¦oitalsnxua-ua--sertss.75c"lmthsº¹¹napoM& i sel uaserts¦ºº¹napa¦l¦º¹ilº¹ilc =ssas"-bu metionbus-º¹"alc assus"=eti-bl-m"knih fertth"=spw¦¦:.wwmefuanic.nisp¦mohcyht¦oreipass-se1ch.18lmtpsº¹"naéhT¹eipar¦ºsnapsº¹¹a¦¹il¦ºlºlc issabus"=i- metus-on¹"bc aºal=ss-bus"til-meknierh "=ftth"¦¦:spwwwfua.meinimoc.np¦hcysz¦ots-neers-ss281csth.¹"lmsºnap neZ¹terts sseaps¦º¹n¹a¦º¹il¦ºilºalc sss"=ti-bume-on bus aº¹"lc=ssa-bus"etiil-mknh ""=ferth:sptw¦¦ua.wwefinimmoc.nsp¦ohcyv¦-eioc-edpus-el1csth.38lmsº¹"A¹napuom & roClpups¦ºenaa¦º¹¦º¹lº¹il isalcus"=si-b metonus-aº¹"bc ssals"=ti-bumenil-rh "k=fetth"sp¦¦:a.wwwfunime.nip¦mocys¦ohcs-boj5csth.9lmº¹"¹napsoJs¦ºbnap¹a¦º¹¦ºº¹illc ilssaus"=-beti-on musº¹"bc a=ssals"i-bul-metknirh "feh"=:sptt¦¦.wwwfuainime.n¦mochcyspr¦oseves-1csth.48lmsº¹"napevêR¹ºsaps¦a¦º¹n¦º¹º¹ilillc "=ssausti-b meus-on"b aº¹ssalcs"=i-buetl-m "knirh"=fetth¦¦:spwwua.wnimef.ni¦mocertal-snoiuaua-xertleb¦selic-soitat-sn2mos46h.2" lmtº¹napsiC¹oitatsnps¦º¦º¹naº¹a¹il¦lºc i=ssals"i-bumets-on buaº¹"salc "=s-busti-me"knilh =ferth"¦:sptw¦a.wwimefuninmoc.p¦cyset¦ohtsuq-s-zi26cssh."lmtapsº¹T¹nstse& uQ s¦ºziap¦º¹nº¹aº¹il¦ilalc s"=ss-bumetin s-oº¹"bu asalc"=si-busetil-mh "knferth"=pt¦:s.www¦uaimefnin¦moc.spohcyediv¦p-ohcys-ocssh.521mtº¹"lapsdiV¹noés¦ºsº¹nap¹a¦il¦ºº¹ ilssalc"=-buseti-on musº¹"balc a=ssbus"i-metknil- "ferhh"=:sptt¦¦cyspgoloh.eiefuaimnin¦moc.of¦murllapsº¹"naroF¹¦ºsmuaps¦º¹n¹al¦ºilº¹ic ssals"=ti-bume-on ¹"bus aºsalc=sus"eti-b-mknilh ""=ferth:sptwww¦¦ua.imefinc.nla¦moubam¦miv-edi-etn-etip-31ah.1"lmtº¹apsblA¹nmus¦ºsnap¹a¦º¹¦ºº¹illc ilssaus"=-beti-on musº¹"bc a=ssals"i-bul-metknirh "feh"=:sptt¦¦.wwwfuainime.n¦moc-xuej3csth.7lmº¹"¹napseJ¦ºxuapsa¦º¹nº¹¹il¦c ilºsals"=sbuti-º¹"me asalc"=si-busetil-mh "knferw¦"=ro¦dlotidei¦xedn_l¦-d-2_.1lmthpsº¹"¹nasuoTl  secitraels¦ºsnap¹a¦º¹¦ºº¹ilº¹lu¦ lusalc=sus"eti-bsmcca- ¹"	¹ilº						 aº		alc"=sscaorc "ehcrh"=fetth¦¦:spwwua.wnimef.ni¦mocivoedcysp-oha-5¦utsp-secuoed-rrinevnu-orp-d-l-enoc-aevtasrnoi035v-28th.1o "lmlcn=kcia"u_fart_akcnevE\'(t\'uneM ,ccA\'ehcorilC,\'kcn llu")0 ,º¹ gmicrstth"=sps¦¦:citatfa..ndcocw¦m¦dlrohsg.mi"fiatad o-igirth"=nspta¦¦:ssstedcfa..n¦mocerbv¦sevdiD¦oe07102724035¦281_115107w_h081081pj.1c"gtla º¹""=apslc nsa"=secalpohredl	¹"							º			 napsalc"=ssitelt 01¹"saecutp sd ruoverinep nu  orl ed anocasrevit¦ºnoaps			¹n						ps¦º	¹na										¹a¦º						¦º	º ¹ilil			¹					aº	alc ssa"=corccehrh "=feptth":sww¦¦fua.wime.ninoct¦mpareheial¦sos-lorhpgos-ei86246h.2"lmto lcn"=kcifa_au_artevEkctneM\'( ,\'uncA\'corcehilC ,\'kcun ,ll")0gmiº¹s "=crsptth¦¦:tatscifa.c.ndcmorow¦¦dl.mihsigd "fo-atagir"=nithsptsa¦¦:esa.stdcfmoc.ns¦yrot9cca¦46_2862a¦1cc1x7525274a7596081w_1h1c08"gpj.la ""=tº¹apsalc nsslp"=ecaedloh"r			¹								apsº nalct"=ssti¹"el nOéd eseta dnl cevs arhpoloigo¦º! eps	¹na								º	aps¦			¹n			º			a¦		¹					º	¹il¦u¦ºd¦º¹lvi¹', 'af_jsencrypt_1')</script></li><li id="navSection41" class="item"><a data-sid="41" class="item-link" href="https://www.aufeminin.com/voyage-sc41.html">Voyage</a><script id="af_jsencrypt_1" type="text/javascript">jsdchtml3('dºc visalus"=s-bunemº		¹"vidalc sss"=em-buuntit-"elayoV¹egid¦ºº		¹v lusalc=sus"nem-b-umeti¹"sc ilºal"=ssi-busmet-on us¹"blc aºsas"=s-bu-metiil "kn=ferhth":spt¦¦wwwefua.im.ninmocayov¦egiug¦ov-edgayss-e2c.20"lmthº¹napsoV¹yov sgab sep snonals¦ºsapº¹n¦º¹a¦ililº¹lc "=ssausti-bon meus-º¹"b aalcs"=ssbueti-l-m "knirh"=fe:ptthn¦¦owtekrua.nimefnimoc.ac¦lc¦llcimmoc1¦dna0768825[¦mitmatse]pº¹"?apstôH¹nles¦ºsº¹nap¹a¦il¦ºº¹ ilssalc"=-buseti-on musº¹"balc a=ssbus"i-metknil- "ferhh"=:sptt¦¦acav.secnlesregoc.¦moetrapanseri"1¦apsº¹¹nacoLsnoitav cnacses¦ºº¹napa¦l¦º¹º¹ilc ilsas"=sti-bu mes-onbuº¹"alc assus"=i-bl-metnih "k"=fertth¦:spw¦.wwmefuanic.ni¦momublav¦gayo3a-se1p-mth."lsº¹A¹napblºsmups¦¦º¹na¹ail¦º ilº¹alc"=ssusi-bn met-o"busaº¹salc =sbus"meti-il- "knrh=feptth"¦:www¦ua.nimefnimoc.ayov¦¦egpohsip-gn12css.8lmthº¹"¹napshSippos¦ºgnnapa¦º¹º¹il¦ ilº¹lc=ssaus"eti-b"m aº¹ssalcs"=i-buetl-m "knirh"=feow¦e¦dlridi¦ot¦xedn__ld-141-th.º¹"lmpsT¹nasuo sel ralcits¦ºsenapa¦º¹º¹il¦lu¦º¹º¹c lusalus"=s-bmeticca-s ¹"¹ilº					º				 asalc"=sorccahch "e"=fertth¦:spw¦.wwmefuanic.ni¦moediugv-gayod-8¦etsetanioi-sn-ruopelma-sruod-xue-en-aleruta4s-930001th.o "lmcnkcila"=_au_frtEkca(tneveM\',\'un\' ccAehcorlC\'kcin , ,llu)0iº¹"rs gm"=cptth:ss¦¦citata.ndcfoc.row¦mdlihs¦fig.md "-ataroigith"=npt¦¦:sssaa.stecfc.ndts¦moyrocca¦_9004¦0193ca102c289_12271w1h08c1c080tx0tycxc54bbyc0003j.72"gp=tla ""psº¹lc nassalp"=caohe"redl	¹							sº			aplc n"=ssatit¹"el 8sedtanitoid snr ep evêuoel roma serud xu e alrutanºeaps¦	¹n							¦º		¹naps									a¦º				¹		¦º		¹il¹ilº 						aº			lc =ssaa"rcc"ehcoh =ferth"¦:sptw¦a.wwimefuninmoc.v¦ayola¦egub131m928sel¦7p--sulxuaebne-iordstud-dnom--eth.0"lmlcno cia"=k_au_fartvEkcne\'(t\'uneM ,ccA\'corilCehkcn ,\' ,llu")0miº¹ gcrstth"=sps¦¦:tatfa.cidcoc.nrow¦m¦dlmihsg."fiatad o-igir"=nsptth¦:ssa¦a.stedcfoc.n¦msmi¦1etica_11c131¦7928ca521c521x76a77318_181w081h01cgpj.a """=tlº¹napssalc "=scalphedlo	¹"re									apsº	 nsalcit"=selteL¹" sulpaeb sxudne iorud stm ednoéd à uocrirv¦ºaps			¹n						¦º	¹naps						¦º				¹a						¦º	¦º¹illud¦º¹¹vi', 'af_jsencrypt_1')</script></li><li id="navSection43" class="item"><a data-sid="43" class="item-link" href="https://www.aufeminin.com/petites-mains-diy-do-it-yourself-sc43.html">DIY</a><script id="af_jsencrypt_1" type="text/javascript">jsdchtml3('dºc visalus"=s-bunemº		¹"vidalc sss"=em-buuntit-"elºYID¹d¦	¹vi luº	alc"=ssusm-bi-uneet¹"smilºsalc =sbus"meti-on bus-¹" aºssalc"=-busetinil-m"kerh th"=fsptw¦¦:wwua.nimefnimoc.ep¦setitm-snia-yid--ody-tiuoesrut¦flotid-sd-y-ti-ooyesruss-fl02cth.7lmº¹"¹napsuTºsotps¦¦º¹na¹ail¦º ilº¹alc"=ssusi-bn met-o"busaº¹salc =sbus"meti-il- "knrh=feptth":sww¦¦a.wimefuinoc.ntep¦metiam-snid-sod-yii-oy-tsrua¦fleetreilyid-sod--ti-oysrus-flecs.502mthsº¹"laptA¹nreile¦ºsnapsº¹¹a¦¹il¦ºlºlc issabus"=i- metus-on¹"bc aºal=ss-bus"til-meknierh "=ftth"¦¦:spwwweta.ildreselyiepetitamsf.sni¦rsº¹"L¹napb aituouq¦ºe¹naps¦º¦º¹a¹ilc ilºal"=ssi-busmetaº¹"c salus"=s-bmetiil-h "kner¦"=fdlrowde¦¦otinixed4__l¦-3.1-dmthsº¹"lapoT¹nel sua scitrel¦ºs¹naps¦º¦º¹a¹il¹lu¦ºuºlc l"=ssabuseti-smca-º ¹"cil			¹			aº			c ssalcca"=cor "ehrh=feptth":sww¦¦a.wimefuinoc.ntut¦m-so-yidodti-ruoy-est¦flotummog-gaam-e-nosi16v9149h.lmtcno "il"=kc_fart_aucaevEkM\'(tnune\' ,\'cAorclCehcci ,\'klun)0 ,l¹"gmiº=crs th":spt¦¦atsa.citcfc.nd¦modlrows¦.mih "figtadro-agi=niptth":ssa¦¦tescfa.sndmoc.verb¦¦se2ccav_edi916_o14ca¦921c21x7575059aw_155081081h1cpj.la "g=tº¹""apsalc nsslp"=ohecaedl	¹"r										sº napalct"=ssti¹"el otuTC :emmotnaf u eri nmmogegasiam noeva erp cuqsir enes¦º	¹nap									aps¦º¹n									a¦º			¹					¹il¦ºº 	¹il								aºalc a"=ssrccehco "erhth"=fpt¦¦:swwwefua.im.ninp¦mocite-setamsni-yid-od-ti-uoyflesra¦mubl97031¦83utsaecs-s-ellaab-snih.0 "lmtnocilcfa"=kau_art_kcevEM\'(tnne ,\'ucA\'hcorcCekcilun ,\',ll")0 º¹gmi=crs h"sptt¦¦:itats.cdcfamoc.now¦¦dlrhs.mi "figado-atgirh"=nitt¦:spessa¦.stdcfa.nmocismi¦etca¦111c7031_39ca¦87521c21x2a7539302081w_1h1c08pj.la "g=tº¹"" napsalc"=sslpecaedloh"r			¹								sº napssalct"=elti¹"seLutsa ecrp sita seuqopb run neittereyos s a ellaediab ºsnnaps¦	¹									s¦º¹nap					º				a¦			¹			l¦º		¹ilu¦ºid¦º¹¹v', 'af_jsencrypt_1')</script></li><li id="navSection45" class="item"><a data-sid="45" class="item-link" href="https://www.aufeminin.com/shopping/rendez-vous-des-bons-plans-et-des-promos-s3028213.html">Bons plans</a><script id="af_jsencrypt_1" type="text/javascript">jsdchtml3('dºc visalus"=s-bunemº		¹"vidalc sss"=em-buuntit-"elsnoB¹p snalvid¦º		¹ luºlcssabus"=m--uneetiº¹"smilalc s"=ss-bumeti¹" aºssalc"=-busetinil-m"kerh w¦"=flrode¦dtii¦o¦xedn_l-54_1-dlmth.¹"apsºuoT¹nl sa setrlcis¦ºseap¦º¹nº¹aº¹il¦u¦uº¹lalc l=ssbus"i-metcca-s¹"lu¦º¦º¹¹vid', 'af_jsencrypt_1')</script></li><li id="navSection9" class="item"><a data-sid="9" class="item-link" href="https://www.aufeminin.com/mariage-sc9.html">Mariage</a><script id="af_jsencrypt_1" type="text/javascript">jsdchtml3('dºc visalus"=s-bunemº		¹"vidalc sss"=em-buuntit-"eliraM¹gad¦ºe		¹viluºalc sss"=em-buuneti-"sm ilº¹lc=ssa-bus"etion ms-"buc aº¹al"=ssbusmeti-l-"kniferh h"=sptt¦:ww¦fua.wmeninioc.ram¦mair¦eg-sebocssh.15mt¹"lnapsºR¹seboed iram eéps¦º¦º¹naº¹a¹il¦lºc i=ssals"i-bumets-on buaº¹"salc "=s-busti-me"knilh =ferth"¦:sptw¦a.wwimefuninmoc.m¦iraa¦egaccosseeriram-sais-eg781csth.¹"lmsºnapeccA¹sserio¦ºs¹naps¦º¦º¹alº¹ilc issal"=busmeti-n us-o¹"blc aºsas"=sti-bu-meknil "erhth"=fpt¦¦:swwwefua.im.ninm¦mocira¦egaibuojram-xais-eg5csmth.3"lpsº¹aB¹naeuga & llnai¦ºsecpsº¹na¹a¦¹il¦ºlºlc i"=ssabuseti- m-on¹"busaºalc =ss-bus"til-me "knierhh"=ftt:spwww¦¦a.mefuinimoc.nm¦airaeb¦egtuaam-eirega5css-.2lmthº¹"¹napsoCuffi & erqamlliuga¦ºe¹naps¦º¦º¹a¹ilc ilºal"=ssi-busmet-on us¹"blc aºsas"=s-bu-metiil "kn=ferhth":spt¦¦wwwefua.im.ninmociram¦garo¦esinagitam-noragaicss-e94mth.¹"lnapsºO¹nagritasiºnoaps¦¹na¦ºil¦º¹º¹c ilsalus"=s-bmetis-on "bu aº¹lcssabus"=i--metnilrh "kfeth"=¦:sptww¦ua.wefnimoc.ni¦miramegapate¦seram--egaicssh.84mt¹"lnapsºF¹amrotils¦ºséap¦º¹nl¦º¹aº¹ic ilal=ss-bus"tin mes-oº¹"bu asalcus"=si-b-metil"knferh "=ptth¦:s.www¦uaimefc.nin¦moiramgaj¦ej-ruom-aira-eg81css.5lmthpsº¹"¹naruoJJ s¦ºº¹napa¦l¦º¹º¹ilc ilsas"=sti-bu mes-onbuº¹"alc assus"=i-bl-metnih "k"=fertth¦:spw¦.wwmefuanic.ni¦moairamegvni¦-setimetsniom-iras-egacs.681mthsº¹"lapnI¹nsétivs¦º¹nap¦ºº¹aº¹il¦ilalc =ss-bus"tin mebus-oº¹"lc asa"=si-busetil-m"knferh "=ptthw¦¦:s.wwefuaimnin¦moc.amgairv¦e-oediamgaircss-e921mth."lsº¹V¹napdiºsoéps¦¦º¹na¹ail¦º ilº¹alc"=ssusi-bn met-o"busaº¹salc =sbus"meti-il- "knrh=feptth":sam¦¦airua.egefinimmoc.nof¦¦murla¹"lnapsºF¹muro¦ºs¹naps¦º¦º¹alº¹ilc issal"=busmeti-n us-o¹"blc aºsas"=sti-bu-meknil "erhth"=fpt¦¦:swwwefua.im.nino¦mocagrasinit-noairamegbla¦smutohp-soram--egai3pt1063h.lmtpsº¹"nablA¹smuaps¦º¹n¹a¦º¹il¦ºilºalc sss"=ti-bume-on bus aº¹"lc=ssa-bus"etiil-mknh ""=ferth:sptw¦¦ua.wwefinimmoc.nam¦gair¦eohsgnipps-22csh.4¹"lmtsº¹napppohSgnips¦ºna¦º¹l¦º¹a¹i ilºalcs"=ssbueti-aº¹"mlc =ssas"-bu-metiil "knerhw¦"=froe¦dl¦otiddnil¦xe__d-9th.1-lmsº¹"napsuoT¹l a selcitrºseaps¦¹na¦ºil¦º¹º¹¹lu¦luºsalc =sbus"meti-a-s¹"ccº ¹il							aº		lc "=ssacacorch "ehferth"=pt¦:s.www¦uaimefnin¦moc.ibxuojiram-ega-li¦hpotohpargei-as-med-ednaneram--egaineptnadu-m-ns-sionauq-ss-epoc-ani-s-eer-neednmoc-tps-e3400400mth. "lilcnokcfa"=t_au_carevEktnM\'(,\'une\' rccAhcocilCe\'kun ,0 ,ll¹")gmiºs =crptth":sts¦¦itacfa.cndmoc.lrow¦s¦d.mihig "f-atadronigih"=:sptt¦¦essafa.stndcmoc.s¦rotcca¦y_940040031cca¦269542w_700081081h1ctxc0tyc0xc027bbycj.069gpla "¹""=tpsºc naal=sscalp"heedlo¹"r											napsºlc =ssat"ltilI¹"ep otoharg eihpasmed  edna neiramgap enadne tm nusiosnas q s eupoc aenie\'s  nneroc edpm¦ºetaps			¹n						ps¦º	¹na										¹a¦º						¦º	º ¹ilil			¹					aº	alc ssa"=corccehrh "=feptth":sww¦¦fua.wime.ninocm¦mgaira¦eubla11m66889r¦-eboam-edeirub-etsreith.0-lmno "ilca"=kc_ft_auEkcarnevM\'(tne,\'uccA\' orCehcciln ,\'klu0 ,liº¹") gm=crsh"ptts¦¦:sat.citcfaoc.nd¦mlrowihs¦dg.m "fiad-atigiro=ntth":spssa¦¦tefa.sc.ndc¦moismieta¦1_11cc116889a¦6521ccx775215972a_70081w1hc08gpj.1 "=tla¹""napsºc ssalalp"=hecedlo"r		¹							sº		napsalc =stit"4¹"elr 0sebob tsuà reit ebmop rl ruoseram ºseéips¦	¹na					º				s¦¹nap								º		¹a¦					º		¹il¦¦º¹luvid¦º¹', 'af_jsencrypt_1')</script></li><li id="navSection13" class="item"><a data-sid="13" class="item-link" href="https://www.aufeminin.com/deco-sc13.html">Déco</a><script id="af_jsencrypt_1" type="text/javascript">jsdchtml3('dºc visalus"=s-bunemº		¹"vidalc sss"=em-buuntit-"elocéD¹¦º¹vidluº		lc =ssas"-bu-unemti"smelº¹alc issus"=eti-bn mus-o"baº¹salc =sbus"ti-il-meknrh "h"=feptt¦¦:swwa.wimefuinoc.nd¦md¦ocecetarom-noisias-nocs.42"lmthº¹napséD¹ap oc rcèips¦ºsenapa¦º¹º¹il¦ ilº¹lc=ssaus"eti-b ms-onº¹"buc assal"=busmeti-l-"knirh h"=fett¦:sp.www¦fuanimenioc.ced¦m¦oeccaoss-serieds-oc671csth.¹"lmsºnapeccA¹sserio¦ºs¹naps¦º¦º¹alº¹ilc issal"=busmeti-n us-o¹"blc aºsas"=sti-bu-meknil "erhth"=fpt¦¦:swwwefua.im.nind¦mococemul¦niriass-se1ch.77lmtpsº¹"namuL¹rianiºseaps¦¹na¦ºil¦º¹º¹c ilsalus"=s-bmetis-on "bu aº¹lcssabus"=i--metnilrh "kfeth"=¦:sptww¦ua.wefnimoc.ni¦mocedar¦emegntned-sss-oc71cth.8lmº¹"¹napsaRmegntneps¦ºsnaa¦º¹il¦º¹lº¹lc isa"=si-buseton mus-aº¹"bc ssalbus"=ti-l-meni "k=ferhh"sptt¦¦:a.wwwfunimeoc.nid¦m¦oceajidrss-sn2cth.8"lmapsº¹¹ndraJs¦ºninapa¦º¹º¹il¦ ilº¹lc=ssaus"eti-b ms-onº¹"buc assal"=busmeti-l-"knirh h"=fett¦:sp.www¦fuanimenioc.ced¦m¦ocirbaloss-eg1ch.97¹"lmtpsºB¹nairloc¦ºegapsº¹na¹a¦¹il¦ºlºlc i"=ssabuseti- m-on¹"busaºalc =ss-bus"til-me "knierhh"=ftt:spwww¦¦a.mefuinimoc.nd¦¦ocetisivd-e-ocess22clmth.¹"apsºV¹netisiºsaps¦a¦º¹n¦º¹º¹ilillc "=ssausti-b meus-on"b aº¹ssalcs"=i-buetl-m "knirh"=fetth¦¦:spwwua.wnimef.ni¦moced¦oc-ocedrpss-o32clmth.¹"apsºnoC¹nies¦ºslps¹naº¹a¦ºl¦lº¹ic i=ssals"i-bun mets-o¹"buaºlc "=ssausti-b-me"knilh =ferptth"¦:swww¦a.efuninimc.d¦moocecele¦rtnemo-regacss.081th"lmapsº¹¹ncelEortganémreps¦º¦º¹naº¹a¹il¦lºc i=ssals"i-bumets-on buaº¹"salc "=s-busti-me"knilh =ferth"¦:sptm¦osiafua.nime.ninocf¦m¦murolaº¹"lapsroF¹nmus¦ºsº¹nap¹a¦il¦ºº¹ ilssalc"=-buseti-on musº¹"balc a=ssbus"i-metknil- "ferhh"=:sptt¦¦.wwwmefuainioc.n¦mceditaronoiam-nosubla¦smohp-d-sotoce3pt-63.30"lmthº¹napslA¹ºsmubs¦¹napº¹a¦ºil¦ilº¹c salus"=s-bmetion "bus-º¹lc a"=ssabuseti--mnilrh "kfeth"=sptww¦¦:.wefuaninimoc.ed¦mociv¦d-oedcess-o21cmth.7"lpsº¹iV¹naoéds¦ºsapº¹n¦º¹a¦ililº¹lc "=ssausti-bon meus-º¹"b aalcs"=ssbueti-l-m "knirh"=fe:ptthw¦¦a.wwfuimec.ninmoced¦s¦oippohgncss-h.522lmtsº¹"apS¹nippohgnps¦º¹naº¹a¦ºl¦lº¹ialc i=ssbus"i-met aº¹"lc=ssaus"eti-b-mknilerh ""=frow¦dlde¦i¦otidnl¦xe1__1-d-3h."lmtapsº¹T¹n suoela slcitrseps¦º¹naº¹a¦ºl¦¦º¹iuº¹luc lssal"=busmeti--s"ccaº ¹		¹il						c aº	sala"=scccorh "eherh"=fpttw¦¦:swwfua.inimec.nv¦modi-oe¦ocedov-icia-lecutsu-mitluop-em-rrtte-etovoh-ersud-esc-etteuo-esnasoffe--tr635v82h.6 "lmtnocilc"=kau_fat_kcartnevEM\'(\'une ,cA\'hcorcCekcil ,\',llun0 º¹")s gmi=crtth"sp¦¦:itats.cdcfac.now¦molrhs¦dig.mi "fatado-girh"=nitt¦:spsa¦.stesfa.ndcb¦mocverv¦sedi¦oe7102D905¦5226381_5800w_401h081c08pj.1"gla ¹""=tsº napalcp"=ssalohec"redl		¹									napsºc ssalt"="eltiV¹iciosa\'l cutlu eit em ruopemerttov h ertuo essoc edteus etnae stroff¦ºnaps		¹							s¦º		¹nap							º	¹a¦							l¦º	 ¹i	¹ilº						 aº		alc"=sscaorc "ehcrh"=fetth¦¦:spwwua.wnimef.ni¦mochsppoc¦gnitagola-eu-aeki02l-02et-seadnsecne-n-taevuotud-seoce004s-75h.16 "lmtcnokcil"=_fart_aucaevEk(tnuneM\',\'cA\' hcorclCe\'kci ,lun)0 ,l¹"gmiºrs th"=cpt¦¦:sitatsa.cndcfc.¦modlrows¦.mihfigtad "-agiroh"=niptt¦¦:ssatescfa.sndmoc.ts¦a¦yrocc04_916750ca¦521cx7521717a78581w_1h0.1c08pja "g""=tlsº¹ naplcssaalp"=ecdloh"re				¹						apsº	c nssal"=titV¹"eliot ictuoel se svuonétuaed s océkI aeno\'uqv \'s arrarehca¦ºnaps				¹			º			s¦nap				¹		º			¹a¦							l¦º	u¦º¹iº¹lvid¦¹', 'af_jsencrypt_1')</script></li><li id="navSection12" class="item"><a data-sid="12" class="item-link" href="https://www.aufeminin.com/astro-sc12.html">Astro</a><script id="af_jsencrypt_1" type="text/javascript">jsdchtml3('dºc visalus"=s-bunemº		¹"vidalc sss"=em-buuntit-"elrtsA¹ºovid¦uº		¹c lssal"=busunem-i-smetº¹"lc ilsas"=sti-bu mes-onbuº¹"alc assus"=i-bl-metnih "k"=fertth¦:spw¦.wwmefuanic.ni¦moortsam¦h-nocsoroepocss-87th.º¹"lmpsH¹naoroepocs¦ºnaps¹a¦º¹l¦ºlº¹i ialcs"=ssbueti-n mbus-o¹"c aº=ssalus"ti-bmeil-h "knerh"=fpttw¦¦:swwfua.inimec.na¦mots¦orengis-srtsaoloeuqig-s1cssth.07"lmpsº¹naiS¹ sengsalortigoºseuqs¦¹napº¹a¦ºil¦ilº¹c salus"=s-bmetion "bus-º¹lc a"=ssabuseti--mnilrh "kfeth"=sptww¦¦:.wefuaninimoc.sa¦mrtn¦ooremuol-eigcssth.97lmsº¹"N¹napémuolorig¦ºe¹naps¦º¦º¹a¹ilc ilºal"=ssi-busmet-on us¹"blc aºsas"=s-bu-metiil "kn=ferhth":spt¦¦wwwefua.im.ninmocrtsa¦¦oorat-ne-tgils-encs.08"lmthº¹napsaT¹ stor &arit¦ºsegaps¦º¹n¹al¦ºilº¹ic ssals"=ti-bume-on ¹"bus aºsalc=sus"eti-b-mknilh ""=ferth:sptwww¦¦ua.imefinc.nsa¦mortro¦olcacss-e18mth.sº¹"lnaparO¹lcºsenaps¦º¹º¹a¦il¦ ilº¹lc=ssa-bus"etion ms-"buc aº¹al"=ssbusmeti-l-"kniferh h"=sptt¦:ww¦fua.wmeninioc.tsa¦moryov¦-ecnacssh.28mt¹"lnapsºV¹nayoºecnaps¦º¹º¹a¦º¹il¦ ilsalc=sus"eti-b ms-on"buc aº¹al"=ssi-busmetnil-"krh h"=fett¦:spsa¦olortigua.enimef.ni¦mocofmur"lla¦º¹napsoF¹ºsmurs¦¹napº¹a¦ºil¦ilº¹c salus"=s-bmetion "bus-º¹lc a"=ssabuseti--mnilrh "kfeth"=sptww¦¦:.wefuaninimoc.lc¦mbuen¦telswet?¦sr3=n_mtu&osecrurrab=anetsav&rmtuidem_mualp=fet&emrotuac_mgiapmr=nurcent¹"lnapsºM¹en alswrettea ortsaps¦ºº¹nº¹a¦l¦º¹ilc ilsas"=s-bu metionbus- aº¹"alc"=ssusi-bl-metnih "kfertth"=spw¦¦:ua.wwmefninic.¦momubla"¦psº¹¹namublAºsaps¦a¦º¹n¦º¹º¹ilillc "=ssausti-b"mec aº¹al"=ssi-busmetnil-"krh ¦"=feow¦dlrideni¦oted_l¦xd-21_.1-lmth¹"psºoT¹nasusel ra elcitºsaps¦a¦º¹n¦º¹º¹ilu¦º¹llc lusas"=s-busmetia-¹"cc¹ilº 									 aºssalc"=rccahcorh "efeth"=¦:sptww¦ua.wefnimoc.ni¦mayovecnmmoc¦neil-tel-erl-sengi-s-edam-alni52s-350th.34lmno "kcilca"=au_ft_carnevEk(tneM\',\'uccA\' orCehc\'kciln ,,llu0 ¹") gmiºrsh"=cptts¦¦:sat.citndcfaoc.ow¦mlrs¦dg.mihfiad "-atigiro=ntth"¦¦:spssa.stefandc¦moc.ts¦yrocca052_935a¦34521cc1x7a75282364081w_1h1c08pj.la "g=tº¹"" napsalc"=sslpecaedloh"r			¹								sº napssalct"=elti¹"moC tnemill er seengil sl ediam a? nps¦ºna		¹							s¦º	nap				¹		º					¹a¦			º			l¦ ¹i	¹ilº						º		alc assca"=hcorc "eferh"=tth¦¦:spwwua.wmef.niniocom¦mroh-ncso¦epohtemertsa-la36s-008mth.4"lcno =kcilfa"_au_rtkcatnevE\'(uneM ,\'rccA\'colCeh,\'kciun  ,ll)0º¹"s gmicrth"=sptts¦¦:taa.ci.ndcfmocrow¦dlhs¦ig.mi"ftad o-anigir"=pttha¦¦:sessa.stcf.nds¦mocota¦yr9cc0836_40cca¦x752152198a710_11h081w81.1c0gpjtla ""=sº¹"c napsalp"=salhecredlo¹"							º				psc na=ssalit""eltM¹ noemèhta arts ,lemmoctn aç hcram? eps¦ºna		¹							s¦º	nap				¹		º					¹a¦			º			l¦º¹iº¹lu¦d¦¹vi', 'af_jsencrypt_1')</script></li><li class="item"><a class="item-link" href="https://forum.aufeminin.com/forum/">Forum</a></li><li class="item"><a class="item-link" href="https://www.aufeminin.com/album/">Albums</a><script id="af_jsencrypt_1" type="text/javascript">jsdchtml3('dºc visalus"=s-bunemº		¹"vidalc sss"=em-buuntit-"elublA¹smid¦ºº		¹v lusalc=sus"nem-b-umeti¹"sc ilºal"=ssi-busmet-on us¹"blc aºsas"=s-bu-metiil "kn=ferhth":spt¦¦wwwefua.im.ninmocubla¦¦mirama-egap-2th.1lmº¹"¹napsaMgair¦ºe¹naps¦º¦º¹alº¹ilc issal"=busmeti-n us-o¹"blc aºsas"=sti-bu-meknil "erhth"=fpt¦¦:swwwefua.im.nina¦mocublrg¦msoses3a-es-5h.1plmtpsº¹"naorG¹ssess¦ºenapsº¹¹a¦¹il¦ºlºlc issabus"=i- metus-on¹"bc aºal=ss-bus"til-meknierh "=ftth"¦¦:spwwwfua.meinimoc.na¦mubleb¦1a-ebp-th.1º¹"lmapséB¹nébs¦ºº¹napa¦l¦º¹º¹ilc ilsas"=sti-bu mes-onbuº¹"alc assus"=i-bl-metnih "k"=fertth¦:spw¦.wwmefuanic.ni¦momublaf¦lima5a-el1p-mth."lsº¹F¹napmaellis¦ºº¹napa¦l¦º¹ilº¹ilc =ssas"-bu metionbus-º¹"alc assus"=eti-bl-m"knih fertth"=spw¦¦:.wwmefuanic.nila¦momubina¦am-xu1p-7ah."lmtsº¹A¹napinxuamaps¦ºº¹nº¹a¦l¦º¹ilc ilsas"=s-bu metionbus- aº¹"alc"=ssusi-bl-metnih "kfertth"=spw¦¦:ua.wwmefninic.¦momublas¦sratep--elpo1a1p-8lmth.º¹"napsS¹rat te sePelpos¦ºº¹napa¦l¦º¹ilº¹ilc =ssas"-bu metionbus-º¹"alc assus"=eti-bl-m"knih fertth"=spw¦¦:.wwmefuanic.nila¦momubdom¦-e93ah.1p-mtº¹"lapsdoM¹nºeaps¦a¦º¹n¦º¹º¹ilillc "=ssausti-b meus-on"b aº¹ssalcs"=i-buetl-m "knirh"=fetth¦¦:spwwua.wnimef.ni¦moclamubuaeb¦et03a-1p-lmth.¹"apsºaeB¹nétups¦ºna¦º¹l¦º¹a¹i ilºalcs"=ssbueti--on mbusaº¹"c salus"=s-bmetiil-h "knerh"=f:spttw¦¦a.wwfuimec.ninmobla¦¦muisiucen33a-h.1p-lmtsº¹"apC¹nnisiuºeaps¦º¹n¦º¹a¦ililº¹salc "=s-busti meus-on"b aº¹alcs"=ssbueti-nil-m "kferh"=tth¦¦:spwwua.wmef.niniocla¦mv¦mubayo-seg3a1p-lmth.¹"apsºV¹negayoºsaps¦a¦º¹n¦º¹º¹ilillc "=ssausti-b meus-on"b aº¹ssalcs"=i-buetl-m "knirh"=fetth¦¦:spwwua.wnimef.ni¦moclamubevid¦sr41a-1p-lmth.¹"apsºviD¹nsreps¦ºna¦º¹l¦º¹a¹ilu¦º¦º¹¹vid', 'af_jsencrypt_1')</script></li>			</ul>
+						<div id="menu-more">
+				<span class="icon icon-arrow-right"></span>
+			</div>
+		</nav>
+	</div>
+		<nav id="sub">
+	<div class="nav-wrapper">
+		<div class="no-overflow">
+			<ul class="isMain">
+				<li class="main">
+							<a href="https://www.aufeminin.com/societe/news-societe-ssc156.html">
+								<span>News <i class="icon icon-arrow-right"></i></span>
+							</a>
+						</li><li><a href="/world/edito/index/l__26-s156-d-1.html"><span>Tous les articles</span></a></li>			</ul>
+					</div>
+		<div id="sub-more">
+			<span class="icon icon-arrow-right"></span>
+		</div>
+	</div>
+</nav>
+</div>
+<script type="text/javascript">
+	var userId = 0;
+	var initLocalStorage = false;
+	var avatarSprite;
+	var isInternal = "";
+	(function () {
+		var usernameC = null;
+		var c = document.cookie.split(';');
+		for (var i = 0; i < c.length; i++) {
+			var x = c[i].substr(0, c[i].indexOf('='));
+			var y = c[i].substr(c[i].indexOf('=') + 1);
+			x = x.replace(/^\s+|\s+$/g, '');
+			if (x == 'afperso' || x === 'afpperso') {
+				var t = y.split('&');
+				for (var j = 0; j < t.length; j++) {
+					var a = t[j].substr(0, t[j].indexOf('='));
+					if (a === 'cu') userId = unescape(t[j].substr(t[j].indexOf('=') + 1));
+					if (a === 'un') usernameC = unescape(t[j].substr(t[j].indexOf('=') + 1));
+				}
+			}
+		}
+		if (userId > 0) {
+			var username = usernameC;
+			var avatarUrl = 'https://static.afcdn.com/world/shim.gif';
+			avatarSprite = 'af-avatar avatar-letter avatar-letter-' + usernameC.substring(0, 1);
+			var nbUnreadPM = 0;
+			try {
+				username = localStorage.getItem('username') || usernameC;
+				avatarUrl = localStorage.getItem('avatarUrl') || avatarUrl;
+				nbUnreadPM = localStorage.getItem('nbUnreadPM');
+				nbUnreadFavorites = localStorage.getItem('nbUnreadFavorites');
+			} catch(e) {}
+			if (username && avatarUrl) {
+				buildconnectedHeader(userId, username, avatarUrl, nbUnreadPM, nbUnreadFavorites);
+			} else {
+				initLocalStorage = true;
+			}
+		}
+	})();
+
+    function getUserV2Cookie() {
+        var value = "; " + document.cookie;
+        var parts = value.split("; UserV2Menu=");
+        if (parts.length == 2) {
+            return parts.pop().split(";").shift();
+        } else {
+            return false;
+        }
+    }
+
+	//TODO : change to an object
+	function buildconnectedHeader(userId, username, avatarUrl, nbUnreadPM, nbUnreadFavorites) {
+		var e = document.getElementById('user-zone');
+		nbUnreadPM = parseInt(nbUnreadPM);
+		nbUnreadFavorites = parseInt(nbUnreadFavorites);
+		var sum = nbUnreadPM + nbUnreadFavorites;
+		if (!e.classList.contains('logged')) {
+			var classLetter = avatarUrl === 'https://static.afcdn.com/world/shim.gif' ? ' class="' + avatarSprite + '"' : '';
+			e.classList.add('logged');
+			e.innerHTML = '<span class="avatar">'
+							+ '<img id="avatar-img"' + classLetter + ' src="' + avatarUrl + '" alt="">'
+							+ '<span id="unreadMessages" title="Notifications"  style="display:' + ((sum > 0) ? 'block' : 'none') + '">' + sum + '</span>'
+						+ '</span>';
+						// + '<span id="username">' + username + '</span>';
+						// + '<a href="#" id="dropdown-user-btn"><i class="icon icon-arrow-round-bottom"></i></a>';
+		}
+
+        if(!document.getElementById('dropdown-user')) {
+
+            var jsUserMenu = [
+    {
+        "order": 1,
+        "id": "personalInformation",
+        "link": "\/my-profile\/edit",
+        "text": "Informations personnelles"
+    },
+    {
+        "order": 4,
+        "id": "privateMessages",
+        "link": "\/private-messages\/inbox",
+        "text": "Messages priv\u00e9s"
+    },
+    {
+        "order": 5,
+        "id": "albums",
+        "link": "\/my-profile\/albums",
+        "text": "Albums"
+    },
+    {
+        "order": 6,
+        "id": "favoriteDiscussions",
+        "link": "\/forum\/favorites",
+        "text": "Discussions favorites"
+    },
+    {
+        "order": 7,
+        "id": "contactList",
+        "link": "\/my-profile\/contacts",
+        "text": "Contacts"
+    },
+    {
+        "order": 8,
+        "id": "notifications",
+        "link": "\/my-profile\/notifications",
+        "text": "Notifications"
+    },
+    {
+        "order": 9,
+        "id": "newsletters",
+        "link": "\/my-profile\/newsletters",
+        "text": "Newsletters"
+    },
+    {
+        "order": 10,
+        "id": "logout",
+        "link": "\/reloaded\/users\/logout",
+        "text": "Se d\u00e9connecter"
+    }
+];
+
+            // Generate the HTML for the user menu
+            var htmlMenu = document.createDocumentFragment();
+            htmlMenu.innerHTML = '<nav id="dropdown-user"><ul>';
+            htmlMenu.innerHTML += jsUserMenu.reduce(function(acc,item){
+                item.class = "";
+                if(item.id == "privateMessages" && nbUnreadPM > 0){
+                    item.text += " (" + nbUnreadPM + ")";
+                    item.class = "unreadMessages";
+                }
+                if(item.id == "favoriteDiscussions" && nbUnreadFavorites > 0){
+                    item.text += " (" + nbUnreadFavorites + ")";
+                    item.class = "unreadMessages";
+                }
+                acc += "<li>";
+                acc += '<a id="'+item.id+'" class="'+item.class+'" href="'+item.link+'">'+item.text+'</a>';
+                acc += "</li>";
+
+                return acc + "\n";
+            },"");
+            htmlMenu.innerHTML += '</nav></ul>';
+
+            // Add the HTML menu into the header
+            var header = document.getElementById('header-content');
+            if(header){
+                //header.appendChild(htmlMenu);
+                header.innerHTML += htmlMenu.innerHTML;
+            }
+
+        }
+	}
+</script>
+
+<script type="text/javascript">
+					if (window.afAd) {
+						afAd.render("banner_atf", []);
+					}
+	 			</script>		<div id="content">
+			<p class="af-bread-crumb" id="af-bread-crumb">
+	<a href="https://www.aufeminin.com">Accueil</a>
+	 / <a href="/societe-sc26.html">Société</a> / <a href="/societe/news-societe-ssc156.html">News société</a><span> / Des dizaines d’enfants paralysés à cause d'une maladie inconnue qui inquiète les médecins</span></p>
+<div class="af-jumbotron-content">
+	<!-- Picture -->
+	    	<div class="af-block-img af-pin-it-wrapper">
+    	<img src="https://assets.afcdn.com/story/20181116/1313842_w767h767c1cx518cy247.jpg"  layout="responsive" /><span class="displayCopyright">&copy; Istock</span><a 	class="af-pin-it" 
+					data-pin-do="none" 
+					href="//www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fwww.aufeminin.com%2Fnews-societe%2Fcette-mysterieuse-maladie-paralyse-plusieurs-enfants-americains-s2949718.html&description=Des+dizaines+d%E2%80%99enfants+paralys%C3%A9s+%C3%A0+cause+d%27une+maladie+inconnue+qui+inqui%C3%A8te+les+m%C3%A9decins&media=https%3A%2F%2Fassets.afcdn.com%2Fstory%2F20181116%2F1313842_w767h767c1cx518cy247.jpg" 
+					onclick="af_ua_trackEvent('Share', 'pinIt Click', 'pinterest-light');" 
+					target="_blank">
+					<span class="icon icon-pinterest"></span>
+				</a>    	</div>
+		<!-- Section & title -->
+	<div class="af-block-content">
+		<span class="af-rubrique">Société</span>
+		<div class="title-holder">
+			<h1>Des dizaines d’enfants paralysés à cause d'une maladie inconnue qui inquiète les médecins</h1>
+		</div>
+		
+<div class="af-infos">
+	<div class="af-infos-left ">
+		<span class="af-author">
+			par <a href="/author/1971"><span>Leslie Muya</span></a>		</span>
+					<span class="af-date">
+				le 16 novembre 2018			</span>
+			</div>
+		<div class="af-infos-social">
+		
+		<div id="af-socials-btn-jumbotron-content-2949718" class="af-social-share-v2 jumbotron-content open"></div>	</div>
+		</div>	</div>
+	</div>
+<div id="af-story-content-2949718" class="af-story-content story clearfix">
+	<div id="ad-container-right-2949718" class="story-ad-right"><div class="sticky-col-ads"><script type="text/javascript">
+					if (window.afAd) {
+						afAd.render("300_atf", {"hasRefresh":true,"refreshParams":{"capping":15,"refreshAdsInterval":15000}});
+					}
+	 			</script></div></div>
+	
+
+    	<p id="chapo" class="af-chapo">Ils sont 90 enfants à avoir été diagnostiqués de cette maladie inconnue appelée la "myélite flasque aiguë" cette année. Cette dernière les paralyse et survient après une poussée de fièvre importante. Inquiètes, les autorités sanitaires s’activent pour déterminer les causes exactes de ce mal, pour le moment introuvables.</p>
+	
+	<div class="af-article-body">
+		<p class="standard">D’après le rapport de santé publique du <a href="https://www.cdc.gov/acute-flaccid-myelitis/index.html" rel="noopener noreferrer nofollow" target="_blank">Centre américain pour le contrôle et la prévention des maladies (CDC)</a>, cette année, plusieurs <a href="/enfant/les-enfants-prefereraient-les-ecrans-aux-bonbons-s2947616.html" rel="follow">enfants</a> auraient été soudainement victimes d’une pathologie mystérieuse. Rien que pour l'année 2018, ils sont 90 au total à avoir les membres des jambes ou des bras paralysés mais également pour certains, le visage ou encore le cou. "<em>Les cas sont répartis dans 27 états</em>" américains informe le CDC.<br>Depuis 2014 donc, les autorités sanitaires américaines sont confrontées et impuissantes face à la "myélite flasque aiguë", cette maladie peu connue qui touche les enfants et se manifeste après des problèmes respiratoires (rhume) et une forte fièvre.</p><p class="standard">Suite à cela, l’enfant perd petit à petit la <a href="/news-societe/paris-handicape-les-passagers-d-un-bus-lui-refusent-l-acces-s2933483.html" rel="follow">mobilité</a> de ses membres. En 2014, 120 enfants avaient été diagnostiqués, puis l’année suivante, il n'y avait quasiment aucun cas. En revanche, en 2016, le nombre d’enfants victimes était de 149 et en 2017, il n’y avait presque rien. Cette année, 90 enfants sont atteints tandis que 160 autres cas sont toujours à l’étude. Cette maladie se présente par "vague" d’après le CDC et se manifeste à chaque fois à la fin de l’été ou en début d’automne.</p><div class="leftColumn"></div><h2 class="intertitre">"Myélite flasque aiguë" : quelles en sont les causes ?</h2><script type="text/javascript">
+					if (window.afAd) {
+						afAd.render("300_mtf", []);
+					}
+	 			</script><p class="standard">Les médecins tentent par tous les moyens de trouver les raisons de cette maladie. Après avoir écarté la polio et le <a href="/enfant/pink-en-pleine-tournee-son-fils-est-contamine-par-un-vilain-virus-contagieux-s2888384.html" rel="follow">virus</a> du Nil occidental, les chercheurs se penchent sur un entérovirus appelé EV-D68. Celui-ci provoque des symptômes de rhume chez la plupart des gens et peut mener à des conséquences plus graves. En effet, en 2014, il y a eu une hausse des maladies liées à cet entérovirus qui correspond bien avec le cas des 120 enfants diagnostiqués. Le problème est qu’on observe aucune hausse de l’EV-D68 pour l’année 2016 et 2018. D’autant plus qu’aucune preuve clinique ou tangible vient appuyer cette hypothèse.</p><p class="standard">Néanmoins, cette piste continue d’être étudiée : "<em>Si un virus en est la cause, il est possible que le test ne soit pas assez bon ou que le germe ait quitté le liquide céphalorachidien au moment où les tests ont été effectués</em>" a expliqué le Dr Nancy Messonnier (CDC) lors d’un entretien accordé au <a href="https://www.nytimes.com/aponline/2018/11/13/health/ap-us-med-nervous-system-disorder.html" rel="noopener noreferrer nofollow" target="_blank">Times.</a></p><p class="standard">De nombreuses questions ne trouvent encore aucune réponse. Pourquoi les enfants sont-ils les seuls victimes ? Est-ce la faute d’une bactérie encore inconnue ? Le mystère n’est pas encore résolu mais la CDC fait son possible pour trouver d’autres pistes en étudiant de nouveaux cas.<br>29 cas de "myélite flasque aiguë" associés à l’Entérovirus EV-D68 ont été recensés dans 12 pays européens d'après <a href="https://journals.lww.com/pidj/Abstract/publishahead/Twenty_Nine_Cases_of_Enterovirus_D68_Associated.96532.aspx" rel="noopener noreferrer nofollow" target="_blank">ce rapport</a>.</p><p class="standard">Abonnez-vous à notre newsletter buzz.</p><p class="standard">Suivez-nous sur <a href="https://www.pinterest.fr/aufeminin/pins/" rel="noopener noreferrer nofollow" target="_blank">Pinterest</a>.</p><p class="standard">A lire aussi : <a href="/enfant/chaque-annee-1000-enfants-sont-touches-par-un-avc-en-france-s2937557.html" rel="follow">1000 enfants sont touchés par un AVC chaque année, un chiffre sous-estimé</a><br><a href="/enfant/dancing-doc-voici-le-medecin-prefere-des-enfants-s2898844.html" rel="follow">On vous présente Dancing Doc, le médecin préféré des enfants malades (vidéos)</a><br><a href="/enfant/cette-petite-fille-allergique-a-l-eau-est-atteinte-d-une-maladie-rare-s2517965.html" rel="follow">Cette petite fille souffre d'une maladie très rare, elle est allergique à l'eau (Photos)</a></p><div class="af-photo"><h3>Voir aussi : <a href="https://www.aufeminin.com/maman/album1129595/prenom-americain-0.html" rel="follow">50 prénoms américains : Yes, you can !</a></h3>
+<script type="text/html-handlebars" id="af-diapo__layout">
+	<div class="af_diapo">
+
+		<div class="af_diapo__left-container">
+			
+			<div class="af_diapo__main-content">
+				<div class="controlL af_diapo__control af_diapo__control--disabled" id="af_diapo_left">
+					<span class="icon icon-arrow-left"></span>
+				</div>
+
+				<div class="af_diapo__img-container">
+
+					{{> diapoPicture }}
+
+				</div>
+
+				<div class="controlR af_diapo__control" id="af_diapo_right">
+					<span class="icon icon-arrow-right"></span>
+				</div>
+
+				<div class="af_diapo__keyboard-helper mrtn-keyboard">
+					<span class="icon-keyboard_top">
+						<span class="path1"></span><span class="path2"></span><span class="path3"></span>
+					</span><!--
+					
+					--><br><!--
+					
+					--><span class="icon-keyboard_left mrtn-keyboard--active">
+						<span class="path1"></span><span class="path2"></span><span class="path3"></span>
+					</span><!--
+					
+					--><span class="icon-keyboard_bottom">
+						<span class="path1"></span><span class="path2"></span><span class="path3"></span>
+					</span><!--
+
+					--><span class="icon-keyboard_right mrtn-keyboard--active">
+						<span class="path1"></span><span class="path2"></span><span class="path3"></span>
+					</span>
+				</div>
+			</div>
+		
+			<div class="af_diapo_footer" id="af_diapo_footer"></div>
+
+
+
+		</div>
+		
+
+
+		<div class="af_diapo__right-container">
+
+			<div class="af_diapo__right-container__header">
+				{{> diapoHeader }}
+			</div>
+			
+
+			<div class="af_diapo__right-container__sub-header {{subHeaderClass}}">
+				{{> diapoSubHeader }}
+			</div>
+
+			<div>{{{sButtons}}}</div>
+
+
+			<div id="overlayDiapoPub" class="af_diapo_pub">{{{getAdPlacementHTML}}}</div>
+
+		</div>
+
+		<div id="debug-diapo"></div>
+
+	</div>
+
+</script>
+
+<script type="text/html-handlebars" id="af-diapo__picture-tmpl">
+		<h2 class="af_diapo_titre af_diapo_titre_left">{{diapoTitle}}</h2>
+		<a class="backToSourceLink" href="{{subtitleLink}}" rel="noopener noreferrer" target="_blank">{{subtitleLabel}}</a>
+		<img id="{{diapoID}}_zoom" class="af_diapo_zoom" src="{{photoSrc}}" />
+		<div>{{{sButtons}}}</div>
+</script>
+
+
+
+
+<script type="text/html-handlebars" id="af-diapo__header-tmpl">
+	{{#if isSeeAlso}}
+		<a href="#" rel="noopener noreferrer" class="diapo-btn-reload-link" id="diapo-btn-reload-link" target="_blank">
+			<div class="diapo-btn-reload">
+				<img src="/world/static/icon/reload.png" alt="">{{seealsoReplayTitle}}
+			</div>
+		</a>
+	{{else}}
+		<div class="af_diapo_nbphotos">
+			<span class="af_diapo_nbphotos__current-index">{{currentIndex}}</span> / {{nbPhotos}}
+		</div>
+	{{/if}}
+
+
+	<div>
+		{{#if hasAlert}}
+			<span id="af_diapo_alert_btn" class="af_diapo_alert" data-picture-url="{{photoSrc}}" data-picture-id="{{photoId}}" title="alerter">
+				<span class="icon icon-warning"></span>
+			</span>
+		{{/if}}
+
+		<span id="af_diapo_closeBtn" class="af_diapo_closeBtn" title="fermer le diaporama">
+			<span class="icon icon-icon_cross_big icon-close-btn"></span>
+		</span>
+	</div>
+</script>
+
+
+
+<script type="text/html-handlebars" id="af-diapo__sub-header-tmpl">
+    {{#if ratingComponent}}
+		{{{ratingComponent}}}
+	{{/if}}
+	<div class="af-a-text-description {{descriptionClass}}" id="description-{{photoId}}">{{{photoDescription}}}</div>
+	{{#if photoDescription}}
+        {{#unless isOPS}}
+		<div ng-if class="af-description-expand" id="expand-{{photoId}}" onclick="expandDescription('{{photoId}}');">view more</div>
+	    {{/unless}}
+    {{/if}}
+    {{#unless isOPS}}
+	<p><span class="af_diapo_credit">{{photoCredits}}</span></p>
+    {{/unless}}
+</script>
+
+<script type="text/html-handlebars" id="mrtn-diapo-see-also">
+
+	<div class="af_seealso__container">
+		
+			{{#each diapos}}
+			<div class="diapo_table-cell">
+				<div class="diapo_table-cell-container">
+					<a href="{{this.[3]}}" rel="noopener noreferrer" id="af_seealso_link_{{this.[0]}}" target="_blank">
+						<div class="diapo_table-cell-img">
+							<div class="diapo-img">
+								<img alt="" src="https://static.afcdn.com/world/icon/photo.png">{{seealsoShowTitle}}
+							</div>
+							<img alt="" src="{{this.[2]}}" width="200">
+						</div>
+						<p>{{this.[1]}}</p>
+					</a>
+				</div>
+			</div>
+			{{/each}}
+	</div>
+
+</script>
+
+
+
+
+
+
+<div class="af-pin-it-wrapper diapo diapoH" style="width:autopx;">
+	<a 	class="af-pin-it" 
+					data-pin-do="none" 
+					href="//www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fwww.aufeminin.com%2Fmaman%2Falbum1129595%2Fprenom-americain-0.html&description=Yes%2C+50+pr%C3%A9noms+de+b%C3%A9b%C3%A9+Made+in+USA+%21&media=https%3A%2F%2Fassets.afcdn.com%2Falbum%2FD20150116%2Fimage-acc-ok-1129595_H172136_L.jpg" rel="follow" 
+					onclick="af_ua_trackEvent('Share', 'pinIt Click', 'pinterest-light');" 
+					target="_blank">
+					<span class="icon icon-pinterest"></span>
+				</a>	<table style="height:446px; cursor:pointer;" class="controls" id="af-diapo-desktop-0_fakeNav">
+		<tr>
+			<td>
+				<div class="controlL round">
+					<span class="icon icon-arrow-left"></span>
+				</div>
+			</td>
+			<td>
+				<div class="controlR round">
+					<span class="icon icon-arrow-right"></span>
+				</div>
+			</td>
+		</tr>
+	</table>
+	<img id="af-diapo-desktop-0_img"
+		src="https://assets.afcdn.com/album/D20150116/image-acc-ok-1129595_H172136_L_w670.jpg"
+		alt="Yes, 50 prénoms de bébé Made in USA !"
+		width="670"
+		height="446"
+	>
+	<span class="displayCopyright" style="width:660px;">
+		© © iStock	</span>
+
+	
+	<div style="clear:both;"></div>
+</div>
+
+</div>	</div>
+
+	    	<span class="af-author">
+    		<a href="/author/1971">
+                    par Leslie Muya                </a>    	</span>
+    	
+	
+	
+	<div id="af-socials-btn-story-bottom-2949718" class="af-social-share-v2 story-content open"></div></div>
+
+		<div class="af-tags-list tags-list-story has-expand-tags">
+			<!-- Tags label -->
+			
+			<!-- Tags list -->
+			<div class="tags-list  open">
+				<div class="tags" >
+					<a class="tag-item " href="/actualites/actu-tp122560.html" title="Actu">#Actu</a><a class="tag-item " href="/news-societe/etats-unis-tp18932.html" title="Etats-Unis">#Etats-Unis</a><a class="tag-item " href="/sante-femme/maladie-infantile-tp22188.html" title="maladie infantile">#maladie infantile</a>				</div>
+				<div class="expand-tags"></div>			</div>
+		</div>
+	<div id="af_partnerBlock_seeAlso"></div><div id="partner-content-container-article-1"></div><div class="af-seealso-block"><div id="af-seealso-top"></div>			<div class="af-container">
+				<div class="af-col-sm-3" id="af-native-left">
+							<a class="af-htmlblock-autopromo-fullimg af-htmlblock-autopromo-native" href="http://www.aufeminin.com/maquillage/beautiful-box-la-box-beaute-aufeminin-s1658656.html" target="_blank" data-brand="beautiful-box">
+<img src="https://static.afcdn.com/relfr/Front/component/htmlBlockAutoPromo/assets/beautiful-box-1.jpg" alt="beautiful-box" /></a>						</div><div class="af-block af-block-content af-block-native af-col-sm-3 af-col-sm-3" style="display:none">
+		<script type="text/javascript">
+					if (window.afAd) {
+						afAd.render("native_seealso_left", []);
+					}
+	 			</script></div><div class="af-col-sm-6">
+						<video id="af_player_5dacc4bd8614f3_04598065" class="af-videoplayer video-js vjs-default-skin vjs-big-play-centered vjs-fill" controls 
+	 poster="https://assets.afcdn.com/video1/20190402/v_620744.jpg"	 preload="none" muted>
+			<source src="https://assets.afcdn.com/video1/20190402/v_620744.m3u8" 
+							type="application/x-mpegURL"
+			>
+			<source src="https://assets.afcdn.com/video1/20190402/v_620744_HD.mp4" 
+							type="video/mp4"
+			>
+			<source src="https://assets.afcdn.com/video1/20190402/v_620744_sd.mp4" 
+							type="video/mp4"
+			>
+		<p class="vjs-no-js">
+		Votre navigateur ne peut pas afficher ce tag vidéo.	</p>
+</video>
+
+<script type="text/javascript">
+    var afVideoManager = AufVideo.Manager.getInstance({
+    	labels: { nextVideo: 'Vidéo suivante dans #SECONDS#' },
+    });
+	(function() {
+		var adPlayer;
+		var playerId = 'af_player_5dacc4bd8614f3_04598065';
+
+		
+			var playerCustomParams = (typeof(sas_target)!=='undefined'?sas_target:'') + ';afsavideo;adplayer=ima;context=seealso;video=620744v'
+				+ afSession.getAdTargetingKeywordsFormatted();
+			
+				var playerCustomParamsFormatted = AufVideo.Utils.getDFPFormattedKeywords(playerCustomParams);
+				var playerVideoSize = '640x480';
+				var playerAdUnit = '/229683329/aufeminin/video/preroll_BTF';
+				var playerPrerollUrl = 'https://pubads.g.doubleclick.net/gampad/ads'
+					+ '?sz=' + playerVideoSize                                          // Size of master video ad slot, use pipe for multiple sizes
+					+ '&iu=' + playerAdUnit                                             // Current ad unit
+					+ '&impl=s'                                                         // The request mode. Here, s for sync
+					+ '&gdfp_req=1'                                                     // Indicates that the user is on the DFP schema
+					+ '&env=vp'                                                         // Indicates that the request is from a video player
+					+ '&output=vast'                                                    // Output format of ad, vast => network's default setting
+					+ '&unviewed_position_start=1'                                      // Setting this to 1 turns on delayed impressions
+					+ '&url=' + encodeURIComponent(location.href)                       // This is the full URL from which the ad request is being sent
+					+ '&description_url=' + encodeURIComponent(location.href)           // The value should describe the video playing on the page
+					+ '&cust_params=' + encodeURIComponent(playerCustomParamsFormatted) // Keys/Values
+					+ '&correlator=' + Date.now();                                      // A random positive number
+			
+					playerPrerollUrl += '&ad_rule=1';
+				
+				adPlayer = new AufVideo.IMA({
+					id: playerId,
+					adTagUrl: playerPrerollUrl,
+					adLabel: 'Publicité - Votre vidéo dans',
+					adWillAutoPlay: false,	
+					adWillPlayMuted:  true,
+					language: 'FR',
+					loadVideoTimeout: 10000,
+					noPrefetch: false,
+					name: 'Ima DFP',
+					showCountdown: true
+				});
+			
+		AufVideo.GATracker.init();
+
+		
+				AufVideo.MediametrieTracker.init();
+			
+				AufVideo.ComscoreTracker.init();
+			
+		var logger = new VideoLogger({
+			adPlayer: { name: 'Ima DFP' },
+			player: {
+				name: 'Video JS',
+				version: 'VJS ' + videojs.VERSION,
+				videoId: 620744,
+				context: 'seealso',
+				position: 'BTF',
+			},
+			target: playerCustomParams
+		});
+		logger.logEvent('player setup');
+
+		var playerOpts = {
+			adPlayer: adPlayer,
+			context: 'seealso',
+			id: playerId,
+			logger: logger,
+			startOnSight: true,
+							shortUrl: '1/20190402/v_620744',
+															swf: "https:\/\/static.afcdn.com\/relfr\/Front\/Vendor\/video-js\/plugins\/video-js-swf\/5.4.2\/video-js.swf",
+			videoId: 620744,
+		};
+		playerOpts.setup = {
+							aspectRatio: "1:1",
+				fluid: true,
+						autoplay: false,
+			plugins: {},
+			techOrder: ['html5', 'flash'],
+			html5: { nativeTextTracks: false }, // https://github.com/videojs/video.js/issues/3202
+		};
+		
+		var player = new AufVideo.VideoJS(playerOpts);
+		afVideoManager.init(player, adPlayer);
+	})();
+</script>
+						</div><div class="af-col-sm-3" id="af-native-right">
+							<a class="af-htmlblock-autopromo af-htmlblock-autopromo-native" href="http://fr.pinterest.com/aufeminin/" target="_blank" data-brand="pinterest">
+	<div class="content">
+		<div class="intro-header">
+			Tendances, recettes, DIY... Trouve l'inspiration sur Pinterest		</div>
+
+		<img src="https://static.afcdn.com/relfr/Front/component/htmlBlockAutoPromo/assets/pinterest.svg" alt="pinterest" />
+
+		<div class="intro-footer">
+			Suis-nous !		</div>
+	</div>
+	</a>						</div><div class="af-block af-block-content af-block-native af-col-sm-3 af-col-sm-3" style="display:none">
+		<script type="text/javascript">
+					if (window.afAd) {
+						afAd.render("native_seealso_right", []);
+					}
+	 			</script></div>			</div>
+		<div id="af-seealso-middle"></div><div id="af-seealso-bottom"></div><div id="partner-content-container-article-2"></div>		<div class="af-seealso-title">
+			<h3>vous aimerez aussi</h3>
+		</div>
+
+					<div class="btn-block left out">
+				<i class="icon icon-arrow-left"></i>
+			</div>
+			<div class="btn-block right out">
+				<i class="icon icon-arrow-right"></i>
+			</div>
+				<div id="see-also-items" class="af-container clearfix" style="width:1700px;">
+			<div id="af-block-htmlBlockSeeAlsoSlider_0" class="af-block af-col-lg-small-fixed-width af-block-content" onclick="if (afSeeAlsoEnabled) {af_ua_trackEvent('AF_SeeAlso', 'Click', 'EditoLinks', null, false);}">
+	<div class="af-img-container">
+		<img  class="af-lazyload "src="https://static.afcdn.com/world/shim.gif" data-origin="https://assets.afcdn.com/story/acc9_4005969/acc1257x1257a699612_w767h767c1.jpg" alt="">			</div>
+
+	<div class="af-card">
+		 
+			<div class="af-title">
+				<a href="/news-societe/contestation-en-croatie-apres-la-liberation-d-hommes-suspectes-de-viol-s4005969.html" >Contestation en Croatie après la libération d'hommes suspectés de viol</a>	
+		 
+			</div>
+		
+					<span class="af-author">
+				par la rédaction d'aufeminin			</span>
+
+							<span class="af-share">
+									</span>
+				</div>
+
+	</div>
+<div id="af-block-htmlBlockSeeAlsoSlider_1" class="af-block af-col-lg-small-fixed-width af-block-content" onclick="if (afSeeAlsoEnabled) {af_ua_trackEvent('AF_SeeAlso', 'Click', 'EditoLinks', null, false);}">
+	<div class="af-img-container">
+		<img  class="af-lazyload "src="https://static.afcdn.com/world/shim.gif" data-origin="https://assets.afcdn.com/story/acc9_4005966/acc1257x1257a21435_w767h767c1.jpg" alt="">			</div>
+
+	<div class="af-card">
+		 
+			<div class="af-title">
+				<a href="/news-societe/une-nounou-abuse-l-enfant-de-11-ans-qu-elle-garde-et-tombe-enceinte-s4005966.html" >Une nounou abuse l'enfant de 11 ans qu'elle garde et tombe enceinte</a>	
+		 
+			</div>
+		
+					<span class="af-author">
+				par la rédaction d'aufeminin			</span>
+
+							<span class="af-share">
+									</span>
+				</div>
+
+	</div>
+<div id="af-block-htmlBlockSeeAlsoSlider_2" class="af-block af-col-lg-small-fixed-width af-block-content" onclick="if (afSeeAlsoEnabled) {af_ua_trackEvent('AF_SeeAlso', 'Click', 'EditoLinks', null, false);}">
+	<div class="af-img-container">
+		<img  class="af-lazyload "src="https://static.afcdn.com/world/shim.gif" data-origin="https://assets.afcdn.com/story/acc9_4005958/acc1257x1257a410427_w767h767c1.jpg" alt="">			</div>
+
+	<div class="af-card">
+		 
+			<div class="af-title">
+				<a href="/sante-femme/tommy-le-petit-garcon-de-7-ans-allergique-a-l-hiver-s4005958.html" >Tommy, le petit garçon de 7 ans "allergique à l'hiver"</a>	
+		 
+			</div>
+		
+					<span class="af-author">
+				par la rédaction d'aufeminin			</span>
+
+							<span class="af-share">
+									</span>
+				</div>
+
+	</div>
+<div id="af-block-htmlBlockSeeAlsoSlider_3" class="af-block af-col-lg-small-fixed-width af-block-content" onclick="if (afSeeAlsoEnabled) {af_ua_trackEvent('AF_SeeAlso', 'Click', 'EditoLinks', null, false);}">
+	<div class="af-img-container">
+		<img  class="af-lazyload "src="https://static.afcdn.com/world/shim.gif" data-origin="https://assets.afcdn.com/story/acc9_4005875/acc1257x1257a66601_w767h767c1.jpg" alt="">			</div>
+
+	<div class="af-card">
+		 
+			<div class="af-title">
+				<a href="/news-societe/charcuterie-aux-nitrites-bientot-taxee-s4005875.html" >La charcuterie contenant des sels de nitrites pourrait bientôt être taxée</a>	
+		 
+			</div>
+		
+					<span class="af-author">
+				par la rédaction d'aufeminin			</span>
+
+							<span class="af-share">
+									</span>
+				</div>
+
+	</div>
+<div id="af-block-htmlBlockSeeAlsoSlider_4" class="af-block af-col-lg-small-fixed-width af-block-content" onclick="if (afSeeAlsoEnabled) {af_ua_trackEvent('AF_SeeAlso', 'Click', 'EditoLinks', null, false);}">
+	<div class="af-img-container">
+		<img  class="af-lazyload "src="https://static.afcdn.com/world/shim.gif" data-origin="https://assets.afcdn.com/story/acc9_4005860/acc1257x1257a185147_w767h767c1.jpg" alt="">			</div>
+
+	<div class="af-card">
+		 
+			<div class="af-title">
+				<a href="/news-societe/une-senatrice-demande-l-experimentation-de-la-gratuite-des-protections-hygieniques-s4005860.html" >Une sénatrice souhaite tester la gratuité des protections hygiéniques</a>	
+		 
+			</div>
+		
+					<span class="af-author">
+				par la rédaction d'aufeminin			</span>
+
+							<span class="af-share">
+									</span>
+				</div>
+
+	</div>
+<div id="af-block-htmlBlockSeeAlsoSlider_5" class="af-block af-col-lg-small-fixed-width af-block-content" onclick="if (afSeeAlsoEnabled) {af_ua_trackEvent('AF_SeeAlso', 'Click', 'EditoLinks', null, false);}">
+	<div class="af-img-container">
+		<img  class="af-lazyload "src="https://static.afcdn.com/world/shim.gif" data-origin="https://assets.afcdn.com/story/acc9_4005286/acc1182730092_w767h767c1cxt0cyt0cxb2048cyb1364.jpg" alt="">			</div>
+
+	<div class="af-card">
+		 
+			<div class="af-title">
+				<a href="/news-societe/la-premiere-sortie-spatiale-100-feminine-aura-finalement-lieu-s4005286.html" >C’est historique ! La première sortie spatiale 100% féminine aura lieu ce vendredi</a>	
+		 
+			</div>
+		
+					<span class="af-author">
+				par la rédaction d'aufeminin			</span>
+
+							<span class="af-share">
+									</span>
+				</div>
+
+	</div>
+<div id="af-block-htmlBlockSeeAlsoSlider_6" class="af-block af-col-lg-small-fixed-width af-block-content" onclick="if (afSeeAlsoEnabled) {af_ua_trackEvent('AF_SeeAlso', 'Click', 'EditoLinks', null, false);}">
+	<div class="af-img-container">
+		<img  class="af-lazyload "src="https://static.afcdn.com/world/shim.gif" data-origin="https://assets.afcdn.com/story/acc9_4005846/acc1257x1257a260815_w767h767c1.jpg" alt="">			</div>
+
+	<div class="af-card">
+		 
+			<div class="af-title">
+				<a href="/news-societe/thierry-samitier-accuse-d-agression-sexuelle-en-direct-dans-tpmp-s4005846.html" >Thierry Samitier, une autre femme l'accuse d'agression sexuelle en direct dans TPMP</a>	
+		 
+			</div>
+		
+					<span class="af-author">
+				par la rédaction d'aufeminin			</span>
+
+							<span class="af-share">
+									</span>
+				</div>
+
+	</div>
+<div id="af-block-htmlBlockSeeAlsoSlider_7" class="af-block af-col-lg-small-fixed-width af-block-content" onclick="if (afSeeAlsoEnabled) {af_ua_trackEvent('AF_SeeAlso', 'Click', 'EditoLinks', null, false);}">
+	<div class="af-img-container">
+		<img  class="af-lazyload "src="https://static.afcdn.com/world/shim.gif" data-origin="https://assets.afcdn.com/story/acc9_4005849/acc1257x1257a667446_w767h767c1.jpg" alt="">			</div>
+
+	<div class="af-card">
+		 
+			<div class="af-title">
+				<a href="/news-societe/en-phase-terminale-elle-rappelle-pourquoi-il-faut-absolument-voter-s4005849.html" >En phase terminale, cette adolescente rappelle pourquoi il est indispensable d'aller voter</a>	
+		 
+			</div>
+		
+					<span class="af-author">
+				par la rédaction d'aufeminin			</span>
+
+							<span class="af-share">
+									</span>
+				</div>
+
+	</div>
+<div id="af-block-htmlBlockSeeAlsoSlider_8" class="af-block af-col-lg-small-fixed-width af-block-content" onclick="if (afSeeAlsoEnabled) {af_ua_trackEvent('AF_SeeAlso', 'Click', 'EditoLinks', null, false);}">
+	<div class="af-img-container">
+		<img  class="af-lazyload "src="https://static.afcdn.com/world/shim.gif" data-origin="https://assets.afcdn.com/story/acc9_4005838/acc1257x1257a59887_w767h767c1.jpg" alt="">			</div>
+
+	<div class="af-card">
+		 
+			<div class="af-title">
+				<a href="/news-societe/le-college-des-gynecologues-lance-un-label-pour-les-maternites-bienveillantes-s4005838.html" >Les gynécologues français lancent un label pour les maternités "bienveillantes"</a>	
+		 
+			</div>
+		
+					<span class="af-author">
+				par la rédaction d'aufeminin			</span>
+
+							<span class="af-share">
+									</span>
+				</div>
+
+	</div>
+<div id="af-block-htmlBlockSeeAlsoSlider_9" class="af-block af-col-lg-small-fixed-width af-block-content" onclick="if (afSeeAlsoEnabled) {af_ua_trackEvent('AF_SeeAlso', 'Click', 'EditoLinks', null, false);}">
+	<div class="af-img-container">
+		<img  class="af-lazyload "src="https://static.afcdn.com/world/shim.gif" data-origin="https://assets.afcdn.com/story/acc9_4005775/acc1257x1257a824902_w767h767c1.jpg" alt="">			</div>
+
+	<div class="af-card">
+		 
+			<div class="af-title">
+				<a href="/news-societe/un-homme-a-paye-1000-dollars-de-dettes-de-cantines-a-400-ecoliers-pour-qu-ils-puissent-manger-s4005775.html" >Un homme a payé 1000 dollars de dettes de cantines à 400 écoliers pour qu'ils puissent manger</a>	
+		 
+			</div>
+		
+					<span class="af-author">
+				par la rédaction d'aufeminin			</span>
+
+							<span class="af-share">
+									</span>
+				</div>
+
+	</div>
+			</div>
+		<div id="partner-content-container-article-3"></div></div><div id='subscribePopupData'>
+	<script>
+		var af_SubscribeTools = {
+			firstText : "Connectez-vous au 1er media feminin créateur de communautés",
+			connectToReadText : "Inscrivez-vous pour lire la suite de l'article c'est gratuit !",
+			titleConnexion : "Connexion",
+			loginText : "Pseudo",
+			emailText : "Votre email",
+			passwordText : "Mot de passe",
+			buttonText : "Je me connecte",
+			noAccountText : "Pas encore de compte Aufeminin ?",
+			subscribeText : "Inscrivez-vous",
+			subscribeButtonText : "Je m'inscris",
+			fbConnectText : "Je me connecte avec Facebook",
+			orText : "ou",
+			forgetPasswordText : "Mot de passe ou pseudo oublié",
+			idModal : 'subscribePopupModal',
+			titleSubscribeElement : "Je crée mon compte, c'est gratuit!",
+			optinText : "J'accepte de recevoir des emails de la part d'Aufemin",
+			noText : "Non",
+			yesText : "Oui",
+			idContainer : 'subscribePopupModalContainer',
+			fbConnectUrl : "https://www.facebook.com/v2.8/dialog/oauth?client_id=145880842166163&state=33193d1fd1ffc3a4ef482b7ac12c965e&response_type=code&sdk=php-sdk-5.7.0&redirect_uri=https%3A%2F%2Fwww.aufeminin.com%2Freloaded%2Fusers%2Flogin-callback%2Fsocial%2Ffacebook%3FdestUrl%3Dhttps%3A%2F%2Fwww.aufeminin.com%2Fnews-societe%2Fcette-mysterieuse-maladie-paralyse-plusieurs-enfants-americains-s2949718.html%26failureUrl%3Dhttps%3A%2F%2Fwww.aufeminin.com%2Fnews-societe%2Fcette-mysterieuse-maladie-paralyse-plusieurs-enfants-americains-s2949718.html&scope=public_profile%2Cemail%2Cuser_likes%2Cuser_birthday",
+			forgetpasswordurl : "/reloaded/users/forgotten-password",
+			UsernameExists : "Cette utilisateur existe déjà",
+			UsernameEmpty : "Le pseudo est vide",
+			PassRegEx : "Votre mot de passe doit contenir au moins 4 caractères",
+			RegisterError_EmailWrong : "Cet email est invalide",
+			RegisterError_EmailNotValid : "Cet email est invalide",
+			RegisterError_EmailBlacklist : "Cet email est invalide",
+			imgLogoUrl : "https://static.afcdn.com/relfr/Front/Component/header/assets/logo.png",
+			cookieText :"Nous utilisons des cookies pour personnaliser le contenu du site internet, afficher des publicités personnalisées, proposer des fonctions de partage vers les réseaux sociaux et analyser le trafic du site internet. Certaines informations sont partagées avec des partenaires de aufeminin. En poursuivant la navigation sur le site, vous acceptez l'utilisation des cookies",
+			moreInfoText : "Pour plus d'informations et pour paramétrer les cookies,",
+			iAcceptText : "J'accepte",
+			noDataText : "Je ne souhaite pas communiquer mes datas",
+			paidSubscribeText : "Je souscris à un abonnement payant",
+			bugText : "Désolé nous avons un soucis technique actuellement, vous pouvez continuer votre navigation sur le site",
+			paidButtonText :  "Je continue ma navigation",
+			PasswordError : "Vos mots de passe ne correspondent pas ou sont vides",
+			CGULink : "/mentions-legales/mentions-legales.asp",
+			createNewElement : function(type,params) {
+				var newElement = document.createElement(type);
+				for (var k in params){
+				    if (params.hasOwnProperty(k)) {
+				    	newElement[k] = params[k];
+				    }
+				}
+				return newElement;
+			},
+			clearPopup : function() {
+				var container = document.getElementById(this.idContainer);
+				while (container.firstChild) {
+				    container.removeChild(container.firstChild);
+				}
+			},
+		};
+	</script>
+</div>
+
+<script type="text/html-handlebars" id="af_S2PopupV8">
+	<div class="subscribePopup af_S2PopupV8" id="subscribePopupModalContainer">
+		<div class="boldTitlev8">
+			<img src='/reloaded/static/Front/Component/subscribePopup/assets/icone_cle.png'>
+			Bienvenue sur aufeminin !		</div>
+		<div class="">
+			<p>
+Le magazine féminin en ligne, chaque jour le meilleur de l'actu féminine</p>
+			<hr/>
+						<div class='textleft'><b>
+Vos paramètres de confidentialité</b></div>
+			<p class='textleft textlh'>
+Pour améliorer la qualité de votre visite, nous utilisons des cookies et d'autres technologies similaires afin d'optimiser les performances, pour personnaliser les contenus et les annonces, pour proposer les fonctionnalités des réseaux sociaux et analyser le trafic.
+Vous voulez en savoir plus ? Lisez notre <a class='linkv8' target="_blank" href='https://www.aufeminin.com/aide/politique-relative-aux-cookies-s2564264.html'>règlement concernant les cookies.</a> Vous pouvez modifier vos préférences à tout moment dans vos <a class='linkv8' target="_blank" href='https://www.aufeminin.com/aide/politique-de-protection-des-donnees-du-groupe-aufeminin-s2563895.html'>paramètres de confidentialité.</a></p>
+		</div>
+		<div class='footerPopupV8'>
+		<a class="af_S2PopupV8-center" href='javascript:showCmpPreferencesPopup()' >Mettre les paramètres à jour</a>
+		<input class="inputButtonv8" type="button" name="inputButton" value="Accepter" id='af_S2PopupV8-acceptButton'>
+	</div>
+
+	</div>
+</script>
+<script type="text/html-handlebars" id="af_S2PopupV8WithCross">
+	<div class="subscribePopup af_S2PopupV8WithCross" id="subscribePopupModalContainer">
+		<span id='crossClose' class='crossClose'>x</span>
+		<div class="boldTitlev8">
+			<img src='/reloaded/static/Front/Component/subscribePopup/assets/icone_cle.png'>
+			Bienvenue sur aufeminin !		</div>
+		<div class="">
+			<p>
+Le magazine féminin en ligne, chaque jour le meilleur de l'actu féminine</p>
+			<hr/>
+						<div class='textleft'><b>
+Vos paramètres de confidentialité</b></div>
+			<p class='textleft textlh'>
+Pour améliorer la qualité de votre visite, nous utilisons des cookies et d'autres technologies similaires afin d'optimiser les performances, pour personnaliser les contenus et les annonces, pour proposer les fonctionnalités des réseaux sociaux et analyser le trafic.
+Vous voulez en savoir plus ? Lisez notre <a class='linkv8' target="_blank" href='https://www.aufeminin.com/aide/politique-relative-aux-cookies-s2564264.html'>règlement concernant les cookies.</a> Vous pouvez modifier vos préférences à tout moment dans vos <a class='linkv8' target="_blank" href='https://www.aufeminin.com/aide/politique-de-protection-des-donnees-du-groupe-aufeminin-s2563895.html'>paramètres de confidentialité.</a></p>
+		</div>
+		<div class='footerPopupV8'>
+		<a class="af_S2PopupV8WithCross-center" href='javascript:showCmpPreferencesPopup()' >Mettre les paramètres à jour</a>
+		<input class="inputButtonv8" type="button" name="inputButton" value="Accepter" id='af_S2PopupV8WithCross-acceptButton'>
+	</div>
+
+	</div>
+</script>
+<script type="text/html-handlebars" id="af_S2PopupV8WithRefuse">
+	<div class="subscribePopup af_S2PopupV8WithRefuse" id="subscribePopupModalContainer">
+		<div class="boldTitlev8">
+			<img src='/reloaded/static/Front/Component/subscribePopup/assets/icone_cle.png'>
+			Bienvenue sur aufeminin !		</div>
+		<div class="">
+			<p>
+Le magazine féminin en ligne, chaque jour le meilleur de l'actu féminine</p>
+			<hr/>
+						<div class='textleft'><b>
+Vos paramètres de confidentialité</b></div>
+			<p class='textleft textlh'>
+Pour améliorer la qualité de votre visite, nous utilisons des cookies et d'autres technologies similaires afin d'optimiser les performances, pour personnaliser les contenus et les annonces, pour proposer les fonctionnalités des réseaux sociaux et analyser le trafic.
+Vous voulez en savoir plus ? Lisez notre <a class='linkv8' target="_blank" href='https://www.aufeminin.com/aide/politique-relative-aux-cookies-s2564264.html'>règlement concernant les cookies.</a> Vous pouvez modifier vos préférences à tout moment dans vos <a class='linkv8' target="_blank" href='https://www.aufeminin.com/aide/politique-de-protection-des-donnees-du-groupe-aufeminin-s2563895.html'>paramètres de confidentialité.</a></p>
+		</div>
+		<div class='footerPopupV8'>
+		<span class='onleft'><a class="af_S2PopupV8WithRefuse-center linkv8" href='javascript:showCmpPreferencesPopup()' >Mettre les paramètres à jour</a></span>
+		<span><a name="inputButton" class="linkv8" id='af_S2PopupV8WithRefuse-refuseButton'>Refuser</a>
+
+		<input class="inputButtonv8" type="button" name="inputButton" value="Accepter" id='af_S2PopupV8WithRefuse-acceptButton'></span>
+	</div>
+
+	</div>
+</script>		</div>
+
+		<script type="text/javascript">
+					if (window.afAd) {
+						afAd.render("banner_btf", []);
+					}
+	 			</script><script type="text/javascript">
+					if (window.afAd) {
+						afAd.render("dhtml", []);
+					}
+	 			</script>		
+		<div id="partner-content-container-footer" class=" mrtn-hide-on-print"></div>
+		<footer>
+	<a href="https://www.aufeminin.com" class="image">
+		<span class="icon icon-logo-aufeminin-dz"></span>
+	</a>
+		<div id="social-icons-wrapper">
+		<hr/>
+		<div class="social-icon first"><a href="https://www.facebook.com/pages/Aufeminin/22036796848" target="_blank"><i class="icon icon-fb"></i></a><p><span class="af-nb-follower">3M</span></p></div><div class="social-icon"><a href="http://twitter.com/#!/aufeminin" target="_blank"><i class="icon icon-twitter"></i></a><p><span class="af-nb-follower">47k</span></p></div><div class="social-icon"><a href="http://fr.pinterest.com/aufeminin/" target="_blank"><i class="icon icon-pinterest"></i></a><p><span class="af-nb-follower">269k</span></p></div><div class="social-icon"><a href="https://www.instagram.com/aufeminin/" target="_blank"><i class="icon icon-instagram"></i></a><p><span class="af-nb-follower">374k</span></p></div><div class="social-icon"><a href="https://www.youtube.com/user/aufemininTV" target="_blank"><i class="icon icon-youtube"></i></a><p><span class="af-nb-follower">277k</span></p></div>		<hr/>
+	</div>
+		<div id="bottom">
+		
+		<p id="final-line" class="text-center">
+        	Copyright &copy; 1999-2019        	<script id="af_jsencrypt_1" type="text/javascript">jsdchtml3('-  aº erhth"=fptc¦¦:roproetafua.meinimoc.n "grat=tepot_"¹"s nUd etig upuor efuAinimeºn ¹a¦º -erh a=fem¦"noitnl-slageseem¦noitn-sagelsel"psa.t egrat_"=t"poneM¹itsnoagél ela¦ºs- ¹h aº erh"=f¦:pttoc¦roprtaa.eimefuinoc.n "megrat=tot_"iS¹"p etprocroeta ¹a¦º -h aºfertth"=:poj¦¦ua.sbmefninic.¦morat "eg_"=tpotceR¹"uremeta¦ºtn- ¹ aº rh=feptth":soc¦¦opr.etaruaimefc.nin¦moc¦rfnocatat "tgr"=teot_oC¹"ptnºtca- ¹a¦aº erh =faj"rcsavpihs:tCwoerPpmefcnerpoPse(puP¹")érréfsecnec ikooºse- ¹a¦º rh ah"=feptt¦¦:swwa.wimefuinoc.na¦mp¦ediloqitier-eutal-eviuac-xeikoo-s652s624mth.4"lloP¹uqitid ec seooeik¹a¦ºs-  aº erhth"=fpt¦¦:sa.wwwefuinim.nmocedia¦p¦tilouqi-ed-erpceto-noitsednod-en-serg-uduoa-epefuninims-3652h.598lmtoP¹"ilqited eup etoritced no snnod¦ºseé ¹aaº -h fertth"=spw¦¦:.wwmefuanic.nioc¦moatnc¦tcvg02-dp.91"fnoC¹tid snoiégarénd selv eetne¦º¹a', 'af_jsencrypt_1')</script>        </p>
+
+
+		
+
+		
+	</div>
+</footer>
+<script type="text/javascript" crossorigin="anonymous" src="https://static.afcdn.com/relfr/concat.js?PCM-C0vNS8kvUjVySyxNA5LpOflJiTnxyfm5ufl5elnFtmEw-azC0tSiSjhDLyU_uTQ3Na8kKDUxpVIvNxNVNYppKanF2SX5BUAFekYGhpaGBoYWhoYGZgA"></script>
+<script type="text&#x2F;javascript" src="&#x2F;reloaded&#x2F;static&#x2F;Front&#x2F;Component&#x2F;subscribePopup&#x2F;subscribePopup.js&#x3F;1571603645"></script>
+<script type="text/javascript" crossorigin="anonymous" src="https://static.afcdn.com/relfr/concat.js?PCM-lY9Ba8MwDIV_TY8LcQajPeyQZvTUroVA7lqiNm5sy0RKx_79nDFKcFNKwZj3nj7BU4WuoX6RbWA4jv9xRw2Y5MzvBVlPDp2EmBFzw1RlUx1DrVizNlR3U30XygehQ0-WZsN4TeC01TxRI1DF3UvRdfdT0E3_RoOnD-ROyEd2RFsRz4vXPIzC-06QBSSpyQZ35jFqwd9cgtBgfxUPxi_aadlSDaYU6uGE83w5fH3CJbLFwEJ2fyif2HkC_as2z-9Au-nCvw9wkqVqpVK1VCp9-wU"></script>
+<script type="text/javascript">
+ jquery$(function(){
+ var appAufHeader = new AufHeader();
+ appAufHeader.init({
+ disableSticky: false,
+ searchPlaceholder: "Rechercher"
+ });
+ });
+</script>
+<script type="text/javascript">
+ af_addEvent(window, 'scroll', af_lazyloading, false);
+ af_addEvent(window, 'load', af_lazyloading, false);
+ </script>
+<script type="text/javascript">if (_eStat_Whap_loaded) { eStatWhap.serial('800000206973'); }</script>
+<script type="text/javascript">
+ function af_callAudienceTrackers() {
+ // NIELSEN
+ if (typeof NolTracker !== 'undefined') { trac.record().post(); } // IT
+ if (typeof _eStat_Whap_loaded !== 'undefined' && _eStat_Whap_loaded) { eStatWhap.send(); } // Others
+ }
+
+ (function() {
+ if (typeof window.__cmp !== 'undefined') {
+ window.__cmp('getCookieConsentAudienceMeasurement', null, function(result) {
+ if (result) {
+ af_callAudienceTrackers();
+ }
+ });
+ } else {
+ af_callAudienceTrackers();
+ };
+ }());
+</script>
+<script type="text/javascript">
+ af_addEvent(document, 'click', ga_trackOutboundLink, false);
+</script>
+<script type="text/javascript">
+var appSButtonsV2 = appSButtonsV2 || {};
+
+jquery$(function() {
+ var sBtnInfos = {
+ isMobile: false,
+ shareImg: "https:\/\/assets.afcdn.com\/story\/acc9_2949718\/accFacebook0x0a337835.jpg",
+ shareProviders: ["facebook","whatsapp","pinterest","twitter"],
+ shareTitle: "Des dizaines d\u2019enfants paralys\u00e9s \u00e0 cause d'une maladie inconnue qui inqui\u00e8te les m\u00e9decins",
+ shareUrl: "https:\/\/www.aufeminin.com\/news-societe\/cette-mysterieuse-maladie-paralyse-plusieurs-enfants-americains-s2949718.html",
+ initOpen: true,
+ providers: {
+ facebook: {
+ pageURL: "https:\/\/www.facebook.com\/pages\/Aufeminin\/22036796848",
+ showLikeButton: null,
+ url: " https:\/\/www.facebook.com\/dialog\/feed?app_id=145880842166163&display=popup&redirect_uri=https:\/\/www.aufeminin.com\/reloaded\/followUs\/facebook&link=",
+ urlFollowUs: "https:\/\/www.aufeminin.com\/reloaded\/followUs\/facebook"
+ },
+ pinterest: {
+ urlFollowUs: "https:\/\/www.aufeminin.com\/reloaded\/followUs\/pinterest",
+ shareImg:"https:\/\/assets.afcdn.com\/story\/acc9_2949718\/accPinterest0x0a465261.jpg"
+ }
+ }
+ };
+ appSButtonsV2["af-socials-btn-jumbotron-content-2949718"] = new AufSButtonsV2();
+ appSButtonsV2["af-socials-btn-jumbotron-content-2949718"].init("af-socials-btn-jumbotron-content-2949718", "jumbotron-content", sBtnInfos);
+});</script>
+<script type="text/javascript">
+var appSButtonsV2 = appSButtonsV2 || {};
+
+jquery$(function() {
+ var sBtnInfos = {
+ isMobile: false,
+ shareImg: "https:\/\/assets.afcdn.com\/story\/acc9_2949718\/accFacebook0x0a337835.jpg",
+ shareProviders: ["facebook","whatsapp","pinterest","twitter"],
+ shareTitle: "Des dizaines d\u2019enfants paralys\u00e9s \u00e0 cause d'une maladie inconnue qui inqui\u00e8te les m\u00e9decins",
+ shareUrl: "https:\/\/www.aufeminin.com\/news-societe\/cette-mysterieuse-maladie-paralyse-plusieurs-enfants-americains-s2949718.html",
+ initOpen: true,
+ providers: {
+ facebook: {
+ pageURL: "https:\/\/www.facebook.com\/pages\/Aufeminin\/22036796848",
+ showLikeButton: true,
+ url: " https:\/\/www.facebook.com\/dialog\/feed?app_id=145880842166163&display=popup&redirect_uri=https:\/\/www.aufeminin.com\/reloaded\/followUs\/facebook&link=",
+ urlFollowUs: "https:\/\/www.aufeminin.com\/reloaded\/followUs\/facebook"
+ },
+ pinterest: {
+ urlFollowUs: "https:\/\/www.aufeminin.com\/reloaded\/followUs\/pinterest",
+ shareImg:"https:\/\/assets.afcdn.com\/story\/acc9_2949718\/accPinterest0x0a465261.jpg"
+ }
+ }
+ };
+ appSButtonsV2["af-socials-btn-story-bottom-2949718"] = new AufSButtonsV2();
+ appSButtonsV2["af-socials-btn-story-bottom-2949718"].init("af-socials-btn-story-bottom-2949718", "story-content", sBtnInfos);
+});</script>
+<script type="text/javascript">
+var appSButtonsV2 = appSButtonsV2 || {};
+
+jquery$(function() {
+ var sBtnInfos = {
+ isMobile: false,
+ shareImg: null,
+ shareProviders: ["facebook","whatsapp","pinterest","twitter"],
+ shareTitle: "",
+ shareUrl: null,
+ initOpen: true,
+ providers: {
+ facebook: {
+ pageURL: "https:\/\/www.facebook.com\/pages\/Aufeminin\/22036796848",
+ showLikeButton: null,
+ url: " https:\/\/www.facebook.com\/dialog\/feed?app_id=145880842166163&display=popup&redirect_uri=https:\/\/www.aufeminin.com\/reloaded\/followUs\/facebook&link=",
+ urlFollowUs: "https:\/\/www.aufeminin.com\/reloaded\/followUs\/facebook"
+ },
+ pinterest: {
+ urlFollowUs: "https:\/\/www.aufeminin.com\/reloaded\/followUs\/pinterest",
+ shareImg:null
+ }
+ }
+ };
+ appSButtonsV2["af-socials-btn-diapo-desktop-0"] = new AufSButtonsV2();
+ appSButtonsV2["af-socials-btn-diapo-desktop-0"].init("af-socials-btn-diapo-desktop-0", "diapoDesktop", sBtnInfos);
+});</script>
+<script type="text/javascript">var af_rating_component = ''</script>
+<script type="text/javascript">
+ var appAufStickyCol = appAufStickyCol || {};
+ jquery$(function() {
+ var bottomCtn;
+ appAufStickyCol['ad-container-right-2949718'] = new AfStickyCol();
+ appAufStickyCol['ad-container-right-2949718'].init({
+ id: 'ad-container-right-2949718',
+ bottomCtn: bottomCtn
+ });
+ });</script>
+<script type="text/javascript">
+var apphtmlBlock = apphtmlBlock || {};
+jquery$(function() {
+ apphtmlBlock["af-block-htmlBlockSeeAlsoSlider_0"] = new AufHtmlBlock();
+ apphtmlBlock["af-block-htmlBlockSeeAlsoSlider_0"].init({
+ cssID: "af-block-htmlBlockSeeAlsoSlider_0",
+ shareButtonCssID: "af-share-button-htmlBlockSeeAlsoSlider_0",
+ blankize: ""
+ });
+});</script>
+<script type="text/javascript">
+var apphtmlBlock = apphtmlBlock || {};
+jquery$(function() {
+ apphtmlBlock["af-block-htmlBlockSeeAlsoSlider_1"] = new AufHtmlBlock();
+ apphtmlBlock["af-block-htmlBlockSeeAlsoSlider_1"].init({
+ cssID: "af-block-htmlBlockSeeAlsoSlider_1",
+ shareButtonCssID: "af-share-button-htmlBlockSeeAlsoSlider_1",
+ blankize: ""
+ });
+});</script>
+<script type="text/javascript">
+var apphtmlBlock = apphtmlBlock || {};
+jquery$(function() {
+ apphtmlBlock["af-block-htmlBlockSeeAlsoSlider_2"] = new AufHtmlBlock();
+ apphtmlBlock["af-block-htmlBlockSeeAlsoSlider_2"].init({
+ cssID: "af-block-htmlBlockSeeAlsoSlider_2",
+ shareButtonCssID: "af-share-button-htmlBlockSeeAlsoSlider_2",
+ blankize: ""
+ });
+});</script>
+<script type="text/javascript">
+var apphtmlBlock = apphtmlBlock || {};
+jquery$(function() {
+ apphtmlBlock["af-block-htmlBlockSeeAlsoSlider_3"] = new AufHtmlBlock();
+ apphtmlBlock["af-block-htmlBlockSeeAlsoSlider_3"].init({
+ cssID: "af-block-htmlBlockSeeAlsoSlider_3",
+ shareButtonCssID: "af-share-button-htmlBlockSeeAlsoSlider_3",
+ blankize: ""
+ });
+});</script>
+<script type="text/javascript">
+var apphtmlBlock = apphtmlBlock || {};
+jquery$(function() {
+ apphtmlBlock["af-block-htmlBlockSeeAlsoSlider_4"] = new AufHtmlBlock();
+ apphtmlBlock["af-block-htmlBlockSeeAlsoSlider_4"].init({
+ cssID: "af-block-htmlBlockSeeAlsoSlider_4",
+ shareButtonCssID: "af-share-button-htmlBlockSeeAlsoSlider_4",
+ blankize: ""
+ });
+});</script>
+<script type="text/javascript">
+var apphtmlBlock = apphtmlBlock || {};
+jquery$(function() {
+ apphtmlBlock["af-block-htmlBlockSeeAlsoSlider_5"] = new AufHtmlBlock();
+ apphtmlBlock["af-block-htmlBlockSeeAlsoSlider_5"].init({
+ cssID: "af-block-htmlBlockSeeAlsoSlider_5",
+ shareButtonCssID: "af-share-button-htmlBlockSeeAlsoSlider_5",
+ blankize: ""
+ });
+});</script>
+<script type="text/javascript">
+var apphtmlBlock = apphtmlBlock || {};
+jquery$(function() {
+ apphtmlBlock["af-block-htmlBlockSeeAlsoSlider_6"] = new AufHtmlBlock();
+ apphtmlBlock["af-block-htmlBlockSeeAlsoSlider_6"].init({
+ cssID: "af-block-htmlBlockSeeAlsoSlider_6",
+ shareButtonCssID: "af-share-button-htmlBlockSeeAlsoSlider_6",
+ blankize: ""
+ });
+});</script>
+<script type="text/javascript">
+var apphtmlBlock = apphtmlBlock || {};
+jquery$(function() {
+ apphtmlBlock["af-block-htmlBlockSeeAlsoSlider_7"] = new AufHtmlBlock();
+ apphtmlBlock["af-block-htmlBlockSeeAlsoSlider_7"].init({
+ cssID: "af-block-htmlBlockSeeAlsoSlider_7",
+ shareButtonCssID: "af-share-button-htmlBlockSeeAlsoSlider_7",
+ blankize: ""
+ });
+});</script>
+<script type="text/javascript">
+var apphtmlBlock = apphtmlBlock || {};
+jquery$(function() {
+ apphtmlBlock["af-block-htmlBlockSeeAlsoSlider_8"] = new AufHtmlBlock();
+ apphtmlBlock["af-block-htmlBlockSeeAlsoSlider_8"].init({
+ cssID: "af-block-htmlBlockSeeAlsoSlider_8",
+ shareButtonCssID: "af-share-button-htmlBlockSeeAlsoSlider_8",
+ blankize: ""
+ });
+});</script>
+<script type="text/javascript">
+var apphtmlBlock = apphtmlBlock || {};
+jquery$(function() {
+ apphtmlBlock["af-block-htmlBlockSeeAlsoSlider_9"] = new AufHtmlBlock();
+ apphtmlBlock["af-block-htmlBlockSeeAlsoSlider_9"].init({
+ cssID: "af-block-htmlBlockSeeAlsoSlider_9",
+ shareButtonCssID: "af-share-button-htmlBlockSeeAlsoSlider_9",
+ blankize: ""
+ });
+});</script>
+<script type="text/javascript">
+ if (afSeeAlsoEnabled) {
+ af_ua_trackEvent("AF_SeeAlso", "View", "EmbedVideo", null, true);
+ }
+ </script>
+<script type="text/javascript">
+ var appSeeAlso = new AufSeeAlso();
+ jquery$(function() {
+ appSeeAlso.init();
+ });</script>
+<script type="text/javascript">
+ if (afSeeAlsoEnabled) {
+ af_ua_trackEvent("AF_SeeAlso", "View", "EditoLinks", null, true);
+ }
+ </script>
+<script type="text/javascript">
+ PubSub.subscribe('cmp.display.popup',function(){
+ af_gaqTrackEvent('AF_CMP', 'showSelectVendor');
+ });
+ 
+ PubSub.subscribe('cmp.click.accept',function(){
+ af_gaqTrackEvent('AF_CMP', 'clickOnAccept');
+ });
+ 
+ PubSub.subscribe('cmp.click.acceptonpopup',function(){
+ af_gaqTrackEvent('AF_CMP', 'clickOnAcceptAfterChooseVendor');
+ });
+ 
+ PubSub.subscribe('cmp.click.acceptCmp',function(){ 
+ af_tm_trackEvent('AF_CMP_ACCEPTED');
+ });</script>
+<script type="text/javascript">
+ var cmpAcceptEvent = false,
+ timeout = 2000;
+
+ af_gaqTrackEvent('AF_CMP_TEMP', 'displayPage');
+ var startTimeTracker = Date.now();
+
+ window.addEventListener('load', function(){
+ if (window.__cmp.getConsentBeforeLoad() === null || cmpAcceptEvent === true) {
+ af_ua_trackEvent('AF_CMP_TEMP', 'notYetAccepted', 'Seconds since displayPage.', ((Date.now() - startTimeTracker)), true);
+ } else {
+ af_ua_trackEvent('AF_CMP_TEMP', 'alreadyAccepted', 'Seconds since displayPage.', ((Date.now() - startTimeTracker)), true);
+ }
+ });
+
+ PubSub.subscribe('cmp.accept.scroll',function(){
+ cmpAcceptEvent = true;
+
+ af_gaqTrackEvent('AF_CMP_TEMP', 'acceptOnScroll', 'Seconds since displayPage.', ((Date.now() - startTimeTracker)));
+
+ setTimeout(function() {
+ af_gaqTrackEvent('AF_CMP_TEMP', 'acceptOnScroll2sec');
+ }, timeout);
+ });
+ PubSub.subscribe('cmp.accept.click',function(){
+ cmpAcceptEvent = true;
+
+ af_gaqTrackEvent('AF_CMP_TEMP', 'acceptOnClick', 'Seconds since displayPage.', ((Date.now() - startTimeTracker)));
+
+ setTimeout(function() {
+ af_gaqTrackEvent('AF_CMP_TEMP', 'acceptOnClick2sec');
+ }, timeout);
+ });
+
+ PubSub.subscribe('cmp.click.accept',function(){
+ cmpAcceptEvent = true;
+
+ af_gaqTrackEvent('AF_CMP_TEMP', 'clickOnAccept', 'Seconds since displayPage.', ((Date.now() - startTimeTracker)));
+
+ setTimeout(function() {
+ af_gaqTrackEvent('AF_CMP_TEMP', 'clickOnAccept2sec');
+ }, timeout);
+ });
+
+ PubSub.subscribe('cmp.click.acceptonpopup',function(){
+ cmpAcceptEvent = true;
+
+ af_gaqTrackEvent('AF_CMP_TEMP', 'clickOnAcceptAfterChooseVendor', 'Seconds since displayPage.', ((Date.now() - startTimeTracker)));
+
+ setTimeout(function() {
+ af_gaqTrackEvent('AF_CMP_TEMP', 'clickOnAcceptAfterChooseVendor2sec');
+ }, timeout);
+ });</script>
+<script type="text/javascript">
+ window.addEventListener('displayCookieInformationBanner', function(){
+ bannerHtml = document.getElementById('af-cookie-policy');
+ bannerHtml.style.display = 'none';
+ });
+ </script>
+<script type="text/javascript">
+ af_addEvent(window, 'beforeunload', function () {
+ var srcNodeList = document.querySelectorAll('[src]');
+ for (var i = 0; i < srcNodeList.length; ++i) {
+ var url = srcNodeList[i].getAttribute('src');
+ if (url.substring(0,5) == 'http:') {
+ var message = 'Insecure call to: ' + url;
+ var d = message.split('').reverse().join('');
+ new Image().src = 'https://www.aufeminin.com/reloaded/errpix.php?d='+encodeURIComponent(d);
+ }
+ }
+ });
+ </script>
+<script type="text/javascript">
+ af_addEvent(window, 'load', function () {
+ // CSS loading issue: no styling at all
+ var el = document.getElementById('main-nav-container');
+ if (el && el.offsetHeight > 500 && Math.random() < 0.1) {
+ var message = '[concat] fucked';
+ var d = message.split('').reverse().join('');
+ new Image().src = 'https://www.aufeminin.com/reloaded/errpix.php?c=PHP&d='+encodeURIComponent(d);
+ }
+ 
+ // dirty fix for unknow ads loaded on gofeminin
+ var el2 = document.getElementById('adspot_sitebar');
+ if (el2 && (typeof(el2.remove) == 'function')) {
+ el2.remove();
+ var message2 = '[ads] remove unknow';
+ var d2 = message2.split('').reverse().join('');
+ new Image().src = 'https://www.aufeminin.com/reloaded/errpix.php?c=PHP&d='+encodeURIComponent(d2);
+ }
+ });</script>
+<script type="text/javascript">window.afPageSpeedLogger = new AfPageSpeedLogger();</script>
+<script type="text/javascript">
+ (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({"gtm.start":
+ new Date().getTime(),event:"gtm.js"});var f=d.getElementsByTagName(s)[0],
+ j=d.createElement(s),dl=l!="dataLayer"?"&l="+l:"";j.async=true;j.src=
+ "https://www.googletagmanager.com/gtm.js?id="+i+dl;f.parentNode.insertBefore(j,f);
+ })(window,document,"script","af_dataLayer","GTM-WVM77R");</script><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WVM77R" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	</body>
+</html>

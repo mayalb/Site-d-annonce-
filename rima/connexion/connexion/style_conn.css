@@ -1,0 +1,63 @@
+
+
+.coll
+{
+	
+padding: 4%;
+border-radius: 20px;
+background-color:#fff; 
+width: 150%;
+
+}
+
+.titre_conn
+{
+margin-bottom: 30px;
+text-align: center;
+color: #f39c12;
+font-weight : bold;
+
+
+
+}
+
+.lab
+{
+text-align: center;
+font-weight : bold;
+
+
+}
+.but
+{
+width: 70%;
+height: 45px;
+
+font-weight : bold;
+font-size: 150%;
+border-radius: 40px;
+
+}
+
+.inp{
+font-weight : bold;	
+
+}
+
+.inp[type='file']
+{
+	font-size: 5px;
+	background-color: #f39c12;
+	height: 100%;
+	border-radius: 40px;
+}
+.but2
+{
+width: 30%;
+height: 40px;
+font-weight : bold;
+font-size: 120%;
+border-radius: 40px;
+
+
+}
